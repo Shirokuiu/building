@@ -1,0 +1,1952 @@
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif /* 1 */;
+  -ms-text-size-adjust: 100% /* 2 */;
+  -webkit-text-size-adjust: 100% /* 2 */;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block /* 1 */;
+  vertical-align: baseline /* 2 */;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit /* 1 */;
+  font: inherit /* 2 */;
+  margin: 0 /* 3 */;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button /* 2 */;
+  cursor: pointer /* 3 */;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box /* 1 */;
+  padding: 0 /* 2 */;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield /* 1 */;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+legend {
+  border: 0 /* 1 */;
+  padding: 0 /* 2 */;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+blockquote {
+  margin: 0;
+}
+/* Libraries, which is used in current project. */
+/* Libraries, which is used in current project. */
+@font-face {
+  font-family: 'Sf-Ui-Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('SFUIDisplay Regular'), local('SFUIDisplay-Regular'), url("../fonts/SFUIDisplay-Regular.woff2") format('woff2'), url("../fonts/SFUIDisplay-Regular.woff") format('woff') /* Modern Browsers */;
+}
+@font-face {
+  font-family: 'Sf-Ui-Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('SFUIDisplay Bold'), local('SFUIDisplay-Bold'), url("../fonts/SFUIDisplay-Bold.woff2") format('woff2'), url("../fonts/SFUIDisplay-Bold.woff") format('woff') /* Modern Browsers */;
+}
+@font-face {
+  font-family: 'Proxima-Nova-Rg';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Proxima Nova Rg'), local('Proxima-Nova-Rg'), url("../fonts/ProximaNova-Bold.woff2") format('woff2'), url("../fonts/ProximaNova-Bold.woff") format('woff') /* Modern Browsers */;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Heavy'), local('Lato-Heavy'), url("../fonts/Lato-Heavy.woff2") format('woff2'), url("../fonts/Lato-Heavy.woff") format('woff') /* Modern Browsers */;
+}
+body {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: 'Sf-Ui-Display', sans-serif;
+  color: #000;
+  font-style: normal;
+}
+*::-webkit-input-placeholder {
+  color: #929292;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  opacity: 1;
+}
+*:-moz-input-placeholder {
+  color: #929292;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Sf-Ui-Display', sans-serif;
+  font-weight: 300;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: #929292;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Sf-Ui-Display', sans-serif;
+  font-weight: 300;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: #929292;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Sf-Ui-Display', sans-serif;
+  font-weight: 300;
+  opacity: 1;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.page-footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.container {
+  width: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* Plugins, which is used in current project. */
+/* Components, which is used in current project. */
+/* Additional style files. */
+.text {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.text--fw700 {
+  font-weight: 700;
+}
+.text--fw500 {
+  font-weight: 500;
+}
+.text--fw400 {
+  font-weight: 400;
+}
+.text--center {
+  text-align: center;
+}
+.text--right {
+  text-align: right;
+}
+.text--uppercase {
+  text-transform: uppercase;
+}
+.text--td-none {
+  text-decoration: none;
+}
+.button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.row--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.row--jc-fs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.row--jc-fe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.row--jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.row--jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.row--jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.row--ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.row--wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.column--reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.column--jc-fs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.column--jc-fe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.column--jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.column--jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.column--jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.column--ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.input {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+.input--checkbox,
+.input--radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list--items-mb5 {
+  margin-bottom: 5px;
+}
+.list--items-mb5:last-child {
+  margin-bottom: 0;
+}
+.m--b10 {
+  margin-bottom: 10px;
+}
+.m--b5 {
+  margin-bottom: 5px;
+}
+.d-block {
+  display: block;
+}
+.page-content__description {
+  overflow-x: scroll;
+}
+.aside {
+  width: 315px;
+}
+.aside__headline-wrap {
+  padding: 22px;
+  padding-right: 0;
+  background-color: #e83e1a;
+  box-shadow: 0px 2px 7px -3px rgba(0,0,0,0.75);
+}
+.aside__burder {
+  width: 32px;
+  height: 22px;
+  margin-right: 20px;
+}
+.aside__burder .burger {
+  width: 32px;
+  height: 22px;
+  fill: #fff;
+}
+.aside__headline {
+  font-family: 'Proxima-Nova-Rg';
+  font-size: 29px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #fff;
+}
+.aside__tel {
+  padding: 15px 0;
+  font-family: 'Lato';
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 900;
+  color: #333640;
+}
+.aside__content-wrap {
+  padding: 0 5px;
+}
+.aside__choose-text {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 19px;
+  line-height: 23px;
+  color: #333640;
+  font-weight: #333640;
+  border: 1px solid #e7e7e7;
+  border-left: none;
+  border-right: none;
+}
+.aside__choose-list {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.aside__choose-items {
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+.aside__choose-items:last-child {
+  margin-bottom: 0;
+}
+.aside__choose-items--title {
+  margin-bottom: 20px;
+}
+.aside__choose-item-title {
+  font-size: 15px;
+  line-height: 18px;
+  color: #333640;
+}
+.aside__choose-item-title--green {
+  color: #23d558;
+}
+.aside__choose-item-link {
+  margin-right: 15px;
+}
+.aside__choose-item-link:hover .aside__choose-item-link-label-indicator {
+  border-color: #e93e1b;
+}
+.aside__choose-item-link-label {
+  position: relative;
+  padding-left: 32px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #333640;
+}
+.aside__choose-item-link-label-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #dcdcdc;
+  border-radius: 3px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.aside__choose-item-link-label-indicator--active {
+  background-color: #e93e1b;
+  border-color: #e93e1b;
+}
+.aside__choose-item-link-label-indicator--active::before,
+.aside__choose-item-link-label-indicator--active::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  content: '';
+  height: 2px;
+  background-color: #fdfaef;
+}
+.aside__choose-item-link-label-indicator--active::before {
+  right: 11px;
+  bottom: -3px;
+  width: 45%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.aside__choose-item-link-label-indicator--active::after {
+  right: -5px;
+  bottom: 2px;
+  width: 85%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.aside__choose-item-border {
+  border-bottom: 1px dashed #dcdcdc;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.aside__choose-item-appartment-text {
+  margin-left: 15px;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #23d558;
+}
+.aside__choose-item-appartment-text span {
+  margin-left: 5px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.aside__submin-button-wrap {
+  padding: 0 10px;
+}
+.aside__submin-button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #32d35e;
+  border-radius: 5px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.aside__submin-button:hover {
+  background-color: #42b273;
+}
+.main-nav {
+  margin-bottom: 20px;
+}
+.main-nav__list {
+  padding-left: 10px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.main-nav__items {
+  margin-bottom: 30px;
+}
+.main-nav__items:last-child {
+  margin-bottom: 0;
+}
+.main-nav__item-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+  font-size: 21px;
+  line-height: 25px;
+  color: #333640;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.main-nav__item-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #333640;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.main-nav__item-link:hover {
+  color: #f00;
+}
+.main-nav__item-link:hover::after {
+  width: 0;
+}
+.main-nav__item-link-icon {
+  width: 24px;
+  height: 25px;
+  margin-right: 15px;
+}
+.house__img-wrap {
+  position: relative;
+}
+.house__img {
+  width: 1612px;
+}
+.house__appartment1-17-link,
+.house__appartment1-16-link,
+.house__appartment1-15-link,
+.house__appartment1-14-link,
+.house__appartment1-13-link,
+.house__appartment1-12-link,
+.house__appartment1-11-link,
+.house__appartment1-10-link,
+.house__appartment1-9-link,
+.house__appartment1-8-link,
+.house__appartment1-7-link,
+.house__appartment1-6-link,
+.house__appartment1-5-link,
+.house__appartment1-4-link,
+.house__appartment1-3-link,
+.house__appartment1-2-link,
+.house__appartment1-1-link {
+  position: absolute;
+  top: 131px;
+  left: 193px;
+  z-index: 20;
+  display: block;
+  width: 325px;
+  height: 50px;
+  -webkit-transform: rotateZ(20deg);
+          transform: rotateZ(20deg);
+}
+.house__appartment1-17-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-16-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-15-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-14-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-13-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-12-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-11-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-10-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-9-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-8-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-7-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-6-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-5-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-4-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-3-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-2-link:hover ~ .house__appartment1-17-img,
+.house__appartment1-1-link:hover ~ .house__appartment1-17-img {
+  opacity: 0.6;
+}
+.house__appartment1-16-link {
+  top: 186px;
+  -webkit-transform: rotateZ(18deg);
+          transform: rotateZ(18deg);
+  height: 36px;
+}
+.house__appartment1-16-link:hover ~ .house__appartment1-16-img {
+  opacity: 0.6;
+}
+.house__appartment1-15-link {
+  top: 232px;
+  -webkit-transform: rotateZ(18deg);
+          transform: rotateZ(18deg);
+  height: 32px;
+}
+.house__appartment1-15-link:hover ~ .house__appartment1-15-img {
+  opacity: 0.6;
+}
+.house__appartment1-14-link {
+  top: 273px;
+  -webkit-transform: rotateZ(16deg);
+          transform: rotateZ(16deg);
+  height: 32px;
+}
+.house__appartment1-14-link:hover ~ .house__appartment1-14-img {
+  opacity: 0.6;
+}
+.house__appartment1-13-link {
+  top: 317px;
+  -webkit-transform: rotateZ(13deg);
+          transform: rotateZ(13deg);
+  height: 32px;
+}
+.house__appartment1-13-link:hover ~ .house__appartment1-13-img {
+  opacity: 0.6;
+}
+.house__appartment1-12-link {
+  top: 361px;
+  -webkit-transform: rotateZ(11deg);
+          transform: rotateZ(11deg);
+  height: 32px;
+}
+.house__appartment1-12-link:hover ~ .house__appartment1-12-img {
+  opacity: 0.6;
+}
+.house__appartment1-11-link {
+  top: 403px;
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+  height: 32px;
+}
+.house__appartment1-11-link:hover ~ .house__appartment1-11-img {
+  opacity: 0.6;
+}
+.house__appartment1-10-link {
+  top: 445px;
+  -webkit-transform: rotateZ(8deg);
+          transform: rotateZ(8deg);
+  height: 32px;
+}
+.house__appartment1-10-link:hover ~ .house__appartment1-10-img {
+  opacity: 0.6;
+}
+.house__appartment1-9-link {
+  top: 489px;
+  -webkit-transform: rotateZ(5deg);
+          transform: rotateZ(5deg);
+  height: 32px;
+}
+.house__appartment1-9-link:hover ~ .house__appartment1-9-img {
+  opacity: 0.6;
+}
+.house__appartment1-8-link {
+  top: 531px;
+  -webkit-transform: rotateZ(4deg);
+          transform: rotateZ(4deg);
+  height: 32px;
+}
+.house__appartment1-8-link:hover ~ .house__appartment1-8-img {
+  opacity: 0.6;
+}
+.house__appartment1-7-link {
+  top: 575px;
+  -webkit-transform: rotateZ(2deg);
+          transform: rotateZ(2deg);
+  height: 32px;
+}
+.house__appartment1-7-link:hover ~ .house__appartment1-7-img {
+  opacity: 0.6;
+}
+.house__appartment1-6-link {
+  top: 617px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+  height: 32px;
+}
+.house__appartment1-6-link:hover ~ .house__appartment1-6-img {
+  opacity: 0.6;
+}
+.house__appartment1-5-link {
+  top: 659px;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
+  height: 32px;
+}
+.house__appartment1-5-link:hover ~ .house__appartment1-5-img {
+  opacity: 0.6;
+}
+.house__appartment1-4-link {
+  top: 704px;
+  -webkit-transform: rotateZ(-4deg);
+          transform: rotateZ(-4deg);
+  height: 32px;
+}
+.house__appartment1-4-link:hover ~ .house__appartment1-4-img {
+  opacity: 0.6;
+}
+.house__appartment1-3-link {
+  top: 746px;
+  -webkit-transform: rotateZ(-6deg);
+          transform: rotateZ(-6deg);
+  height: 32px;
+}
+.house__appartment1-3-link:hover ~ .house__appartment1-3-img {
+  opacity: 0.6;
+}
+.house__appartment1-2-link {
+  top: 788px;
+  -webkit-transform: rotateZ(-8deg);
+          transform: rotateZ(-8deg);
+  height: 32px;
+}
+.house__appartment1-2-link:hover ~ .house__appartment1-2-img {
+  opacity: 0.6;
+}
+.house__appartment1-1-link {
+  top: 834px;
+  -webkit-transform: rotateZ(-10deg);
+          transform: rotateZ(-10deg);
+  height: 52px;
+}
+.house__appartment1-1-link:hover ~ .house__appartment1-1-img {
+  opacity: 0.6;
+}
+.house__appartment1-17-img,
+.house__appartment1-16-img,
+.house__appartment1-15-img,
+.house__appartment1-14-img,
+.house__appartment1-13-img,
+.house__appartment1-12-img,
+.house__appartment1-11-img,
+.house__appartment1-10-img,
+.house__appartment1-9-img,
+.house__appartment1-8-img,
+.house__appartment1-7-img,
+.house__appartment1-6-img,
+.house__appartment1-5-img,
+.house__appartment1-4-img,
+.house__appartment1-3-img,
+.house__appartment1-2-img,
+.house__appartment1-1-img {
+  position: absolute;
+  top: 38px;
+  left: 88px;
+  width: 439px;
+  height: 239px;
+  fill: #20c1e6;
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.house__appartment1-16-img {
+  top: 82px;
+  width: 436px;
+}
+.house__appartment1-15-img {
+  top: 125px;
+  width: 434px;
+}
+.house__appartment1-14-img {
+  top: 167px;
+  width: 431px;
+}
+.house__appartment1-13-img {
+  top: 211px;
+  width: 431px;
+}
+.house__appartment1-12-img {
+  top: 253px;
+  width: 431px;
+}
+.house__appartment1-11-img {
+  top: 296px;
+  width: 431px;
+}
+.house__appartment1-10-img {
+  top: 340px;
+  width: 431px;
+}
+.house__appartment1-9-img {
+  top: 382px;
+  width: 431px;
+}
+.house__appartment1-8-img {
+  top: 425px;
+  width: 431px;
+}
+.house__appartment1-7-img {
+  top: 468px;
+  width: 431px;
+}
+.house__appartment1-6-img {
+  top: 514px;
+  left: 85px;
+  width: 431px;
+}
+.house__appartment1-5-img {
+  top: 559px;
+  left: 85px;
+  width: 431px;
+}
+.house__appartment1-4-img {
+  top: 602px;
+  left: 85px;
+  width: 431px;
+}
+.house__appartment1-3-img {
+  top: 645px;
+  left: 85px;
+  width: 431px;
+}
+.house__appartment1-2-img {
+  top: 688px;
+  left: 85px;
+  width: 431px;
+}
+.house__appartment1-1-img {
+  top: 736px;
+  left: 82px;
+  width: 431px;
+}
+.house__appartment2-17-link,
+.house__appartment2-16-link,
+.house__appartment2-15-link,
+.house__appartment2-14-link,
+.house__appartment2-13-link,
+.house__appartment2-12-link,
+.house__appartment2-11-link,
+.house__appartment2-10-link,
+.house__appartment2-9-link,
+.house__appartment2-8-link,
+.house__appartment2-7-link,
+.house__appartment2-6-link,
+.house__appartment2-5-link,
+.house__appartment2-4-link,
+.house__appartment2-3-link,
+.house__appartment2-2-link,
+.house__appartment2-1-link {
+  position: absolute;
+  top: 239px;
+  left: 537px;
+  z-index: 20;
+  display: block;
+  width: 186px;
+  height: 24px;
+  -webkit-transform: rotateZ(19deg);
+          transform: rotateZ(19deg);
+}
+.house__appartment2-17-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-16-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-15-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-14-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-13-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-12-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-11-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-10-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-9-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-8-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-7-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-6-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-5-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-4-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-3-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-2-link:hover ~ .house__appartment2-17-img,
+.house__appartment2-1-link:hover ~ .house__appartment2-17-img {
+  opacity: 0.6;
+}
+.house__appartment2-16-link {
+  top: 275px;
+  -webkit-transform: rotateZ(18deg);
+          transform: rotateZ(18deg);
+}
+.house__appartment2-16-link:hover ~ .house__appartment2-16-img {
+  opacity: 0.6;
+}
+.house__appartment2-15-link {
+  top: 309px;
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+}
+.house__appartment2-15-link:hover ~ .house__appartment2-15-img {
+  opacity: 0.6;
+}
+.house__appartment2-14-link {
+  top: 344px;
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+}
+.house__appartment2-14-link:hover ~ .house__appartment2-14-img {
+  opacity: 0.6;
+}
+.house__appartment2-13-link {
+  top: 377px;
+  -webkit-transform: rotateZ(12deg);
+          transform: rotateZ(12deg);
+}
+.house__appartment2-13-link:hover ~ .house__appartment2-13-img {
+  opacity: 0.6;
+}
+.house__appartment2-12-link {
+  top: 413px;
+  -webkit-transform: rotateZ(11deg);
+          transform: rotateZ(11deg);
+}
+.house__appartment2-12-link:hover ~ .house__appartment2-12-img {
+  opacity: 0.6;
+}
+.house__appartment2-11-link {
+  top: 448px;
+  -webkit-transform: rotateZ(9deg);
+          transform: rotateZ(9deg);
+}
+.house__appartment2-11-link:hover ~ .house__appartment2-11-img {
+  opacity: 0.6;
+}
+.house__appartment2-10-link {
+  top: 482px;
+  -webkit-transform: rotateZ(7deg);
+          transform: rotateZ(7deg);
+}
+.house__appartment2-10-link:hover ~ .house__appartment2-10-img {
+  opacity: 0.6;
+}
+.house__appartment2-9-link {
+  top: 516px;
+  -webkit-transform: rotateZ(5deg);
+          transform: rotateZ(5deg);
+}
+.house__appartment2-9-link:hover ~ .house__appartment2-9-img {
+  opacity: 0.6;
+}
+.house__appartment2-8-link {
+  top: 551px;
+  -webkit-transform: rotateZ(4deg);
+          transform: rotateZ(4deg);
+}
+.house__appartment2-8-link:hover ~ .house__appartment2-8-img {
+  opacity: 0.6;
+}
+.house__appartment2-7-link {
+  top: 585px;
+  -webkit-transform: rotateZ(2deg);
+          transform: rotateZ(2deg);
+}
+.house__appartment2-7-link:hover ~ .house__appartment2-7-img {
+  opacity: 0.6;
+}
+.house__appartment2-6-link {
+  top: 619px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+.house__appartment2-6-link:hover ~ .house__appartment2-6-img {
+  opacity: 0.6;
+}
+.house__appartment2-5-link {
+  top: 653px;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
+}
+.house__appartment2-5-link:hover ~ .house__appartment2-5-img {
+  opacity: 0.6;
+}
+.house__appartment2-4-link {
+  top: 688px;
+  -webkit-transform: rotateZ(-4deg);
+          transform: rotateZ(-4deg);
+}
+.house__appartment2-4-link:hover ~ .house__appartment2-4-img {
+  opacity: 0.6;
+}
+.house__appartment2-3-link {
+  top: 725px;
+  -webkit-transform: rotateZ(-5deg);
+          transform: rotateZ(-5deg);
+  left: 533px;
+}
+.house__appartment2-3-link:hover ~ .house__appartment2-3-img {
+  opacity: 0.6;
+}
+.house__appartment2-2-link {
+  top: 759px;
+  -webkit-transform: rotateZ(-7deg);
+          transform: rotateZ(-7deg);
+  left: 533px;
+}
+.house__appartment2-2-link:hover ~ .house__appartment2-2-img {
+  opacity: 0.6;
+}
+.house__appartment2-1-link {
+  top: 794px;
+  -webkit-transform: rotateZ(-7deg);
+          transform: rotateZ(-7deg);
+  left: 533px;
+  height: 37px;
+}
+.house__appartment2-1-link:hover ~ .house__appartment2-1-img {
+  opacity: 0.6;
+}
+.house__appartment2-17-img,
+.house__appartment2-16-img,
+.house__appartment2-15-img,
+.house__appartment2-14-img,
+.house__appartment2-13-img,
+.house__appartment2-12-img,
+.house__appartment2-11-img,
+.house__appartment2-10-img,
+.house__appartment2-9-img,
+.house__appartment2-8-img,
+.house__appartment2-7-img,
+.house__appartment2-6-img,
+.house__appartment2-5-img,
+.house__appartment2-4-img,
+.house__appartment2-3-img,
+.house__appartment2-2-img,
+.house__appartment2-1-img {
+  position: absolute;
+  top: 198px;
+  left: 521px;
+  width: 202px;
+  height: 112px;
+  fill: #20c1e6;
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.house__appartment2-16-img {
+  top: 233px;
+}
+.house__appartment2-15-img {
+  top: 267px;
+}
+.house__appartment2-14-img {
+  top: 300px;
+}
+.house__appartment2-13-img {
+  top: 335px;
+}
+.house__appartment2-12-img {
+  top: 369px;
+}
+.house__appartment2-11-img {
+  top: 403px;
+}
+.house__appartment2-10-img {
+  top: 437px;
+}
+.house__appartment2-9-img {
+  top: 471px;
+}
+.house__appartment2-8-img {
+  top: 506px;
+}
+.house__appartment2-7-img {
+  top: 541px;
+}
+.house__appartment2-6-img {
+  top: 577px;
+}
+.house__appartment2-5-img {
+  top: 611px;
+}
+.house__appartment2-4-img {
+  top: 646px;
+}
+.house__appartment2-3-img {
+  top: 680px;
+}
+.house__appartment2-2-img {
+  top: 715px;
+}
+.house__appartment2-1-img {
+  top: 751px;
+}
+.house__appartment3-17-link,
+.house__appartment3-16-link,
+.house__appartment3-15-link,
+.house__appartment3-14-link,
+.house__appartment3-13-link,
+.house__appartment3-12-link,
+.house__appartment3-11-link,
+.house__appartment3-10-link,
+.house__appartment3-9-link,
+.house__appartment3-8-link,
+.house__appartment3-7-link,
+.house__appartment3-6-link,
+.house__appartment3-5-link,
+.house__appartment3-4-link,
+.house__appartment3-3-link,
+.house__appartment3-2-link,
+.house__appartment3-1-link {
+  position: absolute;
+  top: 303px;
+  left: 730px;
+  z-index: 20;
+  display: block;
+  width: 131px;
+  height: 20px;
+  -webkit-transform: rotateZ(17deg);
+          transform: rotateZ(17deg);
+}
+.house__appartment3-17-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-16-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-15-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-14-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-13-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-12-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-11-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-10-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-9-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-8-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-7-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-6-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-5-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-4-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-3-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-2-link:hover ~ .house__appartment3-17-img,
+.house__appartment3-1-link:hover ~ .house__appartment3-17-img {
+  opacity: 0.6;
+}
+.house__appartment3-16-link {
+  top: 331px;
+}
+.house__appartment3-16-link:hover ~ .house__appartment3-16-img {
+  opacity: 0.6;
+}
+.house__appartment3-15-link {
+  top: 360px;
+  -webkit-transform: rotateZ(14deg);
+          transform: rotateZ(14deg);
+}
+.house__appartment3-15-link:hover ~ .house__appartment3-15-img {
+  opacity: 0.6;
+}
+.house__appartment3-14-link {
+  top: 388px;
+  -webkit-transform: rotateZ(14deg);
+          transform: rotateZ(14deg);
+}
+.house__appartment3-14-link:hover ~ .house__appartment3-14-img {
+  opacity: 0.6;
+}
+.house__appartment3-13-link {
+  top: 418px;
+  -webkit-transform: rotateZ(14deg);
+          transform: rotateZ(14deg);
+}
+.house__appartment3-13-link:hover ~ .house__appartment3-13-img {
+  opacity: 0.6;
+}
+.house__appartment3-12-link {
+  top: 448px;
+  -webkit-transform: rotateZ(11deg);
+          transform: rotateZ(11deg);
+}
+.house__appartment3-12-link:hover ~ .house__appartment3-12-img {
+  opacity: 0.6;
+}
+.house__appartment3-11-link {
+  top: 476px;
+  -webkit-transform: rotateZ(9deg);
+          transform: rotateZ(9deg);
+}
+.house__appartment3-11-link:hover ~ .house__appartment3-11-img {
+  opacity: 0.6;
+}
+.house__appartment3-10-link {
+  top: 506px;
+  -webkit-transform: rotateZ(7deg);
+          transform: rotateZ(7deg);
+}
+.house__appartment3-10-link:hover ~ .house__appartment3-10-img {
+  opacity: 0.6;
+}
+.house__appartment3-9-link {
+  top: 536px;
+  -webkit-transform: rotateZ(5deg);
+          transform: rotateZ(5deg);
+}
+.house__appartment3-9-link:hover ~ .house__appartment3-9-img {
+  opacity: 0.6;
+}
+.house__appartment3-8-link {
+  top: 563px;
+  -webkit-transform: rotateZ(5deg);
+          transform: rotateZ(5deg);
+}
+.house__appartment3-8-link:hover ~ .house__appartment3-8-img {
+  opacity: 0.6;
+}
+.house__appartment3-7-link {
+  top: 592px;
+  -webkit-transform: rotateZ(2deg);
+          transform: rotateZ(2deg);
+}
+.house__appartment3-7-link:hover ~ .house__appartment3-7-img {
+  opacity: 0.6;
+}
+.house__appartment3-6-link {
+  top: 622px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+.house__appartment3-6-link:hover ~ .house__appartment3-6-img {
+  opacity: 0.6;
+}
+.house__appartment3-5-link {
+  top: 650px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+.house__appartment3-5-link:hover ~ .house__appartment3-5-img {
+  opacity: 0.6;
+}
+.house__appartment3-4-link {
+  top: 680px;
+  -webkit-transform: rotateZ(-3deg);
+          transform: rotateZ(-3deg);
+}
+.house__appartment3-4-link:hover ~ .house__appartment3-4-img {
+  opacity: 0.6;
+}
+.house__appartment3-3-link {
+  top: 710px;
+  -webkit-transform: rotateZ(-5deg);
+          transform: rotateZ(-5deg);
+}
+.house__appartment3-3-link:hover ~ .house__appartment3-3-img {
+  opacity: 0.6;
+}
+.house__appartment3-2-link {
+  top: 738px;
+  -webkit-transform: rotateZ(-6deg);
+          transform: rotateZ(-6deg);
+}
+.house__appartment3-2-link:hover ~ .house__appartment3-2-img {
+  opacity: 0.6;
+}
+.house__appartment3-1-link {
+  top: 768px;
+  -webkit-transform: rotateZ(-6deg);
+          transform: rotateZ(-6deg);
+  height: 32px;
+}
+.house__appartment3-1-link:hover ~ .house__appartment3-1-img {
+  opacity: 0.6;
+}
+.house__appartment3-17-img,
+.house__appartment3-16-img,
+.house__appartment3-15-img,
+.house__appartment3-14-img,
+.house__appartment3-13-img,
+.house__appartment3-12-img,
+.house__appartment3-11-img,
+.house__appartment3-10-img,
+.house__appartment3-9-img,
+.house__appartment3-8-img,
+.house__appartment3-7-img,
+.house__appartment3-6-img,
+.house__appartment3-5-img,
+.house__appartment3-4-img,
+.house__appartment3-3-img,
+.house__appartment3-2-img,
+.house__appartment3-1-img {
+  position: absolute;
+  top: 274px;
+  left: 717px;
+  width: 146px;
+  height: 85px;
+  fill: #20c1e6;
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.house__appartment3-16-img {
+  top: 302px;
+}
+.house__appartment3-15-img {
+  top: 331px;
+}
+.house__appartment3-14-img {
+  top: 359px;
+}
+.house__appartment3-13-img {
+  top: 387px;
+}
+.house__appartment3-12-img {
+  top: 416px;
+}
+.house__appartment3-11-img {
+  top: 444px;
+}
+.house__appartment3-10-img {
+  top: 473px;
+}
+.house__appartment3-9-img {
+  top: 502px;
+}
+.house__appartment3-8-img {
+  top: 530px;
+}
+.house__appartment3-7-img {
+  top: 559px;
+}
+.house__appartment3-6-img {
+  top: 589px;
+}
+.house__appartment3-5-img {
+  top: 618px;
+}
+.house__appartment3-4-img {
+  top: 648px;
+}
+.house__appartment3-3-img {
+  top: 677px;
+}
+.house__appartment3-2-img {
+  top: 705px;
+}
+.house__appartment3-1-img {
+  top: 735px;
+}
+.house__appartment4-17-link,
+.house__appartment4-16-link,
+.house__appartment4-15-link,
+.house__appartment4-14-link,
+.house__appartment4-13-link,
+.house__appartment4-12-link,
+.house__appartment4-11-link,
+.house__appartment4-10-link,
+.house__appartment4-9-link,
+.house__appartment4-8-link,
+.house__appartment4-7-link,
+.house__appartment4-6-link,
+.house__appartment4-5-link,
+.house__appartment4-4-link,
+.house__appartment4-3-link,
+.house__appartment4-2-link,
+.house__appartment4-1-link {
+  position: absolute;
+  top: 354px;
+  left: 862px;
+  z-index: 20;
+  display: block;
+  width: 170px;
+  height: 20px;
+  -webkit-transform: rotateZ(16deg);
+          transform: rotateZ(16deg);
+}
+.house__appartment4-17-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-16-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-15-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-14-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-13-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-12-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-11-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-10-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-9-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-8-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-7-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-6-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-5-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-4-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-3-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-2-link:hover ~ .house__appartment4-17-img,
+.house__appartment4-1-link:hover ~ .house__appartment4-17-img {
+  opacity: 0.6;
+}
+.house__appartment4-16-link {
+  top: 380px;
+}
+.house__appartment4-16-link:hover ~ .house__appartment4-16-img {
+  opacity: 0.6;
+}
+.house__appartment4-15-link {
+  top: 404px;
+}
+.house__appartment4-15-link:hover ~ .house__appartment4-15-img {
+  opacity: 0.6;
+}
+.house__appartment4-14-link {
+  top: 428px;
+  -webkit-transform: rotateZ(13deg);
+          transform: rotateZ(13deg);
+}
+.house__appartment4-14-link:hover ~ .house__appartment4-14-img {
+  opacity: 0.6;
+}
+.house__appartment4-13-link {
+  top: 452px;
+  -webkit-transform: rotateZ(13deg);
+          transform: rotateZ(13deg);
+}
+.house__appartment4-13-link:hover ~ .house__appartment4-13-img {
+  opacity: 0.6;
+}
+.house__appartment4-12-link {
+  top: 477px;
+  -webkit-transform: rotateZ(11deg);
+          transform: rotateZ(11deg);
+}
+.house__appartment4-12-link:hover ~ .house__appartment4-12-img {
+  opacity: 0.6;
+}
+.house__appartment4-11-link {
+  top: 500px;
+  -webkit-transform: rotateZ(8deg);
+          transform: rotateZ(8deg);
+}
+.house__appartment4-11-link:hover ~ .house__appartment4-11-img {
+  opacity: 0.6;
+}
+.house__appartment4-10-link {
+  top: 524px;
+  -webkit-transform: rotateZ(6deg);
+          transform: rotateZ(6deg);
+}
+.house__appartment4-10-link:hover ~ .house__appartment4-10-img {
+  opacity: 0.6;
+}
+.house__appartment4-9-link {
+  top: 549px;
+  -webkit-transform: rotateZ(6deg);
+          transform: rotateZ(6deg);
+}
+.house__appartment4-9-link:hover ~ .house__appartment4-9-img {
+  opacity: 0.6;
+}
+.house__appartment4-8-link {
+  top: 572px;
+  -webkit-transform: rotateZ(3deg);
+          transform: rotateZ(3deg);
+}
+.house__appartment4-8-link:hover ~ .house__appartment4-8-img {
+  opacity: 0.6;
+}
+.house__appartment4-7-link {
+  top: 596px;
+  -webkit-transform: rotateZ(1deg);
+          transform: rotateZ(1deg);
+}
+.house__appartment4-7-link:hover ~ .house__appartment4-7-img {
+  opacity: 0.6;
+}
+.house__appartment4-6-link {
+  top: 620px;
+  -webkit-transform: rotateZ(1deg);
+          transform: rotateZ(1deg);
+}
+.house__appartment4-6-link:hover ~ .house__appartment4-6-img {
+  opacity: 0.6;
+}
+.house__appartment4-5-link {
+  top: 645px;
+  -webkit-transform: rotateZ(-1deg);
+          transform: rotateZ(-1deg);
+}
+.house__appartment4-5-link:hover ~ .house__appartment4-5-img {
+  opacity: 0.6;
+}
+.house__appartment4-4-link {
+  top: 668px;
+  -webkit-transform: rotateZ(-3deg);
+          transform: rotateZ(-3deg);
+}
+.house__appartment4-4-link:hover ~ .house__appartment4-4-img {
+  opacity: 0.6;
+}
+.house__appartment4-3-link {
+  top: 693px;
+  -webkit-transform: rotateZ(-4deg);
+          transform: rotateZ(-4deg);
+}
+.house__appartment4-3-link:hover ~ .house__appartment4-3-img {
+  opacity: 0.6;
+}
+.house__appartment4-2-link {
+  top: 717px;
+  -webkit-transform: rotateZ(-6deg);
+          transform: rotateZ(-6deg);
+}
+.house__appartment4-2-link:hover ~ .house__appartment4-2-img {
+  opacity: 0.6;
+}
+.house__appartment4-1-link {
+  top: 742px;
+  -webkit-transform: rotateZ(-7deg);
+          transform: rotateZ(-7deg);
+  height: 32px;
+}
+.house__appartment4-1-link:hover ~ .house__appartment4-1-img {
+  opacity: 0.6;
+}
+.house__appartment4-17-img,
+.house__appartment4-16-img,
+.house__appartment4-15-img,
+.house__appartment4-14-img,
+.house__appartment4-13-img,
+.house__appartment4-12-img,
+.house__appartment4-11-img,
+.house__appartment4-10-img,
+.house__appartment4-9-img,
+.house__appartment4-8-img,
+.house__appartment4-7-img,
+.house__appartment4-6-img,
+.house__appartment4-5-img,
+.house__appartment4-4-img,
+.house__appartment4-3-img,
+.house__appartment4-2-img,
+.house__appartment4-1-img {
+  position: absolute;
+  top: 327px;
+  left: 861px;
+  width: 169px;
+  height: 76px;
+  fill: #20c1e6;
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.house__appartment4-16-img {
+  top: 351px;
+}
+.house__appartment4-15-img {
+  top: 375px;
+}
+.house__appartment4-14-img {
+  top: 399px;
+}
+.house__appartment4-13-img {
+  top: 423px;
+}
+.house__appartment4-12-img {
+  top: 447px;
+}
+.house__appartment4-11-img {
+  top: 471px;
+}
+.house__appartment4-10-img {
+  top: 495px;
+}
+.house__appartment4-9-img {
+  top: 518px;
+}
+.house__appartment4-8-img {
+  top: 543px;
+}
+.house__appartment4-7-img {
+  top: 568px;
+}
+.house__appartment4-6-img {
+  top: 592px;
+}
+.house__appartment4-5-img {
+  top: 618px;
+}
+.house__appartment4-4-img {
+  top: 641px;
+}
+.house__appartment4-3-img {
+  top: 665px;
+}
+.house__appartment4-2-img {
+  top: 690px;
+}
+.house__appartment4-1-img {
+  top: 715px;
+}
+.house__appartment5-17-link,
+.house__appartment5-16-link,
+.house__appartment5-15-link,
+.house__appartment5-14-link,
+.house__appartment5-13-link,
+.house__appartment5-12-link,
+.house__appartment5-11-link,
+.house__appartment5-10-link,
+.house__appartment5-9-link,
+.house__appartment5-8-link,
+.house__appartment5-7-link,
+.house__appartment5-6-link,
+.house__appartment5-5-link,
+.house__appartment5-4-link,
+.house__appartment5-3-link,
+.house__appartment5-2-link,
+.house__appartment5-1-link {
+  position: absolute;
+  top: 357px;
+  left: 1088px;
+  z-index: 20;
+  display: block;
+  width: 190px;
+  height: 20px;
+  -webkit-transform: rotateZ(-8deg);
+          transform: rotateZ(-8deg);
+}
+.house__appartment5-17-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-16-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-15-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-14-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-13-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-12-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-11-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-10-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-9-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-8-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-7-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-6-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-5-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-4-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-3-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-2-link:hover ~ .house__appartment5-17-img,
+.house__appartment5-1-link:hover ~ .house__appartment5-17-img {
+  opacity: 0.6;
+}
+.house__appartment5-16-link {
+  top: 381px;
+}
+.house__appartment5-16-link:hover ~ .house__appartment5-16-img {
+  opacity: 0.6;
+}
+.house__appartment5-15-link {
+  top: 405px;
+}
+.house__appartment5-15-link:hover ~ .house__appartment5-15-img {
+  opacity: 0.6;
+}
+.house__appartment5-14-link {
+  top: 429px;
+  -webkit-transform: rotateZ(-5deg);
+          transform: rotateZ(-5deg);
+}
+.house__appartment5-14-link:hover ~ .house__appartment5-14-img {
+  opacity: 0.6;
+}
+.house__appartment5-13-link {
+  top: 453px;
+  -webkit-transform: rotateZ(-5deg);
+          transform: rotateZ(-5deg);
+}
+.house__appartment5-13-link:hover ~ .house__appartment5-13-img {
+  opacity: 0.6;
+}
+.house__appartment5-12-link {
+  top: 477px;
+  -webkit-transform: rotateZ(-5deg);
+          transform: rotateZ(-5deg);
+}
+.house__appartment5-12-link:hover ~ .house__appartment5-12-img {
+  opacity: 0.6;
+}
+.house__appartment5-11-link {
+  top: 500px;
+  -webkit-transform: rotateZ(-5deg);
+          transform: rotateZ(-5deg);
+}
+.house__appartment5-11-link:hover ~ .house__appartment5-11-img {
+  opacity: 0.6;
+}
+.house__appartment5-10-link {
+  top: 525px;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
+}
+.house__appartment5-10-link:hover ~ .house__appartment5-10-img {
+  opacity: 0.6;
+}
+.house__appartment5-9-link {
+  top: 549px;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
+}
+.house__appartment5-9-link:hover ~ .house__appartment5-9-img {
+  opacity: 0.6;
+}
+.house__appartment5-8-link {
+  top: 573px;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
+}
+.house__appartment5-8-link:hover ~ .house__appartment5-8-img {
+  opacity: 0.6;
+}
+.house__appartment5-7-link {
+  top: 597px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+.house__appartment5-7-link:hover ~ .house__appartment5-7-img {
+  opacity: 0.6;
+}
+.house__appartment5-6-link {
+  top: 621px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+.house__appartment5-6-link:hover ~ .house__appartment5-6-img {
+  opacity: 0.6;
+}
+.house__appartment5-5-link {
+  top: 645px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+.house__appartment5-5-link:hover ~ .house__appartment5-5-img {
+  opacity: 0.6;
+}
+.house__appartment5-4-link {
+  top: 670px;
+  -webkit-transform: rotateZ(2deg);
+          transform: rotateZ(2deg);
+}
+.house__appartment5-4-link:hover ~ .house__appartment5-4-img {
+  opacity: 0.6;
+}
+.house__appartment5-3-link {
+  top: 693px;
+  -webkit-transform: rotateZ(2deg);
+          transform: rotateZ(2deg);
+}
+.house__appartment5-3-link:hover ~ .house__appartment5-3-img {
+  opacity: 0.6;
+}
+.house__appartment5-2-link {
+  top: 716px;
+  -webkit-transform: rotateZ(2deg);
+          transform: rotateZ(2deg);
+}
+.house__appartment5-2-link:hover ~ .house__appartment5-2-img {
+  opacity: 0.6;
+}
+.house__appartment5-1-link {
+  top: 738px;
+  -webkit-transform: rotateZ(2deg);
+          transform: rotateZ(2deg);
+  height: 40px;
+}
+.house__appartment5-1-link:hover ~ .house__appartment5-1-img {
+  opacity: 0.6;
+}
+.house__appartment5-17-img,
+.house__appartment5-16-img,
+.house__appartment5-15-img,
+.house__appartment5-14-img,
+.house__appartment5-13-img,
+.house__appartment5-12-img,
+.house__appartment5-11-img,
+.house__appartment5-10-img,
+.house__appartment5-9-img,
+.house__appartment5-8-img,
+.house__appartment5-7-img,
+.house__appartment5-6-img,
+.house__appartment5-5-img,
+.house__appartment5-4-img,
+.house__appartment5-3-img,
+.house__appartment5-2-img,
+.house__appartment5-1-img {
+  position: absolute;
+  top: 333px;
+  left: 1088px;
+  width: 222px;
+  height: 76px;
+  fill: #20c1e6;
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.house__appartment5-16-img {
+  top: 357px;
+}
+.house__appartment5-15-img {
+  top: 380px;
+}
+.house__appartment5-14-img {
+  top: 404px;
+}
+.house__appartment5-13-img {
+  top: 428px;
+}
+.house__appartment5-12-img {
+  top: 451px;
+}
+.house__appartment5-11-img {
+  top: 475px;
+}
+.house__appartment5-10-img {
+  top: 499px;
+}
+.house__appartment5-9-img {
+  top: 522px;
+}
+.house__appartment5-8-img {
+  top: 546px;
+}
+.house__appartment5-7-img {
+  top: 569px;
+}
+.house__appartment5-6-img {
+  top: 593px;
+}
+.house__appartment5-5-img {
+  top: 618px;
+}
+.house__appartment5-4-img {
+  top: 641px;
+}
+.house__appartment5-3-img {
+  top: 664px;
+}
+.house__appartment5-2-img {
+  top: 689px;
+}
+.house__appartment5-1-img {
+  top: 710px;
+}

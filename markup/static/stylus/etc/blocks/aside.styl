@@ -1,0 +1,171 @@
+.aside
+  width 315px
+
+.aside__headline-wrap
+  padding 22px
+  padding-right 0
+  
+  background-color #e83e1a
+  box-shadow 0px 2px 7px -3px rgba(0,0,0,0.75)
+  
+.aside__burder
+  width 32px
+  height 22px
+  margin-right 20px
+  .burger
+    width 32px
+    height 22px
+    
+    fill #ffffff
+    
+.aside__headline
+  font-family 'Proxima-Nova-Rg'
+  font-size 29px
+  line-height 34px
+  font-weight 700
+  color #ffffff
+  
+.aside__tel
+  padding 15px 0
+  
+  font-family 'Lato'
+  font-size 27px
+  line-height 32px
+  font-weight 900
+  color #333640
+  
+.aside__content-wrap
+  padding 0 5px
+  
+.aside__choose-text
+  padding-top 10px
+  padding-left 10px
+  padding-bottom 10px
+  
+  font-size 19px
+  line-height 23px
+  color #333640
+  font-weight #333640
+  
+  border 1px solid #e7e7e7
+  border-left none
+  border-right none
+  
+.aside__choose-list
+  margin-bottom 15px
+  padding-top 10px
+  padding-bottom 25px
+  
+  border-bottom 1px solid #e7e7e7
+  
+.aside__choose-items
+  margin-bottom 25px
+  padding-left 10px
+  &:last-child
+    margin-bottom 0
+  &--title
+    margin-bottom 20px
+  
+.aside__choose-item-title
+  font-size 15px
+  line-height 18px
+  color #333640
+  &--green
+    color #23d558
+    
+.aside__choose-item-link
+  margin-right 15px
+  &:hover
+    .aside__choose-item-link-label-indicator
+      border-color #e93e1b
+    
+.aside__choose-item-link-label
+  position relative
+  
+  padding-left 32px
+  
+  font-size 17px
+  line-height 20px
+  color #333640
+  
+.aside__choose-item-link-label-indicator
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  
+  box-sizing border-box
+  width 22px
+  height 22px
+  
+  border 2px solid #dcdcdc
+  border-radius 3px
+  
+  transition 0.2s ease
+  &--active
+    background-color #e93e1b
+    
+    border-color #e93e1b
+    &::before,
+    &::after
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: auto;
+      
+      content: '';
+      
+      height: 2px;
+      background-color: #fdfaef;
+    &::before
+      right: 11px;
+      bottom: -3px;
+      width: 45%;
+      transform: rotate(45deg)
+    &::after
+      right: -5px;
+      bottom: 2px;
+      width: 85%;
+
+      transform: rotate(-45deg);
+      
+.aside__choose-item-border
+  border-bottom 1px dashed #dcdcdc
+  
+  transform translateY(-6px)
+  
+.aside__choose-item-appartment-text
+  margin-left 15px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #23d558
+  span
+    margin-left 5px
+    
+    font-size 15px
+    line-height 18px
+    font-weight 400
+    
+.aside__submin-button-wrap
+  padding 0 10px
+    
+.aside__submin-button
+  box-sizing border-box
+  width 100%
+  padding 12px 10px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #ffffff
+  
+  background-color #32d35e
+  
+  border-radius 5px
+  
+  transition 0.2s ease
+  &:hover
+    background-color #42B273
+

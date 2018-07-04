@@ -16,381 +16,429 @@ html(class="no-js", lang="ru")
                 .aside__burder
                   != pugHelpers.Icon.call(locals, {iconName: 'burger', className: 'burger'})
                 h2.aside__headline.text ЖК «Стрела»
-              a.aside__tel.d-block.text--center.text--td-none(href="tel:74952330246") +7(495) 233-02-46
-              .aside__content-wrap
-                .aside__choose-text Выберите корпус:
-                ul.aside__choose-list.list
-                  li.aside__choose-items.aside__choose-items--title.row.row--jc-sb
-                    p.aside__choose-item-title.text Академика Легостаева
-                    p.aside__choose-item-title.aside__choose-item-title--green.text В продаже:
-                  li.aside__choose-items.row.row--jc-sb
-                    a.aside__choose-item-link.text--td-none.d-block(href="#")
-                      p.aside__choose-item-link-label.text.d-block д.4, корп. 1
-                        span.aside__choose-item-link-label-indicator.aside__choose-item-link-label-indicator--active.d-block
-                    .aside__choose-item-border.grow
-                    p.aside__choose-item-appartment-text.text 28
-                      span квартир
-                  li.aside__choose-items.row.row--jc-sb
-                    a.aside__choose-item-link.text--td-none.d-block(href="#")
-                      p.aside__choose-item-link-label.text.d-block д.4, корп. 2
-                        span.aside__choose-item-link-label-indicator.d-block
-                    .aside__choose-item-border.grow
-                    p.aside__choose-item-appartment-text.text 12
-                      span квартир
-                  li.aside__choose-items.row.row--jc-sb
-                    a.aside__choose-item-link.text--td-none.d-block(href="#")
-                      p.aside__choose-item-link-label.text.d-block д.4, корп. 3
-                        span.aside__choose-item-link-label-indicator.d-block
-                    .aside__choose-item-border.grow
-                    p.aside__choose-item-appartment-text.text 6
-                      span квартир
-                nav.main-nav
-                  ul.main-nav__list.list
-                    li.main-nav__items.row.row--ai-c
-                      .main-nav__item-link-icon
-                        img(src="%=static=%img/content/youtube.svg")
-                      a.main-nav__item-link.text--td-none(href="#") Видео
-                    li.main-nav__items.row.row--ai-c
-                      .main-nav__item-link-icon
-                        img(src="%=static=%img/content/photo-camera.svg")
-                      a.main-nav__item-link.text--td-none(href="#") Фотографии
-                    li.main-nav__items.row.row--ai-c
-                      .main-nav__item-link-icon.main-nav__item-link-icon--panorama
-                        img(src="%=static=%img/content/panorama.png")
-                      a.main-nav__item-link.text--td-none(href="#") Панорамы 360°
-                    li.main-nav__items.row.row--ai-c
-                      .main-nav__item-link-icon
-                        img(src="%=static=%img/content/discount.svg")
-                      a.main-nav__item-link.main-nav__item-link--discount.text--td-none(href="#") Спецпредложения
-                .aside__submin-button-wrap
-                  a.aside__submin-button.text--td-none.text--center.d-block(href="#") Записаться на просмотр
+              .aside__content
+                a.aside__tel.d-block.text--center.text--td-none(href="tel:74952330246") +7(495) 233-02-46
+                .aside__content-wrap
+                  .aside__choose-text Выберите корпус:
+                  ul.aside__choose-list.list
+                    li.aside__choose-items.aside__choose-items--title.row.row--jc-sb
+                      p.aside__choose-item-title.text Академика Легостаева
+                      p.aside__choose-item-title.aside__choose-item-title--green.text В продаже:
+                    li.aside__choose-items.row.row--jc-sb
+                      a.aside__choose-item-link.text--td-none.d-block(href="#")
+                        p.aside__choose-item-link-label.text.d-block д.4, корп. 1
+                          span.aside__choose-item-link-label-indicator.aside__choose-item-link-label-indicator--active.d-block
+                      .aside__choose-item-border.grow
+                      p.aside__choose-item-appartment-text.text 28
+                        span квартир
+                    li.aside__choose-items.row.row--jc-sb
+                      a.aside__choose-item-link.text--td-none.d-block(href="#")
+                        p.aside__choose-item-link-label.text.d-block д.4, корп. 2
+                          span.aside__choose-item-link-label-indicator.d-block
+                      .aside__choose-item-border.grow
+                      p.aside__choose-item-appartment-text.text 12
+                        span квартир
+                    li.aside__choose-items.row.row--jc-sb
+                      a.aside__choose-item-link.text--td-none.d-block(href="#")
+                        p.aside__choose-item-link-label.text.d-block д.4, корп. 3
+                          span.aside__choose-item-link-label-indicator.d-block
+                      .aside__choose-item-border.grow
+                      p.aside__choose-item-appartment-text.text 6
+                        span квартир
+                  nav.main-nav
+                    ul.main-nav__list.list
+                      li.main-nav__items.row.row--ai-c
+                        .main-nav__item-link-icon
+                          img(src="%=static=%img/content/youtube.svg")
+                        a.main-nav__item-link.text--td-none(href="#") Видео
+                      li.main-nav__items.row.row--ai-c
+                        .main-nav__item-link-icon
+                          img(src="%=static=%img/content/photo-camera.svg")
+                        a.main-nav__item-link.text--td-none(href="#") Фотографии
+                      li.main-nav__items.row.row--ai-c
+                        .main-nav__item-link-icon.main-nav__item-link-icon--panorama
+                          img(src="%=static=%img/content/panorama.png")
+                        a.main-nav__item-link.text--td-none(href="#") Панорамы 360°
+                      li.main-nav__items.row.row--ai-c
+                        .main-nav__item-link-icon
+                          img(src="%=static=%img/content/discount.svg")
+                        a.main-nav__item-link.main-nav__item-link--discount.text--td-none(href="#") Спецпредложения
+                  .aside__submin-button-wrap
+                    a.aside__submin-button.text--td-none.text--center.d-block(href="#") Записаться на просмотр
             .page-content__description
+              .house__popup.hidden
+                .house__popup-content.column
+                  button.house__popup-exit(type="button")
+                  p.house__popup-headline.text.text--center
+                    span.house__popup-headline-floor 10
+                    | этаж / секция
+                    span.house__popup-headline-section 1
+                  .house__popup-img.grow
+                    a.house__popup-img-room1-link
+                    svg.house__popup-img-room1-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 122.83 297.33')
+                      polygon.cls-1(points='0.17 0.5 59.17 0 59.5 110.5 52.67 110.33 52.67 114.33 59.83 114.33 59.5 126.5 63.33 126.5 63.17 114.67 122.83 114.33 122.67 266.5 106.67 266.33 106.67 278.5 119.83 278.5 120 297.33 65.17 297.33 65 278.5 95.33 278 95.5 266.33 63.5 266.5 0 266.83 0.17 0.5')
+                    a.house__popup-img-room2-link
+                    svg.house__popup-img-room2-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 122.75 146.5')
+                      polygon.cls-1(points='0 36.75 90.5 36.5 90.25 24.5 64.5 24.5 64.75 9.25 70 7.75 77 6 83.75 4.25 89.5 3 95.5 1.75 100.75 1.25 108.5 0.75 115.5 0.25 122.5 0 122.75 24.5 101.75 24.5 101.75 36.25 122.5 36.25 122.5 146.5 0 146.5 0 36.75')
+                    a.house__popup-img-room3-link
+                    svg.house__popup-img-room3-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 123.75 147')
+                      polygon.cls-1(points='0 0.25 5.25 0 10 0 18.5 1 26.75 1.75 31.5 2.75 37 4 42.5 5.25 49.25 7.25 54.75 8.75 59 10 59 36.25 61.25 36.25 123.75 36.5 123.75 147 0.25 147 0 0.25')
+                    a.house__popup-img-room4-link
+                    svg.house__popup-img-room4-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 125.17 297.33')
+                      path.cls-1(d='M435.5,260l59.33-.17L495,526H397.67v11.67l32.33.5s.83,19-.17,19H375.17l-.17-19.5,11.5.17V526.5H373l.17-129.67-3.33-.17.33-14.83h3.33l-.17-8.17,62.83.17Z' transform='translate(-369.83 -259.83)')
+              .house__popup.house__popup--rooms6.hidden
+                .house__popup-content.column
+                  button.house__popup-exit(type="button")
+                  p.house__popup-headline.text.text--center
+                    span.house__popup-headline-floor 10
+                    | этаж / секция
+                    span.house__popup-headline-section 1
+                  .house__popup-img.grow
+                    a.house__popup-img-room1-6-link
+                    svg.house__popup-img-room1-6-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 207.17 199')
+                      polygon.cls-1(points='153 199 52 199 51.83 172 0 171.67 0.33 132.67 0.17 0 49.33 0.17 49.33 85.17 100 85 100.33 113 162.17 112.83 162 109.83 175.17 109.83 175.17 112.33 206.17 112.17 206.17 145.33 207.17 168.17 153.17 168.33 153 199')
+                    a.house__popup-img-room2-6-link
+                    svg.house__popup-img-room2-6-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 102.67 136')
+                      polygon.cls-1(points='101 136 51.17 136 51.17 108.67 0.17 108.5 0 27 74.83 27 74.67 18.83 52.5 18.83 52.33 7.33 55 6.83 59 5.83 63.67 4.83 69 3.5 73.83 2.5 78 1.67 83.67 1 89.5 0.67 95 0.33 101.17 0 101.17 18.67 84.17 18.83 84 26.83 101.17 27 101.5 120 102.5 120.17 102.67 129.5 101 129.83 101 136')
+                    a.house__popup-img-room3-6-link
+                    svg.house__popup-img-room3-6-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 101.33 111')
+                      polygon.cls-1(points='101.17 109.33 43.83 109.17 43.83 111 32 111 32 109.17 0.67 109.33 0.33 27.5 17.17 27.67 17 19.17 0 19.17 0 0 1.83 0.17 5.67 0.5 9.67 0.67 14.17 1.17 18.67 1.67 24.17 2.17 28.83 3 32.67 3.67 37.33 4.83 41.67 5.83 45 6.67 48 7.5 48.17 19.33 26.83 19.5 26.83 27.67 101.33 27.33 101.17 109.33')
+                    a.house__popup-img-room4-6-link
+                    svg.house__popup-img-room4-6-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 119.17 100.33')
+                      polygon.cls-1(points='0.17 0.33 90.33 0 89.83 75.5 99.17 75.5 98.83 56 111.33 56.17 112.67 60.33 115 68.17 116.83 76.83 118 86.67 118.33 93.33 119.17 99.83 98.17 100 98.17 83 89.83 83 90.33 99.83 0 100.33 0.17 0.33')
+                    a.house__popup-img-room5-6-link
+                    svg.house__popup-img-room5-6-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 119.83 93')
+                      polygon.cls-1(points='90.33 93 1.5 92.83 1.83 38.5 0 38.33 0 28.5 1.17 28.5 1.17 0 91.33 0.33 91.17 13.83 99.5 13.67 99.33 0.33 119.83 0.5 119.67 5.83 119.33 11.33 118.67 17.33 118 22.83 116.67 28.83 115 34.5 113 39.5 112 42.83 100.17 43 100.33 22 90.33 22 90.33 93')
+                    a.house__popup-img-room6-6-link
+                    svg.house__popup-img-room6-6-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 92 95.83')
+                      polygon.cls-1(points='91.83 95.67 1.83 95.83 2.17 40.67 0 40.67 0.17 27.83 2.33 27.83 2.33 0 92 0.17 91.83 95.67')
               .house
-                .house__img-wrap
-                  img.house__img(src="%=static=%img/content/main-img.jpg")
-                  
-                  //-- Корпус 1 ----------------------------------------------------------------------------------------------------------------------------
-                  a.house__appartment1-17-link(href="#")
-                  svg.house__appartment1-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.33 46.17')
-                    polygon.cls-1(points='0 19.5 32 0 52 7.67 55.5 6.17 74.5 13.67 85.33 16.5 87 17 94.67 20.17 96 20.83 102 25 116.33 30.17 116.33 32.83 125.33 36 124.33 46.17 116.5 43.83 116.17 41.33 102 36.5 96.33 32.83 94.5 32.17 87.17 29.33 85 29 75.33 26.67 56 19.5 52.5 21.17 32.33 13.83 0 31.33 0 19.5')
-                  a.house__appartment1-16-link(href="#")
-                  svg.house__appartment1-16-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 124.38 43')
-                    polygon.cls-1(points='0 17.38 32.13 0 52.13 7.13 55.5 5.5 74.38 12.25 84.75 14.88 87.13 15.5 94.38 18.13 96.25 19 101.38 22.13 116.38 27.25 116.38 30 124.38 32.5 123.63 43 116.25 40.75 116.25 38.63 101.75 34 96.38 31.25 94.25 30.25 87.25 28 85.13 27.25 74.88 25.25 72.38 24.5 55.88 19 52.5 20.38 32.5 13.88 0 29.25 0 17.38')
-                  a.house__appartment1-15-link(href="#")
-                  svg.house__appartment1-15-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 124.08 39.92')
-                    polygon.cls-1(points='0 15.75 32.33 0 52.08 6.42 55.5 5.33 72.08 10.58 75 11.42 84.5 13.5 87.17 14.08 94.17 16.42 96.17 17.17 101.25 19.75 103.42 20.92 116.17 24.92 116.17 26.75 124.08 29.25 124.08 39.92 116.25 37.92 116.25 36.08 103.42 32.25 101.5 31.58 96.17 29.25 94.17 28.42 87.17 26.58 85 25.83 74.5 24.08 72 23.33 55.58 18.25 52.67 19.5 32.33 14 0 27.92 0 15.75')
-                  a.house__appartment1-14-link(href="#")
-                  svg.house__appartment1-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 513.5 151.5')
-                    polygon.cls-1(points='0 58 134.5 0 217 23.5 231 19.5 302.5 40.5 311.5 42 354.5 50 362.5 52 393 60.5 400 63 423.5 74.5 429.5 77 483.5 92 483.5 99.5 513.5 107.5 513.5 151.5 484 144.5 483.5 137.5 430 124 421 121.5 400.5 112.5 391 110.5 362 103.5 353.5 101.5 312.5 94.5 301 91.5 232.5 73.5 217.5 79.5 135 58 2.5 108.5 0 58')
-                  a.house__appartment1-13-link(href="#")
-                  svg.house__appartment1-13-img(data-name='Layer 3', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 514.33 140.33')
-                    polygon.cls-1(points='0 51 133.67 0 217.33 21 230.33 16.33 300 35 309.33 37.33 351.67 44.33 361 46.33 391 53 398.67 55.33 420.67 65.33 429.33 67.33 482 80.33 482 87 514.33 94.67 514.33 140.33 481 132.67 481 126 428.67 115.67 420.33 113.67 398.33 105 390.33 103.33 360.67 97 352 96 309.67 90.33 300 87.67 230.67 72.67 217.33 76 134 57.33 0 101.67 0 51')
-                  a.house__appartment1-12-link(href="#")
-                  svg.house__appartment1-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 514.67 126.67')
-                    polygon.cls-1(points='0 43.67 133 0 215.67 18 229.67 15 298.67 30 310 32.67 349.33 37.67 361.33 39.67 390 46 398 47.67 419.33 55.67 428.33 57.67 481.33 69 481.33 75.67 514.67 82 514.67 126.67 480.67 121 480.33 115.67 472.67 114.67 427.67 107.33 419.67 105 397.67 98.33 389.33 96 359.33 90.67 351 89.67 309.33 84.67 299.67 83.33 229.67 70 215.67 73.33 133.33 57.67 0 94 0 43.67')
-                  a.house__appartment1-11-link(href="#")
-                  svg.house__appartment1-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 514 114.33')
-                    polygon.cls-1(points='0 36 133 0 213 15.67 229.33 12.33 298 25.67 309 27 350.67 32 360 33.33 389.33 38.67 397.67 40.67 420.33 47.67 428.67 50 473 57.67 480.67 59.33 480.67 64.33 514 69 514 114.33 480.33 109.67 480 104.67 426.33 97 419 95.67 397 91 388.67 89.67 358 84.67 349.67 84 308.67 79.67 298.33 78.33 229.67 67.67 216 70.33 132.67 57.17 0 86.67 0 36')
-                  a.house__appartment1-10-link(href="#")
-                  svg.house__appartment1-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 514.67 101.33')
-                    polygon.cls-1(points='0 28.33 132.67 0 215.67 12 229 9.33 299 20 309.33 22.33 351 25.67 360.33 26.67 389.33 31.33 397.67 33 420.33 38.33 428 39.67 480.67 47 480.67 52 514.67 55.67 514.67 101.33 480.33 97 480.33 93 427.67 88.67 419.33 87 397.67 82.67 389.33 81.67 360 78.33 350.67 77.67 308.33 74.67 298.33 73.33 229.67 65.33 216.67 67 133 57 0 78.33 0 28.33')
-                  a.house__appartment1-9-link(href="#")
-                  svg.house__appartment1-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 515.33 87.67')
-                    polygon.cls-1(points='0 22 133.67 0 216.67 9.67 229.67 7.67 300.33 16.33 309.67 17.33 350.33 20 360 20.67 390.33 25 399 25 420.33 29.33 428.67 31 481.33 36 481.33 40 515.33 43.33 515.33 87.67 481.67 86 481.33 82.33 427.67 80 420.33 78.33 399 76 390.33 75.67 360.33 72.67 352 72 309.67 69.67 299 69.33 230 62.67 216 64.33 134 57 0 71.67 0 22')
-                  a.house__appartment1-8-link(href="#")
-                  svg.house__appartment1-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 516.67 75.67')
-                    polygon.cls-1(points='0 14 133.67 0 216.67 7 229.67 5.33 240.67 7 298.33 12 309.67 12.33 351.33 15.33 360.33 15.33 390 17.67 398.33 17.67 419.33 21.33 427.33 22.67 481.33 25.67 481.33 28.67 516.67 31 516.67 75.67 481.67 74 481.33 71.67 427 70.33 418.67 69.67 398 68.33 389 68.33 360 66.33 350.67 66 309.33 65.33 298.67 64.33 229.67 61 216.33 62.33 132.67 56.67 0 65 0 14')
-                  a.house__appartment1-7-link(href="#")
-                  svg.house__appartment1-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517.07 63.67')
-                    path.cls-1(d='M62,676l134-8,83,4h13.33l70.33,4H413l10,1.33,29,1.33h8l22,2h8.67l53.67,2.67v2.33h34s1.67,46,0,46h-33L491,730l-9-1H452l-29.33-.33H413l-42-.33H360.67l-68-.67-14-.33-83-1.67H62Z', transform='translate(-62 -668)')
-                  a.house__appartment1-6-link(href="#")
-                  svg.house__appartment1-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 516.67 57')
-                    polygon.cls-1(points='0 0 134.33 0 217 1.33 230 1.33 299.67 2.75 309.42 2.75 351.42 2.75 360.92 2.75 391.17 2.75 399.92 2.75 421.67 2.75 428.42 4 482.92 4 482.92 6.25 516.67 6.25 516.67 50.25 482.42 50.25 474.67 51.75 427.92 51.75 421.67 51.75 398.67 53.75 390.42 53.75 361.92 53.75 352.42 53.75 309.92 55.25 299.92 55.25 230.67 57 216.17 57 134.42 57 0 50.5 0 0')
-                  a.house__appartment1-5-link(href="#")
-                  svg.house__appartment1-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517.25 64.5')
-                    polygon.cls-1(points='0 0 134.5 7 217.25 5.75 231 5.75 241.25 7 299 5.25 309.75 4.75 352.75 3.5 361.25 3.5 391.25 3.5 400.25 3.5 422.5 3.5 429.75 3.5 475.25 1.5 483 1.25 517.25 0 517.25 45 482.5 46.75 475.25 46.75 429 50.75 420.75 50.75 399.5 53 390.5 54.25 361 55.5 352.75 55.5 309.25 57 300 57 230.25 61.5 217.25 60.25 134.25 64.5 0 50.5 0 0')
-                  a.house__appartment1-4-link(href="#")
-                  svg.house__appartment1-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517 77.5')
-                    polygon.cls-1(points='1.25 5.75 136.25 20.25 217.5 16.5 232 17.25 301.5 14.25 311.5 13 354 11.5 363 11.5 392.75 10 401 9.25 423 7 431.25 7 484.5 3.25 484.5 1.25 517 0 517 44.5 485.25 47.5 484.75 50 430.75 55.25 423.25 55.25 401 59.25 392.5 60.5 362.25 63 354 63 311 66 302 67.25 232.25 73.25 217.25 71.25 136 77.5 0 57.25 1.25 5.75')
-                  a.house__appartment1-3-link(href="#")
-                  svg.house__appartment1-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517.25 90.75')
-                    polygon.cls-1(points='0 11.75 134.75 33 216 26.5 231 28.5 301.25 22.38 311 21.25 351.75 18.25 362.25 18 392.25 15.75 400.25 14.75 422.75 10.25 431.5 10.25 484 5.5 484 2.75 517.25 0 517.25 45 484 48.25 483.75 52.25 430.25 59.25 423 59.25 400.25 64.5 392.5 66.5 362 69.75 353.25 71 310.25 74.25 300.75 75.5 241.5 83 231.25 83 217.25 81 135 90.75 0 62.5 0 11.75')
-                  a.house__appartment1-2-link(href="#")
-                  svg.house__appartment1-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517 103.75')
-                    polygon.cls-1(points='0 17.25 135.5 46.5 217.5 36.75 231.25 39 242 38.5 300.25 31.88 311.25 29.25 354.5 26 363.25 24.5 392 21.5 400.5 20.25 423.5 15.25 431.25 14 484.5 7.75 484.5 4 517 0 517 45 485 49.5 485 55 435.75 61 430.75 59.5 430.75 62.25 423.25 63.75 413.5 67 401.25 69.5 394.25 71.25 377.25 73.5 354.25 77.25 352 77.25 333.25 79.25 311.5 81 301.75 82.5 267.5 87.5 231.25 90.75 230.25 94.5 215.25 91.75 134.25 103.75 0 68.25 0 17.25')
-                  a.house__appartment1-1-link(href="#")
-                  svg.house__appartment1-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 519.5 122.5')
-                    path.cls-1(d='M13.25,659l134.5,37L230,684l14.75,1.75L246,683.5l5.5,1.75L276,690l63.25-9.25,7.5-1.25,6.25-2h9.25l24.5-4.75L397.5,671l10.25-1.25,8.5-2,10-1,18.5-3.25,17.5-2.75,12-1.75-21.5-5.5,45.5-5.5v-5L531,638.75v41l-32,5V693s-26.25,3.5-27,3-25.75,3.75-25.75,3.75L431.5,702.5l-.25,10.25,5,2.25,1.25,9.75-8.25,1.75h-6l-4.5-1.25L399,730l-.5,2.5-9.5,2-4-1.25-28.5,5.25L356,741l-3.75,1.25H339l-13.5,1.5L300,749.5l-6.5-2L276.75,753l.75,4h-5.37l-26.87-6.5-15.75-6.75-82.25,17.5L127.5,755.5l-23.75,5.75h-6.5L40.75,743.5l1-9.5,3.5-1.75-33.75-9Z', transform='translate(-11.5 -638.75)')
-                  //-- Корпус 2 ----------------------------------------------------------------------------------------------------------------------------
-                  a.house__appartment2-17-link(href="#")  
-                  svg.house__appartment2-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236 124.5')
-                    polygon.cls-1(points='0 0 44.33 16.17 57.67 12.33 102.67 29 108.5 31.33 137.67 37.33 143.5 39.33 161.5 46.33 167.67 49.33 178.5 58.17 184.33 60 218.67 73.67 218.67 82.17 236 88.33 236 124.5 218.67 119.17 218.83 110.83 183.83 99.17 178.67 96.67 167.17 88.67 162 85.67 142.5 79.5 136.17 77.83 107.33 72.5 101.17 70.17 57.83 55 44.67 59 0 44.5 0 0')
-                  a.house__appartment2-16-link(href="#")
-                  svg.house__appartment2-16-img(data-name='Layer 3', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 235.67 117.5')
-                    polygon.cls-1(points='0 0 45 14.83 57.83 10.83 100.67 26 106.67 28 132.5 33.17 136.5 33.83 142.5 35.5 161.33 41.83 166.67 44.33 178.33 52.67 183.17 54.5 218.5 67 218.5 75 235.67 80.17 235.67 117.5 218.67 112.67 218.5 104.5 183.5 93.83 177.67 91.17 166.67 84 137 74.5 134.5 74.17 106.33 69.33 99.83 67 57.33 53.83 44.83 57.5 0 44.83 0 0')
-                  a.house__appartment2-15-link(href="#")
-                  svg.house__appartment2-15-img(data-name='Layer 4', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.33 109.5')
-                    polygon.cls-1(points='0 0 42.83 13.5 56.5 9.33 99.5 22.83 105.83 24.83 134.83 29.83 141.83 31.33 159.33 37.33 166.17 39.83 176.67 46.67 183.17 49.33 218 60 218 67.5 236.33 72.67 236.33 109.5 218 104.67 217.67 97.33 213.17 97 183 89.33 177.5 86.5 166.33 80.5 160.33 77.83 142 73 136.33 71.5 106 66.67 99 64.83 56.67 52.83 44.17 56.17 0 44.67 0 0')
-                  a.house__appartment2-14-link(href="#")
-                  svg.house__appartment2-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 239.83 102.67')
-                    polygon.cls-1(points='0 0 46.17 12.17 58.67 9 65.17 10.17 101 20.5 108.17 22.5 137.83 27.67 162.33 34 168.17 36.17 179.5 42.5 184.67 44.33 215.17 53 220.17 54.33 220.17 60.83 239.83 65.67 239.83 102.67 219.83 97.5 220 91.67 184.17 83.5 179 81.67 168.33 76 162.33 74.67 144 70 137.83 68.83 107.83 64.5 101.17 62.83 58.83 52.67 45.5 55.67 0 44.17 0 0')
-                  a.house__appartment2-13-link(href="#")
-                  svg.house__appartment2-13-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 239 94.33')
-                    polygon.cls-1(points='0 0 44.17 10.83 59 8 101.17 18.33 108.17 20.17 136.67 24.33 144 25.5 162.33 30 167.5 31.83 179.17 37.33 219.33 47.83 219.33 53.5 239 58 239 94.33 219.67 90.33 219.67 85.83 184.17 78.67 179 77.33 168.83 72.17 162.17 70.5 144.83 67.17 138 65.33 108.17 61.83 101.67 60.67 58 51.33 44.5 54.33 0 45 0 0')
-                  a.house__appartment2-12-link(href="#")
-                  svg.house__appartment2-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 241.33 86.83')
-                    path.cls-1(d='M77.83,236.17l44.33,9.5L136,243l42.67,9.17,6.67,1.17,29.5,3.83s6.17,1.5,6.67,1.5,18.17,3.67,18.17,3.67l6.17,1.5,10.83,4.67,5.17,1.33,35,7.67v4.67L319.17,286v37l-22-3.83V315l-5.67-.83-30.17-4.5-4.5-1.17-11.67-4-5.5-1.5-18.33-3-6-1.5-29.33-3-7.67-1.5-36.67-7-6-.67-14.5,2.17-43.33-7.67Z', transform='translate(-77.83 -236.17)')
-                  a.house__appartment2-11-link(href="#")
-                  svg.house__appartment2-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 239.33 78.83')
-                    polygon.cls-1(points='0 0 44.17 7.83 57.67 5.67 63.5 6.33 100 13 107.33 14.33 136.67 17.67 143 18.67 161.5 22 167.5 23 178.5 27.5 184 28.83 219.17 37.83 239.33 41.67 238 78.83 218.67 76.17 218.67 72.5 182.5 67.5 178.33 66.5 167.17 63.17 161.33 62.33 142.83 60 137.17 58.67 133.67 58.83 106.83 56.5 99.67 55.17 57.17 48.83 44 50.67 0 44.5 0 0')
-                  a.house__appartment2-10-link(href="#")
-                  svg.house__appartment2-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 237.83 70.83')
-                    path.cls-1(d='M77.83,325.17l44.33,6.33,12.5-1.67,49.5,7.17,29.5,2.67,6.5,1.33,19,2.33,5.17.83,10.83,2.67,5.67,1.33,35.67,5v3.5l19.17,2.5V396l-19-2.33-.33-2.5-34.83-2.83s-5-1-5.67-1.17-11-2.17-11-2.17l-5.83-.67-17.5-1.83-6.33-1-30.67-2.17-8-.83L135,373.83l-15.33.5L77.83,370Z', transform='translate(-77.83 -325.17)')
-                  a.house__appartment2-9-link(href="#")
-                  svg.house__appartment2-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 240.17 63.33')
-                    polygon.cls-1(points='0 0 43.17 4.83 57.17 4.83 99.17 9 106.67 10 136.33 12 143.5 12.67 160.5 15 166.83 15 177.83 17.67 183 17.67 219 21.83 219 25 240.17 26.33 240.17 63.33 218.5 62.17 218.67 60 213 59.5 183.33 57.83 177.5 57.17 166.67 56 161.33 55.17 142.67 53.83 136.17 53.33 105.67 51.83 99.83 51.67 56.17 48 42 48.5 0 45.33 0 0')
-                  a.house__appartment2-8-link(href="#")
-                  svg.house__appartment2-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.83 55.33')
-                    path.cls-1(d='M77.83,415l42.5,2.83H134s1.5-.5,5.5,0,37.5,2.83,37.5,2.83l7.17.83,29.5,1.67h6.17L238.67,425s5.33-.5,5.83,0,10,1.17,10.5,1.33,5.17,1,6,1.17,35,2.17,35,2.17l.83,2.83,17.83,1v36.83l-18.17-1v-1.67L260.17,467l-4.67-.5-12.33-.33-4.67-.67s-18.17-.83-18.67-.83-5.67-.17-5.67-.17l-2.83-.67s-25.83-.5-26.5-.5-7.67-.33-7.67-.33L134,461.5l-14.33.17L77.83,460Z', transform='translate(-77.83 -415)')
-                  a.house__appartment2-7-link(href="#")
-                  svg.house__appartment2-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 237 47.17')
-                    polygon.cls-1(points='0 0 42.5 1.17 55.83 1.17 105.83 2.83 134.17 4.17 141.83 4.17 159.67 5.33 167 5.33 177.67 6.5 182.33 6.5 218.17 7.67 218.17 9.33 237 9.33 237 47.17 218 47.17 177.5 47.17 166.17 46.33 160.67 46.33 141 46.33 135.5 46.17 133.5 46.17 104.83 45.5 98.67 45.5 56.17 44 41.67 45.5 0 44.5 0 0')
-                  a.house__appartment2-6-link(href="#")
-                  svg.house__appartment2-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.17 44.5')
-                    polygon.cls-1(points='0 0 42.83 0.67 56.33 0.67 99 0.67 106 1.5 133.67 1.5 140.67 2.33 160.5 2.33 165.83 2.33 177.5 2.33 182.83 2.33 218 2.33 218 3.67 236.17 3.67 236.17 40 217.83 40 182.17 42 177.5 42 165.83 43.17 160.5 43.17 141 43.17 134.5 43.17 106 43.17 99 43.17 61.67 44.5 55.67 44.5 42 44.5 0 44.5 0 0')
-                  a.house__appartment2-5-link(href="#")
-                  svg.house__appartment2-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.33 50')
-                    polygon.cls-1(points='0 5.67 42.67 4.67 55.67 4.67 61.5 4.67 98.67 4 105 4 135 4 141.67 4 159.67 4 165.33 3 177 3 181.83 2.17 212.33 1 218 1 236.33 0 236.33 37.67 217.5 37.67 217.67 40.33 177.33 42.17 166.17 43.5 161.83 43.5 140.33 44.67 135.5 44.67 105 45.5 98.33 45.5 97.67 46.83 56 48.83 42.33 47.67 0 50 0 5.67')
-                  a.house__appartment2-4-link(href="#")
-                  svg.house__appartment2-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.67 57.67')
-                    polygon.cls-1(points='0 13.33 41.17 10.5 55.17 11.17 98.17 8.83 105.17 8.83 133 8.83 140.67 7.5 159.83 6.67 164.5 6.67 177.17 4.83 181.67 4.83 217.17 3 217.17 1.17 236.67 0 236.67 37.5 217.67 38.33 218 41.17 176.83 43.17 177 45.33 165 47.33 159.67 48.5 135.33 49.67 105.33 50.67 98.33 50.67 79.67 52.67 55.33 54.5 42.33 54.5 0 57.67 0 13.33')
-                  a.house__appartment2-3-link(href="#")
-                  svg.house__appartment2-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 234.5 65.17')
-                    path.cls-1(d='M77.83,638.17,119,634.83h35l20.67-2.5s6-1,7.67-1,29.83-1,29.83-1h6.33l18.67-1.67,6-1.67,11.5-2.17h5.5l35.17-3V619l17-1v37.5l-17.17,1.17-.17,3.5-5,1-31.33,4h-4.33l-11.67,2.67-4.5,1-19.67,2.33-5.67,1-30.33,1.5-7,1.17-36.5,4.5h-5.5l-13.67-.83-42,4.67Z', transform='translate(-77.83 -618)')
-                  a.house__appartment2-2-link(href="#")
-                  svg.house__appartment2-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 234.5 72.83')
-                    path.cls-1(d='M77.83,683.17l41.17-5,13.17.83,5.83.17,10-1,9.83-.83,9.5-1.17L176,674.5l5.33-1.33,31-.83,6.17-1.17,19.33-2.5,4.83-.83,12-3,4.33-1h17l19.17-3.17v-4.33l17.17-1.83V692l-17,2-.17,4.33-33,3h-7l-6,3-6,2.17H236l-22,3.83-15,1-18,1h-4.17s.67,4.17-.5,4.17-43.17,6-43.17,6L118.5,721l-40.67,6.33Z', transform='translate(-77.83 -654.5)')
-                  a.house__appartment2-1-link(href="#")
-                  svg.house__appartment2-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 237.5 82.67')
-                    path.cls-1(d='M77.83,727.5l39.33-6,15,1.33h6.5l17.5-3.33,20.17-4.5,5.5-1.5,6.5,1,23-1,17-2.33,14.17-2.5,9.5-2.83,8-2.5v-2h3.67l1,.83,5,.5,7.33-.17,17.67-3.17.67-4.5,19.17-3.17.83,34-20,4-.67,7.33-3.33,2.5H285.5l6.5,5-.67,9.67-6.5,1.33H280l-14.83,2.33-.67,1.33L260,760l-6.67-.83-12.67,3.17-3.17,2.5H233l-19.33,4.83-6.5.83s-18.5-2.83-19-2.67-8.5,3.5-8.5,3.5l-20.33-3.17L139,772.83l-5.67,1.5-1-6.67-12.5-2L107.5,768l-29.67,4.33Z', transform='translate(-77.83 -691.67)')
-                  //-- Корпус 3 ----------------------------------------------------------------------------------------------------------------------------
-                  a.house__appartment3-17-link(href="#")
-                  svg.house__appartment3-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.33 93.5')
-                    polygon.cls-1(points='1.17 0 31.33 11 44.17 7.83 78.83 21.17 100.83 25.67 106 26.83 118.5 32.33 122.67 34.17 128.83 40.5 132.33 42 157 50.83 156.83 58.67 168.33 62 168.17 93.5 157 90.17 157.17 83 132.67 75 128.67 73.67 121.83 67.33 117.67 65.67 101.5 59.5 97.67 59.5 78.83 56 74.17 54.17 44 43.33 30.83 46.5 0 36.17 1.17 0')
-                  a.house__appartment3-16-link(href="#")
-                  svg.house__appartment3-16-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.67 87.67')
-                    path.cls-1(d='M138.33,148.33l29.33,10.17,13.5-2.67,33.67,11.5,22.83,4,5.5,1.67,12,4.5L259,179l7.33,6.5,2.83,1.33,25.17,8,.17,6.33,10.33,3.67L305.5,236l-11-2.5-.5-6.33-4-.83-21-5.83-3.83-2.83s-4.83-4-5.5-4.17-4.5-2.17-4.5-2.17L238.33,206l-22.83-3.83-3.83-1-30-9.67-13.33,3-31.5-10Z', transform='translate(-136.83 -148.33)')
-                  a.house__appartment3-15-link(href="#")
-                  svg.house__appartment3-15-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170 82.83')
-                    path.cls-1(d='M137.83,185l30.5,9.5,12.83-3,30.17,9.5,4.17,1.17,21.83,4,4.83.83L255,211l4.17,2.17,5.17,4.5,4.67,2.17,25.17,7.67.17,6,11.17,2.67v31.67l-11.5-2.5v-5.67l-3.83-1.33-20.83-4.5-3.83-2.33-6.17-4.5-3.67-1.17-13-3.83-4.17-1.17-2,.17-20-3.67-5.5-1-26.5-7.67s-2.83-2-3.33-1.83S168.83,230,168.83,230l-22-5.67L135.5,220.5Z', transform='translate(-135.5 -185)')
-                  a.house__appartment3-14-link(href="#")
-                  svg.house__appartment3-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170.33 77.83')
-                    polygon.cls-1(points='2 0 33 8.67 45.5 6.17 50.33 7.5 76.33 15.33 80.83 16 102.83 20 107.83 20.33 120.67 24.5 124.67 25.83 130.17 30.5 133.67 31.83 158.83 39 159.17 44 170.17 46 170.33 77.83 159.17 76.17 159.5 70.17 133.5 65.17 129.67 62.83 124.83 59.67 120.17 58.33 107.33 55.17 103.67 54 100.5 54 80.33 51 74.67 49.83 45.5 42.5 33.67 44.67 0 36.33 2 0')
-                  a.house__appartment3-13-link(href="#")
-                  svg.house__appartment3-13-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 169.17 72.67')
-                    polygon.cls-1(points='1.67 0 31.17 7.67 44 5.67 73.67 13.5 79.17 14.33 101.17 17 105.67 17.83 119.17 21.5 122.67 23.17 128.83 26.67 133 28.17 157.83 34.17 157.67 38.67 169.17 41 169 72.67 157.83 70.67 157.67 65.83 132.33 61.5 129 59.83 122 56 118.17 55.67 105.5 52.5 101.67 52.17 78.83 49 73.5 47.67 44.17 41.5 31.67 43.17 0 36.33 1.67 0')
-                  a.house__appartment3-12-link(href="#")
-                  svg.house__appartment3-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170.17 67.33')
-                    path.cls-1(d='M136,294.17,167.5,301l13.17-1.67,30,6.17,3.83.67,22.67,3.17,4.5.83,13.5,3.5L258,314l6.83,3.67,4,1,25,5.17s-.5,4.33.33,4.33,11.17,1.5,11.17,1.5l-.17,31.83-11.17-2-.5-3.33-4.5-1.33-20.67-2.5-3.67-.67L258.33,348l-3.33-.33L241.67,345l-4.67-.5-22.17-2.67-5.67-1L180,335.67l-13.17,1-31.67-5.83Z', transform='translate(-135.17 -294.17)')
-                  a.house__appartment3-11-link(href="#")
-                  svg.house__appartment3-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170.5 62.17')
-                    path.cls-1(d='M136.17,330.83l30.67,5.5L180,335.5l4.83.67L210.17,341l4.5.5,22.5,2.67s4.17.83,4.67,1,13,1.83,13,1.83l3.33.83,6.33,3,3.5.83L293.17,356l.5,3.5,11.83,1.33L304.83,393l-11.5-1.33.17-3.17L268.17,385l-10-3-3.17-.83-17.17-2.67H235l-20.33-2.17h-4.5l-29.5-4.17-13.17.5L135,367.83Z', transform='translate(-135 -330.83)')
-                  a.house__appartment3-10-link(href="#")
-                  svg.house__appartment3-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.5 55.17')
-                    polygon.cls-1(points='1.17 0 31 4.17 44 3 73.67 7.33 78 8.17 99.17 10 105 10.5 119 13 121.83 13.5 128 15 132.17 16.5 157.33 19.5 157.33 23 168.5 23.67 168.5 55.17 157.5 54.33 157.17 52 132.17 49.33 128.33 48.83 123.33 47.67 119 47 105.83 45.17 101.5 44.83 97.5 44.67 78 43 73.33 42.33 44.33 39.33 31 39.83 0 36.5 1.17 0')
-                  a.house__appartment3-9-link(href="#")
-                  svg.house__appartment3-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.17 50.17')
-                    polygon.cls-1(points='0.5 0 30.67 3.67 42.33 2.67 47.5 3.17 72.5 6 77.67 6.5 100 8 117.67 10.17 121.83 10.83 128 12.67 156.5 15.17 156.67 17.33 168.17 18.17 167.67 50 157 50.17 157 48.5 131.33 46.83 127.5 45.83 122.17 45 117.83 44.5 105 43.33 100.5 42.83 77.33 41.83 72.83 41.33 47.67 39.5 43.33 38.83 30.17 39.17 0 36.83 0.5 0')
-                  a.house__appartment3-8-link(href="#")
-                  svg.house__appartment3-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.83 45.33')
-                    polygon.cls-1(points='1 0 30.67 3 43.67 2.17 48.67 2.5 77.83 4.67 101.5 6 105.67 6.33 118.83 7.67 122.33 8.33 128.33 9.33 153.83 11.67 157.83 11.67 157.67 13 168.83 13.33 168.67 45.33 157.33 45.17 157.33 43.67 132.33 43 128 42.5 122.33 41.5 101.5 40.83 43.83 38.33 30.67 38.5 0 37.33 1 0')
-                  a.house__appartment3-7-link(href="#")
-                  svg.house__appartment3-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 169.17 39.67')
-                    polygon.cls-1(points='0 0 30 1.83 43.33 1.67 72.33 2.83 78 3.17 100.83 4.33 118.83 5 123 5.17 129 6 157.67 7.17 157.5 8.5 169.17 8 168.33 39.67 157.83 39.67 131.83 39.33 127.67 39.33 121.83 39.5 105.5 38.83 100.67 39 78.67 38.5 43.83 37.67 30.33 38.33 0.17 37.67 0 0')
-                  a.house__appartment3-6-link(href="#")
-                  svg.house__appartment3-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.5 37.17')
-                    polygon.cls-1(points='0.33 0 30.17 0.67 43.17 0.83 73.33 1 78.33 1 100.33 1.33 105.5 1.83 118.67 1.67 121.83 1.83 128.67 1.83 157.67 1.5 157.5 2.67 168.5 2.33 168.17 33.83 156.83 33.5 157 34.67 131.83 35.5 122.67 35.67 118.67 35.83 105.17 35.67 100.83 35.83 78 35.83 44 36.83 31 36.33 0 37.17 0.33 0')
-                  a.house__appartment3-5-link(href="#")
-                  svg.house__appartment3-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 167.67 41.49')
-                    path.cls-1(d='M136.17,552.5l29.17-.33,12.17.33,5.17-.33,25.83-.5,4.83-.33h26.83l14,.17,2.83-.17,6.33.17,3.5-.33,21.17-.83,4.17-.17V549s11.5-.83,11.5-.33.17,31.83.17,31.83H292.67l-.17,2.83-25,1.17-4.67-.5-5,1.5-18.33.33-2.83.17H213.5l-5,.67-28.67,1.67L166.67,588l-30.17,2Z', transform='translate(-136.17 -548.51)')
-                  a.house__appartment3-4-link(href="#")
-                  svg.house__appartment3-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 167.83 46.33')
-                    polygon.cls-1(points='0 9.33 30 8.33 42.33 8.33 72.5 7 76.17 6 99.17 6.17 103.33 6 116.83 5.83 120.33 4.83 126.67 3.67 131.17 4 156 3.17 156.17 0.33 167.83 0 167.33 32 156.5 32.33 156.17 35 127.33 37.17 127.33 38.5 121.33 39 117.17 39.33 104.17 40.17 100.33 40.5 97 41.17 77 41.33 72.17 41.67 51.17 44.5 42.33 44.33 29.5 43.67 1.17 46.33 0 9.33')
-                  a.house__appartment3-3-link(href="#")
-                  svg.house__appartment3-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170 51.83')
-                    polygon.cls-1(points='0 15.17 30.5 12.67 43.83 13.17 49.17 13.17 74.83 11 79.17 9.83 102.33 9.67 106.33 9 119.33 8.17 123.33 7.33 129.17 6.33 133 6.33 158.5 3.67 158.5 0.67 170 0 169.5 31.83 158.33 32.17 158.5 35.83 154.33 36.5 133.5 39.17 129.17 40.17 124 41.83 119 42.33 106.67 43.5 102.83 43.83 79 45.5 44.33 49.17 31.5 48.33 1.5 51.83 0 15.17')
-                  a.house__appartment3-2-link(href="#")
-                  svg.house__appartment3-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170.17 58')
-                    polygon.cls-1(points='0 20.67 31.33 17.33 43.67 18 49.5 18 74.5 15 78.5 14 101.67 12.83 106.33 12.67 119 11.5 123.17 10.5 129 8.83 133 8.17 158.5 5 158.17 1.67 170.17 0 169.67 32.17 158.17 32.83 157.67 36.5 135 40 130.5 39.5 129.33 41.5 126.5 42.5 123.17 43.17 113.83 43.33 110.5 44.5 103.5 44.83 102.67 46.17 99.83 46 78.83 46 74.83 47.67 74.83 50.83 45 54.33 32 53.17 0.17 58 0 20.67')
-                  a.house__appartment3-1-link(href="#")
-                  svg.house__appartment3-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 169.67 62.67')
-                    path.cls-1(d='M133.5,700.33,164.83,696l12.83,1.17,30.67-3.83.17-2.33,28.67,3.33,57.67-9-15.5-2.5,13.33-3v-3.17l10.5-1.5-.17,29.5-10.67,2.17.5,19.5-55,11.5h-2.67l-25-2.5-.5-8s-30.33,4.17-30.83,4.33-13.67-1.17-13.67-1.17L135,736.67Z', transform='translate(-133.5 -675.17)')
-                  //-- Корпус 4 ----------------------------------------------------------------------------------------------------------------------------
-                  a.house__appartment4-17-link(href="#")
-                  svg.house__appartment4-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 199.67 86.83')
-                    path.cls-1(d='M305.83,174.17,327,182.33l13.17-2.17,24.67,9.5,17.83,3.67s3.33.67,4,.83,9.5,3.5,9.5,3.5l2.67,2.5s2.17,3.33,2.67,3.5a24.51,24.51,0,0,1,2.83,2.17l19.17,6.33-.17,6.5,3.67,1.5,14-3.5,16.83,7.67L472.67,222l32.17,12.67V261l-31.67-12.17L458.67,251l-16.83-6.5s-14,2.5-14.67,2.5a23,23,0,0,1-3.83-1.5v-6.33l-20.83-5.5-3.83-6.17-15-5-19-3.17-23.33-8.5L327.83,213l-22.67-7.67Z', transform='translate(-305.17 -174.17)')
-                  a.house__appartment4-16-link(href="#")
-                  svg.house__appartment4-16-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200.5 81.67')
-                    polygon.cls-1(points='0.5 0 22.67 7.5 34.83 5.5 59 14.17 78 17.83 81.33 18.17 91.17 21.83 94.33 23.83 96.67 26.83 99.33 28.67 118 34.33 118.33 40.83 121.5 41.33 136.17 39.67 153.67 45.67 167.83 44.17 199.67 55.5 200.5 81.67 169.17 71.17 153.83 72.67 137.33 67.17 122 69 118.83 68.5 118.83 62.67 100.5 57.5 97.33 56.17 93.83 52.17 78.83 47.33 59.83 44.17 56.5 43 35.83 36.33 22.33 38.17 0 31.33 0.5 0')
-                  a.house__appartment4-15-link(href="#")
-                  svg.house__appartment4-15-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200 76')
-                    path.cls-1(d='M305.17,236.33l22.17,6.83,13-1.67L362,248.67l3,.83,19.17,2.83,13.5,4.5,4.67,5.17,21.33,6-.5,5.33,3.5.5,14.67-2L458,277.5l15.17-1.67,31.5,10.67.5,25.83s-31-9.17-31.5-9.17-14.67,1.5-14.67,1.5l-17-5.17-14.5,1.83-4-.67-.17-5.33h-3.17l-15-3.67-6-5.67-3.5-1.17L386,282.17l-3.33-.67-18.5-2.5-3-.33L342.5,272.5l-2.83-.5-11.33,1.5-23-6Z', transform='translate(-305.17 -236.33)')
-                  a.house__appartment4-14-link(href="#")
-                  svg.house__appartment4-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 199.83 71.5')
-                    polygon.cls-1(points='0.33 0 22.5 5.67 35.17 4.83 56.17 11 59 11.33 78.17 13.67 81.67 14.5 91.17 17.5 93.67 18 97.67 23 99.17 23.67 118.5 27.83 118.33 32.5 121.83 33.17 136.33 31.67 153.5 36.5 169.17 35.5 199.83 44.33 199.33 71.5 168 62.33 152.83 63.67 136.5 59.17 121.83 61 118.17 60.33 118.33 55.17 99.5 51.33 96.83 50 93.67 46.83 79 43.5 59.67 41.5 35.83 35 22.5 36.17 0 30.83 0.33 0')
-                  a.house__appartment4-13-link(href="#")
-                  svg.house__appartment4-13-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200 66.17')
-                    path.cls-1(d='M305.33,298.5l22.17,5.67L340.83,303,363,308.33l20.17,2.83,12.67,3.33,2.67.33,4.33,3.5,20.33,4.83v4.67l3.5.17,15-1s16,4.33,16.5,4.33S472.5,330,472.5,330l31.5,8.67.67,26-31.83-7.83-14.67,1.5-16.67-4-13.83,2-4.33-2.17-.17-3.17-18.83-3.5-6-4L386,341l-4-1-17.17-1.5-25.67-5.17-12.33,1.17-22.17-5Z', transform='translate(-304.67 -298.5)')
-                  a.house__appartment4-12-link(href="#")
-                  svg.house__appartment4-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 199.67 60.67')
-                    polygon.cls-1(points='0 0 21.17 4.83 34.17 4.17 38.17 4.33 56 8.33 59.17 9.17 78.5 10.83 81.17 11.67 90.5 13.5 93 14 98 17.67 118 21.5 118 25.17 121.83 26 136.17 25.17 152.67 29 168.33 27.33 199.67 34.5 199.17 60.67 168 54.5 153.33 55.5 136.17 52.17 122.5 53.33 118 53.5 118 49.17 99.67 47.17 93.17 43.33 80.67 41.5 77.83 40.67 60.5 39.33 55.17 38.33 37.67 35.5 34.17 34.33 22.33 35.5 0.17 31.5 0 0')
-                  a.house__appartment4-11-link(href="#")
-                  svg.house__appartment4-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 199.5 55.17')
-                    polygon.cls-1(points='0 0 22.33 4.17 34.5 3.33 37.67 3.5 57 7.5 59.67 7.5 77.83 9.5 81.67 10.67 90.5 12 93.33 12.17 99.83 15.83 117.5 18.33 118 22 122.33 21.67 152.83 24.33 168.5 23 199.5 29.33 199.5 55.17 168.5 50.5 153.67 51.33 136.5 48.67 122.5 49.33 118.33 49.5 118 46 100.17 44.5 97 43.5 92.67 41 78.17 39.67 60.33 37.67 55.67 37.17 35 33.5 22.33 35.17 0 32.33 0 0')
-                  a.house__appartment4-10-link(href="#")
-                  svg.house__appartment4-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200.17 49.17')
-                    path.cls-1(d='M304.17,392.67l22.67,2.5L340,394.5l41.33,5.17,4.5,1,11.83.83,5.33,2.83,19.33,2.17v3.33l4-.33,14.33-.5,17.17,2.67,15.33-.83,31.17,4.5-.17,26.5-31.33-3.67-14.67.5-17-2.17-14,1-4.83-.5-.33-2.83-17.67-.67-6.83-3.17-14.17-.67-19.83-1.5-23.5-3-13.33.17c-.67,0-22.17-1.67-22.17-1.67Z', transform='translate(-304.17 -392.67)')
-                  a.house__appartment4-9-link(href="#")
-                  svg.house__appartment4-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200.17 44.17')
-                    path.cls-1(d='M304.17,423.33l22.5,2.33,12-.67,3,.17,22,3.17,16,1,5.5.5,10.67.67,7,2.67,19.5,1.33.17,2.33,3.5-.17,14.67-.5s16.17,2.67,16.83,2.83,15-1.67,15-1.67l31.83,4.17-.17,26-32.33-2.83-14.33,1-17.33-1.83-13,.67-4.67-.17v-2.17l-18.17.5-6.33-3-12.5-.17-21.17-.83-24.83-2.33H326.17l-22-1.17Z', transform='translate(-304.17 -423.33)')
-                  a.house__appartment4-8-link(href="#")
-                  svg.house__appartment4-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200.33 38.5')
-                    path.cls-1(d='M304.17,454.83l22.33,1.5,13-.17,22.33,2.17,19.17.83,4.5-.17,11.83,1,5.5,1.5,19.67,1.33-.17,1.83,4.33-.33,14.33-.5,17,1.5,14.33-.33,32.17,2.33v26s-30.33-2-30.83-2-15.5.83-15.5.83l-17.5-1s-12.67,1.17-13.33,1-4.67-.17-4.67-.17l-.5-2.67-19.5.83-4.83-1.33-13.67.67L380,487.83l-40.5-1-12.67-.33-22.67-.33Z', transform='translate(-304.17 -454.83)')
-                  a.house__appartment4-7-link(href="#")
-                  svg.house__appartment4-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200.67 34.67')
-                    polygon.cls-1(points='0.17 0 22.5 1.17 34.67 1.17 56.83 2.17 59.67 2.17 77.67 3 93.5 3.67 99.17 4.17 118.17 4.33 118.83 6.83 137 6.5 154 6.83 168.33 7 200.17 7.67 200.67 34.67 169.17 34.17 153 33.5 136.17 33 124 33.33 78.17 33.17 35.17 31.5 22.83 31.67 0 31.5 0.17 0')
-                  a.house__appartment4-6-link(href="#")
-                  svg.house__appartment4-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200.83 31.33')
-                    polygon.cls-1(points='0 0 22 0.17 35.17 0 58.83 0.17 78.33 0.83 94 1.17 97.83 1.33 119.17 0.83 118.83 1.83 135.67 1.33 153.5 1 168.83 1.33 200.67 1.5 200.83 28 168.83 29 153.17 28.83 136.67 29 122.33 28.67 117.67 29.33 100.33 30.17 59.33 30.83 38 31 22.5 30.5 0 31.33 0 0')
-                  a.house__appartment4-5-link(href="#")
-                  svg.house__appartment4-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 201.33 35')
-                    polygon.cls-1(points='0 3.33 22.33 3.17 34.33 3.17 38.83 3.17 60 2.5 81 2.67 100 2.17 118.67 1 123.33 0.67 136.67 0.83 154.17 0.83 169.5 0.67 200.67 0 201.33 26.67 185.83 27.33 168.67 27.17 154.17 27.67 138.17 28.33 123.83 28.17 118.17 27.83 118.17 30 100.33 30.33 95.83 30.33 92.33 31.83 80.67 32 60.33 32.83 35.17 34.5 22.83 33.33 0.67 35 0 3.33')
-                  a.house__appartment4-4-link(href="#")
-                  svg.house__appartment4-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200 41')
-                    polygon.cls-1(points='0.17 9.17 21.83 7.67 34.5 8.33 55.83 7.17 59.67 6.83 76.17 6.17 92.67 6.17 99.17 4.67 118.17 4.33 117.5 2.5 135.67 2.67 153.83 1.33 200 0 200 26.5 168.33 29.33 153.67 28.33 136.33 30.5 122.83 28.67 117.83 31.67 97.83 33 93.17 35.67 58.67 36.67 35.67 39.17 22.5 38.67 0 41 0.17 9.17')
-                  a.house__appartment4-3-link(href="#")
-                  svg.house__appartment4-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 200.17 45.67')
-                    path.cls-1(d='M303.33,611.17,325,609.5l13.5,1.17,23.33-3.17,21.5-.5,14.33-1.67,3.5-1.5,19.83-.67v-1.83l4.83-1.17,13.5.83,18-1.67,14.67.33,31.5-2.83v26.33L477.17,627l-5.33-.17-14.33-.67s-16.17,2.83-16.83,2.67-13-.83-13-.83l-5.83-.33-.33,1.83-3,1.5-15.67,1.83-7.17,2.67-13.5,1.5-20.83-.17-2.67,1.5L342.33,640h-16.5l-22.5,2.5Z', transform='translate(-303.33 -596.83)')
-                  a.house__appartment4-2-link(href="#")
-                  svg.house__appartment4-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 199.83 51.17')
-                    polygon.cls-1(points='0 19.5 22.5 17.17 36.17 17.67 58.83 15 77.67 13.83 80.83 13.5 93 12.17 98 10 115.83 9 117.67 8.17 118.17 5 123 4.67 136.67 5.17 153.17 2.67 168.17 4 172.33 4 199.83 0 199.83 23.5 186.67 26.5 171.33 29.83 167.5 30 154.33 29.17 151 29.5 137.17 31.67 123 31.17 118.33 31 118.33 34.5 102 36.33 97.67 35.5 95.83 37.67 87.33 39.83 78.17 40.17 75.67 39.83 56.17 42.33 55.83 45.33 38 48 33.5 48.17 21.67 47.5 0.5 51.17 0 19.5')
-                  a.house__appartment4-1-link(href="#")
-                  svg.house__appartment4-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 188.58 54.67')
-                    path.cls-1(d='M303.17,674.17,324.83,670l15,1.17,19-2.5.67-2.5,26.17,2.5,4.17-.17,37.83-6.33L411,660.67l10.17-2.17L421,655l3.83-.17,14.5.67,17.33-2.17,14.67.17,18.83-3s2,26.33,1.5,26.33-14.83,3.67-14.83,3.67l-5.33,1.17-13.5-2-10.5,2.83-8.17.17-12.5-.83-.67,7L386,698l-22.5-1.83-15.83-1.67-6.5,2.33.17,5.17-4,.67-3.83-.33-8-1.5-6.67,1.5-15.67,2.83Z', transform='translate(-303.17 -650.5)')
-                  //-- Корпус 5 ----------------------------------------------------------------------------------------------------------------------------
-                  a.house__appartment5-17-link(href="#")
-                  svg.house__appartment5-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263 59.25')
-                    path.cls-1(d='M273.75,231.25s28-2.75,28-3.5v-4L340,219.5l15.5-4.25L361,214l16.75-2.5h5.5L405,210l42.75-6.5,4.25,3.25,42-6,42,32.5.25,26.75-42.5-30-41,6-5.25-3-42,5.25-22.25.75L356,243l-15.5,3.5-38,3.75-.25,4.5-29,2.75Z', transform='translate(-273.25 -200.75)')
-                  a.house__appartment5-16-link(href="#")
-                  svg.house__appartment5-16-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 56.75')
-                    polygon.cls-1(points='0 27.75 29 25 29 20.75 62 17.5 67.5 17.5 82.25 13.25 87.75 12.75 103.5 10.25 111 9.5 131.5 8.75 175 2.75 179.25 6.25 220.75 0 263.5 30 263 56.75 220.5 29.75 180 35.25 174.5 32 137.75 36.75 132 36.75 110.75 38 104.75 38.25 87.75 40.5 82.5 40.75 67.75 44.5 28.75 48 28.75 52.25 0.5 54.75 0 27.75')
-                  a.house__appartment5-15-link(href="#")
-                  svg.house__appartment5-15-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.75 53.75')
-                    polygon.cls-1(points='0.25 24.5 28.25 22 28.5 18.5 62 15.5 67.5 15 82.5 11.25 88 10.75 105.25 8.5 110.75 8.25 137.25 7 173.75 2.25 179.5 5.25 220.5 0 263.75 27.25 263 53.75 221 29.25 179.25 34 174 31.5 137.75 36 131.75 36 111 36.75 104.25 37 87.75 39.25 82 39.25 68.25 42.75 28.5 46 28.5 49.5 0 51.5 0.25 24.5')
-                  a.house__appartment5-14-link(href="#")
-                  svg.house__appartment5-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.25 51.5')
-                    polygon.cls-1(points='0.5 22.5 28.5 20 29 16.75 62.25 15 67.75 13.25 83.5 10.25 87.75 9.75 104.75 8 110.25 7.5 132.25 7 138 6.75 175.5 2.5 178.5 5.25 220.75 0 263.25 24.25 263.25 51.5 221 29.5 179.75 35 174.75 31.75 138.25 35.25 110.25 36 105 36.5 88.25 38.25 82.25 38.75 68.25 41 29 44 29 47.75 0 49 0.5 22.5')
-                  a.house__appartment5-13-link(href="#")
-                  svg.house__appartment5-13-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.25 48.25')
-                    polygon.cls-1(points='0 19 28.5 17.5 28.75 14.25 62.5 12 67.75 11.75 82 9 88 8.75 105.25 6.75 110.75 6.5 133.5 5.75 174.5 1.75 179.25 4.25 220.75 0 263.25 21.25 263 48.25 220.75 30 180.25 33.75 175 31.25 132.75 34.5 110.25 35.25 104.25 35.5 88 36.75 82.75 37 68.75 39.5 29 41.75 28.75 44.25 0 46.25 0 19')
-                  a.house__appartment5-12-link(href="#")
-                  svg.house__appartment5-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263 45.75')
-                    polygon.cls-1(points='0 16.5 28 15.5 28.25 12.5 61.75 10.5 66.25 10 82.5 7.75 87.75 7.5 104.5 6.25 110 5.75 132.25 5 174 1.75 179 4 219.75 0 263 19 262.5 45.75 220.5 30.25 179.25 33.5 174.25 31 137.75 34 131 34 104.75 34.5 82.5 35.5 67 37.75 29.25 39.75 28.5 42.5 0.25 43.25 0 16.5')
-                  a.house__appartment5-11-link(href="#")
-                  svg.house__appartment5-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 42.25')
-                    polygon.cls-1(points='0.75 13.25 28.25 12.25 29 9.25 68 8 83.5 5.75 110.25 4.25 138.75 3.5 174.75 1.25 179.5 2.5 221 0 263.5 15.25 263.25 42.25 220 29.75 180.5 32.25 174.25 30.25 138 32.5 110.25 33 83.75 34 67.5 36.25 29.5 36.75 28.75 39.25 0 40 0.75 13.25')
-                  a.house__appartment5-10-link(href="#")
-                  svg.house__appartment5-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 39.5')
-                    polygon.cls-1(points='0.5 10 28.5 9.5 28.75 7.25 63.75 6.25 68.25 6 83.25 4.5 106 3.5 132.25 2.75 175.5 0.5 180.25 1.75 220.75 0 263.5 11.75 263.5 39.5 221 29.75 179.5 31.25 174.25 29.25 136.75 31.25 110.5 31.5 83.5 32.5 67.5 34 29.5 34.75 29.5 37 0 37 0.5 10')
-                  a.house__appartment5-9-link(href="#")
-                  svg.house__appartment5-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 262.75 36.75')
-                    path.cls-1(d='M273.25,444.75l27-.25,1.75-1.75,37.5-1.5,20.5-1,23-.75,26.25-.25,38.5-1.5,4.25,1L492.75,437,536,446.75v27l-42.5-7.25L452,468.25,447.75,467l-37,1.25-27.25.25-27.75.5-16.25.75H301.75s1,1.75.25,1.75l-28.75.25Z', transform='translate(-273.25 -437)')
-                  a.house__appartment5-8-link(href="#")
-                  svg.house__appartment5-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.25 33.75')
-                    polygon.cls-1(points='0 5 28.5 4.5 28.75 3.25 67 2.5 88.75 2.5 109.5 1.5 138 1.25 175 0.25 180.25 1.25 220.25 0 263.25 6.5 263 33.75 220.75 29.75 179.5 30.25 174.5 29.5 132.75 30.25 110.25 30.25 83.25 30.25 63.75 30.5 29 30.75 29 32.25 0 32 0 5')
-                  a.house__appartment5-7-link(href="#")
-                  svg.house__appartment5-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.75 30.75')
-                    path.cls-1(d='M272.25,498.75l28.75-.5,38.5-.75,17.25-.25H382.5l27-.75h38.25l4.75.25,40-.75,43.5,4v26.75l-43-.5-40.5-.5h-5.25l-42.75-.25-21.5-.25H355.5l-15.5.25-38-.5-29.5.5Z', transform='translate(-272.25 -496)')
-                  a.house__appartment5-6-link(href="#")
-                  svg.house__appartment5-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 30.25')
-                    polygon.cls-1(points='0 0.5 29.25 0.25 66.75 0 83 0.25 104.75 0.25 110.75 0.25 131.5 0 175.25 0.5 179 1 220.5 0.75 263.5 1.5 263.5 27.75 220.75 30.25 179.5 29.25 174.25 29.75 132 29 110.25 28.75 105.5 29 83.5 28.5 67.75 28.25 30.25 27.75 0 26.75 0 0.5')
-                  a.house__appartment5-5-link(href="#")
-                  svg.house__appartment5-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 33.25')
-                    path.cls-1(d='M272.5,552l29,.5,38.5,1.25,19.75.25,23.75.25,26-.25,37.25.75h5.5L493,555l43-1.75v27l-42.5,5-41.5-1.5-5.25.25-35.5-.75h-6l-22-.25-27-1-16-1-38.75-.75L273,578.5Z', transform='translate(-272.5 -552)')
-                  a.house__appartment5-4-link(href="#")
-                  svg.house__appartment5-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 35.5')
-                    polygon.cls-1(points='0 0 28.25 1 67 2.5 88.25 3.5 110.5 4 136.25 4.5 174.75 5.5 179.5 4.5 220 6.25 263.5 1.25 263.5 28.5 220.75 35.5 179.5 33.5 174.75 34.5 138 33.25 111 32.75 83.25 31.5 67.5 30.5 29 29 29.25 27 0 26.75 0 0')
-                  a.house__appartment5-3-link(href="#")
-                  svg.house__appartment5-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 264.5 38')
-                    path.cls-1(d='M272,606l29,.25V608l34.25,1h4.5L355,610l22.25,1.25,27,.25,6.75.25L447,613l5.75-.5,40,1.5,43-7.5-.25,27L493,644l-41.25-2.5L447.5,643l-36.75-1.5-7-.75-21.5-.5-22.5-1s-5-1.25-5.75-1-14-.75-14-.75L301.75,635l-.75-1.75-29.75-.5Z', transform='translate(-271.25 -606)')
-                  a.house__appartment5-2-link(href="#")
-                  svg.house__appartment5-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 264.5 40.75')
-                    path.cls-1(d='M271.75,632.75l28.25.75v1.75l38.75,2,15.75,1.5,5,.25,23.25,1,26.75,1.25s35.25,1.5,36.75,1.5,5.75-1.5,5.75-1.5l40.5,2.5,43.25-10.25-.25,26.75L492.75,673.5l-40-2.25-6.25.25-36.25-2.25L334.5,663l-4,1.5L301.25,663l.5-2.25L275,659.5v-2l-3.25-.25,1-10.75h-1.5Z', transform='translate(-271.25 -632.75)')
-                  a.house__appartment5-1-link(href="#")
-                  svg.house__appartment5-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 264.16 39.25')
-                    path.cls-1(d='M275,659.25l25.75,1s-2.25,3.25-.5,3.25,30.5.5,30.5.5l-7,3-.75,3.75,71.5,5.5,4-.75L409,673l.25-3.5,38,2.25s4-1,4.75-1.25,40.5,3,40.5,3l43-13.25s.5,26.75-.25,27-14,5.5-14,5.5l.5-16.75L493,674.5l-41.5-2.75L420.25,671l-10,2.25L382,680l-11.75,3.5-.25,15-19.75-2.25-32-3.75-17.5-.75.25-3.25-27-1.75-.25-3.5-2.25-.5.75-19,2.75-1Z', transform='translate(-271.5 -659.25)')
+                ul.house__preview.house__preview--hidden.list
+                  li.house__preview-items.house__preview-items--green
+                    p.house__preview-number.house__preview-number--white.house__preview-sell.text.text--center 3
+                    p.house__preview-text.house__preview-text--white.text.text--uppercase.text--center В продаже
+                  li.house__preview-items.house__preview-items--gray
+                    p.house__preview-number.house__preview-section.text.text--center 1
+                    p.house__preview-text.text.text--uppercase.text--center Секция
+                  li.house__preview-items
+                    p.house__preview-number.house__preview-floor.text.text--center 14
+                    p.house__preview-text.text.text--uppercase.text--center Этаж
+                .house__content
+                  .house__img-wrap
+                    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
+                    //-- Корпус 1 --------------------------------------------------------------------------------------------------------------------------
+                    a.house__appartment1-17-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="1" data-floor="17")
+                    svg.house__appartment1-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.33 46.17')
+                      polygon.cls-1(points='0 19.5 32 0 52 7.67 55.5 6.17 74.5 13.67 85.33 16.5 87 17 94.67 20.17 96 20.83 102 25 116.33 30.17 116.33 32.83 125.33 36 124.33 46.17 116.5 43.83 116.17 41.33 102 36.5 96.33 32.83 94.5 32.17 87.17 29.33 85 29 75.33 26.67 56 19.5 52.5 21.17 32.33 13.83 0 31.33 0 19.5')
+                    a.house__appartment1-16-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="16")
+                    svg.house__appartment1-16-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 124.38 43')
+                      polygon.cls-1(points='0 17.38 32.13 0 52.13 7.13 55.5 5.5 74.38 12.25 84.75 14.88 87.13 15.5 94.38 18.13 96.25 19 101.38 22.13 116.38 27.25 116.38 30 124.38 32.5 123.63 43 116.25 40.75 116.25 38.63 101.75 34 96.38 31.25 94.25 30.25 87.25 28 85.13 27.25 74.88 25.25 72.38 24.5 55.88 19 52.5 20.38 32.5 13.88 0 29.25 0 17.38')
+                    a.house__appartment1-15-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="15")
+                    svg.house__appartment1-15-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 124.08 39.92')
+                      polygon.cls-1(points='0 15.75 32.33 0 52.08 6.42 55.5 5.33 72.08 10.58 75 11.42 84.5 13.5 87.17 14.08 94.17 16.42 96.17 17.17 101.25 19.75 103.42 20.92 116.17 24.92 116.17 26.75 124.08 29.25 124.08 39.92 116.25 37.92 116.25 36.08 103.42 32.25 101.5 31.58 96.17 29.25 94.17 28.42 87.17 26.58 85 25.83 74.5 24.08 72 23.33 55.58 18.25 52.67 19.5 32.33 14 0 27.92 0 15.75')
+                    a.house__appartment1-14-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="14")
+                    svg.house__appartment1-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 513.5 151.5')
+                      polygon.cls-1(points='0 58 134.5 0 217 23.5 231 19.5 302.5 40.5 311.5 42 354.5 50 362.5 52 393 60.5 400 63 423.5 74.5 429.5 77 483.5 92 483.5 99.5 513.5 107.5 513.5 151.5 484 144.5 483.5 137.5 430 124 421 121.5 400.5 112.5 391 110.5 362 103.5 353.5 101.5 312.5 94.5 301 91.5 232.5 73.5 217.5 79.5 135 58 2.5 108.5 0 58')
+                    a.house__appartment1-13-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="13")
+                    svg.house__appartment1-13-img(data-name='Layer 3', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 514.33 140.33')
+                      polygon.cls-1(points='0 51 133.67 0 217.33 21 230.33 16.33 300 35 309.33 37.33 351.67 44.33 361 46.33 391 53 398.67 55.33 420.67 65.33 429.33 67.33 482 80.33 482 87 514.33 94.67 514.33 140.33 481 132.67 481 126 428.67 115.67 420.33 113.67 398.33 105 390.33 103.33 360.67 97 352 96 309.67 90.33 300 87.67 230.67 72.67 217.33 76 134 57.33 0 101.67 0 51')
+                    a.house__appartment1-12-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="12")
+                    svg.house__appartment1-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 514.67 126.67')
+                      polygon.cls-1(points='0 43.67 133 0 215.67 18 229.67 15 298.67 30 310 32.67 349.33 37.67 361.33 39.67 390 46 398 47.67 419.33 55.67 428.33 57.67 481.33 69 481.33 75.67 514.67 82 514.67 126.67 480.67 121 480.33 115.67 472.67 114.67 427.67 107.33 419.67 105 397.67 98.33 389.33 96 359.33 90.67 351 89.67 309.33 84.67 299.67 83.33 229.67 70 215.67 73.33 133.33 57.67 0 94 0 43.67')
+                    a.house__appartment1-11-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="1" data-floor="11")
+                    svg.house__appartment1-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 514 114.33')
+                      polygon.cls-1(points='0 36 133 0 213 15.67 229.33 12.33 298 25.67 309 27 350.67 32 360 33.33 389.33 38.67 397.67 40.67 420.33 47.67 428.67 50 473 57.67 480.67 59.33 480.67 64.33 514 69 514 114.33 480.33 109.67 480 104.67 426.33 97 419 95.67 397 91 388.67 89.67 358 84.67 349.67 84 308.67 79.67 298.33 78.33 229.67 67.67 216 70.33 132.67 57.17 0 86.67 0 36')
+                    a.house__appartment1-10-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="10")
+                    svg.house__appartment1-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 514.67 101.33')
+                      polygon.cls-1(points='0 28.33 132.67 0 215.67 12 229 9.33 299 20 309.33 22.33 351 25.67 360.33 26.67 389.33 31.33 397.67 33 420.33 38.33 428 39.67 480.67 47 480.67 52 514.67 55.67 514.67 101.33 480.33 97 480.33 93 427.67 88.67 419.33 87 397.67 82.67 389.33 81.67 360 78.33 350.67 77.67 308.33 74.67 298.33 73.33 229.67 65.33 216.67 67 133 57 0 78.33 0 28.33')
+                    a.house__appartment1-9-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="1" data-floor="9")
+                    svg.house__appartment1-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 515.33 87.67')
+                      polygon.cls-1(points='0 22 133.67 0 216.67 9.67 229.67 7.67 300.33 16.33 309.67 17.33 350.33 20 360 20.67 390.33 25 399 25 420.33 29.33 428.67 31 481.33 36 481.33 40 515.33 43.33 515.33 87.67 481.67 86 481.33 82.33 427.67 80 420.33 78.33 399 76 390.33 75.67 360.33 72.67 352 72 309.67 69.67 299 69.33 230 62.67 216 64.33 134 57 0 71.67 0 22')
+                    a.house__appartment1-8-link.house__appartment-link(href="#" data-selling="1" data-selling-position="2 0 1" data-section="1" data-floor="8")
+                    svg.house__appartment1-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 516.67 75.67')
+                      polygon.cls-1(points='0 14 133.67 0 216.67 7 229.67 5.33 240.67 7 298.33 12 309.67 12.33 351.33 15.33 360.33 15.33 390 17.67 398.33 17.67 419.33 21.33 427.33 22.67 481.33 25.67 481.33 28.67 516.67 31 516.67 75.67 481.67 74 481.33 71.67 427 70.33 418.67 69.67 398 68.33 389 68.33 360 66.33 350.67 66 309.33 65.33 298.67 64.33 229.67 61 216.33 62.33 132.67 56.67 0 65 0 14')
+                    a.house__appartment1-7-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="7")
+                    svg.house__appartment1-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517.07 63.67')
+                      path.cls-1(d='M62,676l134-8,83,4h13.33l70.33,4H413l10,1.33,29,1.33h8l22,2h8.67l53.67,2.67v2.33h34s1.67,46,0,46h-33L491,730l-9-1H452l-29.33-.33H413l-42-.33H360.67l-68-.67-14-.33-83-1.67H62Z', transform='translate(-62 -668)')
+                    a.house__appartment1-6-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="6")
+                    svg.house__appartment1-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 516.67 57')
+                      polygon.cls-1(points='0 0 134.33 0 217 1.33 230 1.33 299.67 2.75 309.42 2.75 351.42 2.75 360.92 2.75 391.17 2.75 399.92 2.75 421.67 2.75 428.42 4 482.92 4 482.92 6.25 516.67 6.25 516.67 50.25 482.42 50.25 474.67 51.75 427.92 51.75 421.67 51.75 398.67 53.75 390.42 53.75 361.92 53.75 352.42 53.75 309.92 55.25 299.92 55.25 230.67 57 216.17 57 134.42 57 0 50.5 0 0')
+                    a.house__appartment1-5-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="5")
+                    svg.house__appartment1-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517.25 64.5')
+                      polygon.cls-1(points='0 0 134.5 7 217.25 5.75 231 5.75 241.25 7 299 5.25 309.75 4.75 352.75 3.5 361.25 3.5 391.25 3.5 400.25 3.5 422.5 3.5 429.75 3.5 475.25 1.5 483 1.25 517.25 0 517.25 45 482.5 46.75 475.25 46.75 429 50.75 420.75 50.75 399.5 53 390.5 54.25 361 55.5 352.75 55.5 309.25 57 300 57 230.25 61.5 217.25 60.25 134.25 64.5 0 50.5 0 0')
+                    a.house__appartment1-4-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="1" data-floor="4")
+                    svg.house__appartment1-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517 77.5')
+                      polygon.cls-1(points='1.25 5.75 136.25 20.25 217.5 16.5 232 17.25 301.5 14.25 311.5 13 354 11.5 363 11.5 392.75 10 401 9.25 423 7 431.25 7 484.5 3.25 484.5 1.25 517 0 517 44.5 485.25 47.5 484.75 50 430.75 55.25 423.25 55.25 401 59.25 392.5 60.5 362.25 63 354 63 311 66 302 67.25 232.25 73.25 217.25 71.25 136 77.5 0 57.25 1.25 5.75')
+                    a.house__appartment1-3-link.house__appartment-link(href="#" data-selling="1" data-selling-position="3" data-section="1" data-floor="3")
+                    svg.house__appartment1-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517.25 90.75')
+                      polygon.cls-1(points='0 11.75 134.75 33 216 26.5 231 28.5 301.25 22.38 311 21.25 351.75 18.25 362.25 18 392.25 15.75 400.25 14.75 422.75 10.25 431.5 10.25 484 5.5 484 2.75 517.25 0 517.25 45 484 48.25 483.75 52.25 430.25 59.25 423 59.25 400.25 64.5 392.5 66.5 362 69.75 353.25 71 310.25 74.25 300.75 75.5 241.5 83 231.25 83 217.25 81 135 90.75 0 62.5 0 11.75')
+                    a.house__appartment1-2-link.house__appartment1-2-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="1" data-floor="2")
+                    svg.house__appartment1-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 517 103.75')
+                      polygon.cls-1(points='0 17.25 135.5 46.5 217.5 36.75 231.25 39 242 38.5 300.25 31.88 311.25 29.25 354.5 26 363.25 24.5 392 21.5 400.5 20.25 423.5 15.25 431.25 14 484.5 7.75 484.5 4 517 0 517 45 485 49.5 485 55 435.75 61 430.75 59.5 430.75 62.25 423.25 63.75 413.5 67 401.25 69.5 394.25 71.25 377.25 73.5 354.25 77.25 352 77.25 333.25 79.25 311.5 81 301.75 82.5 267.5 87.5 231.25 90.75 230.25 94.5 215.25 91.75 134.25 103.75 0 68.25 0 17.25')
+                    a.house__appartment1-1-link.house__appartment1-1-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="1" data-floor="1")
+                    svg.house__appartment1-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 519.5 122.5')
+                      path.cls-1(d='M13.25,659l134.5,37L230,684l14.75,1.75L246,683.5l5.5,1.75L276,690l63.25-9.25,7.5-1.25,6.25-2h9.25l24.5-4.75L397.5,671l10.25-1.25,8.5-2,10-1,18.5-3.25,17.5-2.75,12-1.75-21.5-5.5,45.5-5.5v-5L531,638.75v41l-32,5V693s-26.25,3.5-27,3-25.75,3.75-25.75,3.75L431.5,702.5l-.25,10.25,5,2.25,1.25,9.75-8.25,1.75h-6l-4.5-1.25L399,730l-.5,2.5-9.5,2-4-1.25-28.5,5.25L356,741l-3.75,1.25H339l-13.5,1.5L300,749.5l-6.5-2L276.75,753l.75,4h-5.37l-26.87-6.5-15.75-6.75-82.25,17.5L127.5,755.5l-23.75,5.75h-6.5L40.75,743.5l1-9.5,3.5-1.75-33.75-9Z', transform='translate(-11.5 -638.75)')
+                    //-- Корпус 2 --------------------------------------------------------------------------------------------------------------------------
+                    a.house__appartment2-17-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="2" data-floor="17")  
+                    svg.house__appartment2-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236 124.5')
+                      polygon.cls-1(points='0 0 44.33 16.17 57.67 12.33 102.67 29 108.5 31.33 137.67 37.33 143.5 39.33 161.5 46.33 167.67 49.33 178.5 58.17 184.33 60 218.67 73.67 218.67 82.17 236 88.33 236 124.5 218.67 119.17 218.83 110.83 183.83 99.17 178.67 96.67 167.17 88.67 162 85.67 142.5 79.5 136.17 77.83 107.33 72.5 101.17 70.17 57.83 55 44.67 59 0 44.5 0 0')
+                    a.house__appartment2-16-link.house__appartment-link(href="#" data-selling="1" data-selling-position="2 0 1" data-section="2" data-floor="16")
+                    svg.house__appartment2-16-img(data-name='Layer 3', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 235.67 117.5')
+                      polygon.cls-1(points='0 0 45 14.83 57.83 10.83 100.67 26 106.67 28 132.5 33.17 136.5 33.83 142.5 35.5 161.33 41.83 166.67 44.33 178.33 52.67 183.17 54.5 218.5 67 218.5 75 235.67 80.17 235.67 117.5 218.67 112.67 218.5 104.5 183.5 93.83 177.67 91.17 166.67 84 137 74.5 134.5 74.17 106.33 69.33 99.83 67 57.33 53.83 44.83 57.5 0 44.83 0 0')
+                    a.house__appartment2-15-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="2" data-floor="15")
+                    svg.house__appartment2-15-img(data-name='Layer 4', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.33 109.5')
+                      polygon.cls-1(points='0 0 42.83 13.5 56.5 9.33 99.5 22.83 105.83 24.83 134.83 29.83 141.83 31.33 159.33 37.33 166.17 39.83 176.67 46.67 183.17 49.33 218 60 218 67.5 236.33 72.67 236.33 109.5 218 104.67 217.67 97.33 213.17 97 183 89.33 177.5 86.5 166.33 80.5 160.33 77.83 142 73 136.33 71.5 106 66.67 99 64.83 56.67 52.83 44.17 56.17 0 44.67 0 0')
+                    a.house__appartment2-14-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="2" data-floor="14")
+                    svg.house__appartment2-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 239.83 102.67')
+                      polygon.cls-1(points='0 0 46.17 12.17 58.67 9 65.17 10.17 101 20.5 108.17 22.5 137.83 27.67 162.33 34 168.17 36.17 179.5 42.5 184.67 44.33 215.17 53 220.17 54.33 220.17 60.83 239.83 65.67 239.83 102.67 219.83 97.5 220 91.67 184.17 83.5 179 81.67 168.33 76 162.33 74.67 144 70 137.83 68.83 107.83 64.5 101.17 62.83 58.83 52.67 45.5 55.67 0 44.17 0 0')
+                    a.house__appartment2-13-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="2" data-floor="13")
+                    svg.house__appartment2-13-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 239 94.33')
+                      polygon.cls-1(points='0 0 44.17 10.83 59 8 101.17 18.33 108.17 20.17 136.67 24.33 144 25.5 162.33 30 167.5 31.83 179.17 37.33 219.33 47.83 219.33 53.5 239 58 239 94.33 219.67 90.33 219.67 85.83 184.17 78.67 179 77.33 168.83 72.17 162.17 70.5 144.83 67.17 138 65.33 108.17 61.83 101.67 60.67 58 51.33 44.5 54.33 0 45 0 0')
+                    a.house__appartment2-12-link.house__appartment-link(href="#" data-selling="3" data-selling-position="0 0 1 0" data-section="2" data-floor="12")
+                    svg.house__appartment2-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 241.33 86.83')
+                      path.cls-1(d='M77.83,236.17l44.33,9.5L136,243l42.67,9.17,6.67,1.17,29.5,3.83s6.17,1.5,6.67,1.5,18.17,3.67,18.17,3.67l6.17,1.5,10.83,4.67,5.17,1.33,35,7.67v4.67L319.17,286v37l-22-3.83V315l-5.67-.83-30.17-4.5-4.5-1.17-11.67-4-5.5-1.5-18.33-3-6-1.5-29.33-3-7.67-1.5-36.67-7-6-.67-14.5,2.17-43.33-7.67Z', transform='translate(-77.83 -236.17)')
+                    a.house__appartment2-11-link.house__appartment2-11-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="2" data-floor="11")
+                    svg.house__appartment2-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 239.33 78.83')
+                      polygon.cls-1(points='0 0 44.17 7.83 57.67 5.67 63.5 6.33 100 13 107.33 14.33 136.67 17.67 143 18.67 161.5 22 167.5 23 178.5 27.5 184 28.83 219.17 37.83 239.33 41.67 238 78.83 218.67 76.17 218.67 72.5 182.5 67.5 178.33 66.5 167.17 63.17 161.33 62.33 142.83 60 137.17 58.67 133.67 58.83 106.83 56.5 99.67 55.17 57.17 48.83 44 50.67 0 44.5 0 0')
+                    a.house__appartment2-10-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="2" data-floor="10")
+                    svg.house__appartment2-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 237.83 70.83')
+                      path.cls-1(d='M77.83,325.17l44.33,6.33,12.5-1.67,49.5,7.17,29.5,2.67,6.5,1.33,19,2.33,5.17.83,10.83,2.67,5.67,1.33,35.67,5v3.5l19.17,2.5V396l-19-2.33-.33-2.5-34.83-2.83s-5-1-5.67-1.17-11-2.17-11-2.17l-5.83-.67-17.5-1.83-6.33-1-30.67-2.17-8-.83L135,373.83l-15.33.5L77.83,370Z', transform='translate(-77.83 -325.17)')
+                    a.house__appartment2-9-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="2" data-floor="9")
+                    svg.house__appartment2-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 240.17 63.33')
+                      polygon.cls-1(points='0 0 43.17 4.83 57.17 4.83 99.17 9 106.67 10 136.33 12 143.5 12.67 160.5 15 166.83 15 177.83 17.67 183 17.67 219 21.83 219 25 240.17 26.33 240.17 63.33 218.5 62.17 218.67 60 213 59.5 183.33 57.83 177.5 57.17 166.67 56 161.33 55.17 142.67 53.83 136.17 53.33 105.67 51.83 99.83 51.67 56.17 48 42 48.5 0 45.33 0 0')
+                    a.house__appartment2-8-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="2" data-floor="8")
+                    svg.house__appartment2-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.83 55.33')
+                      path.cls-1(d='M77.83,415l42.5,2.83H134s1.5-.5,5.5,0,37.5,2.83,37.5,2.83l7.17.83,29.5,1.67h6.17L238.67,425s5.33-.5,5.83,0,10,1.17,10.5,1.33,5.17,1,6,1.17,35,2.17,35,2.17l.83,2.83,17.83,1v36.83l-18.17-1v-1.67L260.17,467l-4.67-.5-12.33-.33-4.67-.67s-18.17-.83-18.67-.83-5.67-.17-5.67-.17l-2.83-.67s-25.83-.5-26.5-.5-7.67-.33-7.67-.33L134,461.5l-14.33.17L77.83,460Z', transform='translate(-77.83 -415)')
+                    a.house__appartment2-7-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="2" data-floor="7")
+                    svg.house__appartment2-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 237 47.17')
+                      polygon.cls-1(points='0 0 42.5 1.17 55.83 1.17 105.83 2.83 134.17 4.17 141.83 4.17 159.67 5.33 167 5.33 177.67 6.5 182.33 6.5 218.17 7.67 218.17 9.33 237 9.33 237 47.17 218 47.17 177.5 47.17 166.17 46.33 160.67 46.33 141 46.33 135.5 46.17 133.5 46.17 104.83 45.5 98.67 45.5 56.17 44 41.67 45.5 0 44.5 0 0')
+                    a.house__appartment2-6-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="2" data-floor="6")
+                    svg.house__appartment2-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.17 44.5')
+                      polygon.cls-1(points='0 0 42.83 0.67 56.33 0.67 99 0.67 106 1.5 133.67 1.5 140.67 2.33 160.5 2.33 165.83 2.33 177.5 2.33 182.83 2.33 218 2.33 218 3.67 236.17 3.67 236.17 40 217.83 40 182.17 42 177.5 42 165.83 43.17 160.5 43.17 141 43.17 134.5 43.17 106 43.17 99 43.17 61.67 44.5 55.67 44.5 42 44.5 0 44.5 0 0')
+                    a.house__appartment2-5-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="2" data-floor="5")
+                    svg.house__appartment2-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.33 50')
+                      polygon.cls-1(points='0 5.67 42.67 4.67 55.67 4.67 61.5 4.67 98.67 4 105 4 135 4 141.67 4 159.67 4 165.33 3 177 3 181.83 2.17 212.33 1 218 1 236.33 0 236.33 37.67 217.5 37.67 217.67 40.33 177.33 42.17 166.17 43.5 161.83 43.5 140.33 44.67 135.5 44.67 105 45.5 98.33 45.5 97.67 46.83 56 48.83 42.33 47.67 0 50 0 5.67')
+                    a.house__appartment2-4-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="2" data-floor="4")
+                    svg.house__appartment2-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 236.67 57.67')
+                      polygon.cls-1(points='0 13.33 41.17 10.5 55.17 11.17 98.17 8.83 105.17 8.83 133 8.83 140.67 7.5 159.83 6.67 164.5 6.67 177.17 4.83 181.67 4.83 217.17 3 217.17 1.17 236.67 0 236.67 37.5 217.67 38.33 218 41.17 176.83 43.17 177 45.33 165 47.33 159.67 48.5 135.33 49.67 105.33 50.67 98.33 50.67 79.67 52.67 55.33 54.5 42.33 54.5 0 57.67 0 13.33')
+                    a.house__appartment2-3-link.house__appartment-link(href="#" data-selling="1" data-selling-position="3" data-section="2" data-floor="3")
+                    svg.house__appartment2-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 234.5 65.17')
+                      path.cls-1(d='M77.83,638.17,119,634.83h35l20.67-2.5s6-1,7.67-1,29.83-1,29.83-1h6.33l18.67-1.67,6-1.67,11.5-2.17h5.5l35.17-3V619l17-1v37.5l-17.17,1.17-.17,3.5-5,1-31.33,4h-4.33l-11.67,2.67-4.5,1-19.67,2.33-5.67,1-30.33,1.5-7,1.17-36.5,4.5h-5.5l-13.67-.83-42,4.67Z', transform='translate(-77.83 -618)')
+                    a.house__appartment2-2-link.house__appartment2-2-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="2" data-floor="2")
+                    svg.house__appartment2-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 234.5 72.83')
+                      path.cls-1(d='M77.83,683.17l41.17-5,13.17.83,5.83.17,10-1,9.83-.83,9.5-1.17L176,674.5l5.33-1.33,31-.83,6.17-1.17,19.33-2.5,4.83-.83,12-3,4.33-1h17l19.17-3.17v-4.33l17.17-1.83V692l-17,2-.17,4.33-33,3h-7l-6,3-6,2.17H236l-22,3.83-15,1-18,1h-4.17s.67,4.17-.5,4.17-43.17,6-43.17,6L118.5,721l-40.67,6.33Z', transform='translate(-77.83 -654.5)')
+                    a.house__appartment2-1-link.house__appartment-link(href="#" data-selling="1" data-selling-position="3" data-section="2" data-floor="1")
+                    svg.house__appartment2-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 237.5 82.67')
+                      path.cls-1(d='M77.83,727.5l39.33-6,15,1.33h6.5l17.5-3.33,20.17-4.5,5.5-1.5,6.5,1,23-1,17-2.33,14.17-2.5,9.5-2.83,8-2.5v-2h3.67l1,.83,5,.5,7.33-.17,17.67-3.17.67-4.5,19.17-3.17.83,34-20,4-.67,7.33-3.33,2.5H285.5l6.5,5-.67,9.67-6.5,1.33H280l-14.83,2.33-.67,1.33L260,760l-6.67-.83-12.67,3.17-3.17,2.5H233l-19.33,4.83-6.5.83s-18.5-2.83-19-2.67-8.5,3.5-8.5,3.5l-20.33-3.17L139,772.83l-5.67,1.5-1-6.67-12.5-2L107.5,768l-29.67,4.33Z', transform='translate(-77.83 -691.67)')
+                    //-- Корпус 3 --------------------------------------------------------------------------------------------------------------------------
+                    a.house__appartment3-17-link.house__appartment-link(href="#" data-selling="1" data-selling-position="3" data-section="3" data-floor="17")
+                    svg.house__appartment3-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.33 93.5')
+                      polygon.cls-1(points='1.17 0 31.33 11 44.17 7.83 78.83 21.17 100.83 25.67 106 26.83 118.5 32.33 122.67 34.17 128.83 40.5 132.33 42 157 50.83 156.83 58.67 168.33 62 168.17 93.5 157 90.17 157.17 83 132.67 75 128.67 73.67 121.83 67.33 117.67 65.67 101.5 59.5 97.67 59.5 78.83 56 74.17 54.17 44 43.33 30.83 46.5 0 36.17 1.17 0')
+                    a.house__appartment3-16-link.house__appartment3-16-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="3" data-floor="16")
+                    svg.house__appartment3-16-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.67 87.67')
+                      path.cls-1(d='M138.33,148.33l29.33,10.17,13.5-2.67,33.67,11.5,22.83,4,5.5,1.67,12,4.5L259,179l7.33,6.5,2.83,1.33,25.17,8,.17,6.33,10.33,3.67L305.5,236l-11-2.5-.5-6.33-4-.83-21-5.83-3.83-2.83s-4.83-4-5.5-4.17-4.5-2.17-4.5-2.17L238.33,206l-22.83-3.83-3.83-1-30-9.67-13.33,3-31.5-10Z', transform='translate(-136.83 -148.33)')
+                    a.house__appartment3-15-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 1 1 0" data-section="3" data-floor="15")
+                    svg.house__appartment3-15-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170 82.83')
+                      path.cls-1(d='M137.83,185l30.5,9.5,12.83-3,30.17,9.5,4.17,1.17,21.83,4,4.83.83L255,211l4.17,2.17,5.17,4.5,4.67,2.17,25.17,7.67.17,6,11.17,2.67v31.67l-11.5-2.5v-5.67l-3.83-1.33-20.83-4.5-3.83-2.33-6.17-4.5-3.67-1.17-13-3.83-4.17-1.17-2,.17-20-3.67-5.5-1-26.5-7.67s-2.83-2-3.33-1.83S168.83,230,168.83,230l-22-5.67L135.5,220.5Z', transform='translate(-135.5 -185)')
+                    a.house__appartment3-14-link.house__appartment-link(href="#" data-selling="1" data-selling-position="0 1 1 1" data-section="3" data-floor="14")
+                    svg.house__appartment3-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170.33 77.83')
+                      polygon.cls-1(points='2 0 33 8.67 45.5 6.17 50.33 7.5 76.33 15.33 80.83 16 102.83 20 107.83 20.33 120.67 24.5 124.67 25.83 130.17 30.5 133.67 31.83 158.83 39 159.17 44 170.17 46 170.33 77.83 159.17 76.17 159.5 70.17 133.5 65.17 129.67 62.83 124.83 59.67 120.17 58.33 107.33 55.17 103.67 54 100.5 54 80.33 51 74.67 49.83 45.5 42.5 33.67 44.67 0 36.33 2 0')
+                    a.house__appartment3-13-link.house__appartment-link(href="#" data-selling="1" data-selling-position="0 1 1 1" data-section="3" data-floor="13")
+                    svg.house__appartment3-13-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 169.17 72.67')
+                      polygon.cls-1(points='1.67 0 31.17 7.67 44 5.67 73.67 13.5 79.17 14.33 101.17 17 105.67 17.83 119.17 21.5 122.67 23.17 128.83 26.67 133 28.17 157.83 34.17 157.67 38.67 169.17 41 169 72.67 157.83 70.67 157.67 65.83 132.33 61.5 129 59.83 122 56 118.17 55.67 105.5 52.5 101.67 52.17 78.83 49 73.5 47.67 44.17 41.5 31.67 43.17 0 36.33 1.67 0')
+                    a.house__appartment3-12-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="3" data-floor="12")
+                    svg.house__appartment3-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170.17 67.33')
+                      path.cls-1(d='M136,294.17,167.5,301l13.17-1.67,30,6.17,3.83.67,22.67,3.17,4.5.83,13.5,3.5L258,314l6.83,3.67,4,1,25,5.17s-.5,4.33.33,4.33,11.17,1.5,11.17,1.5l-.17,31.83-11.17-2-.5-3.33-4.5-1.33-20.67-2.5-3.67-.67L258.33,348l-3.33-.33L241.67,345l-4.67-.5-22.17-2.67-5.67-1L180,335.67l-13.17,1-31.67-5.83Z', transform='translate(-135.17 -294.17)')
+                    a.house__appartment3-11-link.house__appartment-link(href="#" data-selling="2" data-selling-position="1 0 0 1" data-section="3" data-floor="11")
+                    svg.house__appartment3-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170.5 62.17')
+                      path.cls-1(d='M136.17,330.83l30.67,5.5L180,335.5l4.83.67L210.17,341l4.5.5,22.5,2.67s4.17.83,4.67,1,13,1.83,13,1.83l3.33.83,6.33,3,3.5.83L293.17,356l.5,3.5,11.83,1.33L304.83,393l-11.5-1.33.17-3.17L268.17,385l-10-3-3.17-.83-17.17-2.67H235l-20.33-2.17h-4.5l-29.5-4.17-13.17.5L135,367.83Z', transform='translate(-135 -330.83)')
+                    a.house__appartment3-10-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 0 1 1" data-section="3" data-floor="10")
+                    svg.house__appartment3-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.5 55.17')
+                      polygon.cls-1(points='1.17 0 31 4.17 44 3 73.67 7.33 78 8.17 99.17 10 105 10.5 119 13 121.83 13.5 128 15 132.17 16.5 157.33 19.5 157.33 23 168.5 23.67 168.5 55.17 157.5 54.33 157.17 52 132.17 49.33 128.33 48.83 123.33 47.67 119 47 105.83 45.17 101.5 44.83 97.5 44.67 78 43 73.33 42.33 44.33 39.33 31 39.83 0 36.5 1.17 0')
+                    a.house__appartment3-9-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="3" data-floor="9")
+                    svg.house__appartment3-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.17 50.17')
+                      polygon.cls-1(points='0.5 0 30.67 3.67 42.33 2.67 47.5 3.17 72.5 6 77.67 6.5 100 8 117.67 10.17 121.83 10.83 128 12.67 156.5 15.17 156.67 17.33 168.17 18.17 167.67 50 157 50.17 157 48.5 131.33 46.83 127.5 45.83 122.17 45 117.83 44.5 105 43.33 100.5 42.83 77.33 41.83 72.83 41.33 47.67 39.5 43.33 38.83 30.17 39.17 0 36.83 0.5 0')
+                    a.house__appartment3-8-link.house__appartment-link(href="#" data-selling="4" data-selling-position="0" data-section="3" data-floor="8")
+                    svg.house__appartment3-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.83 45.33')
+                      polygon.cls-1(points='1 0 30.67 3 43.67 2.17 48.67 2.5 77.83 4.67 101.5 6 105.67 6.33 118.83 7.67 122.33 8.33 128.33 9.33 153.83 11.67 157.83 11.67 157.67 13 168.83 13.33 168.67 45.33 157.33 45.17 157.33 43.67 132.33 43 128 42.5 122.33 41.5 101.5 40.83 43.83 38.33 30.67 38.5 0 37.33 1 0')
+                    a.house__appartment3-7-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 0 1 1" data-section="3" data-floor="7")
+                    svg.house__appartment3-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 169.17 39.67')
+                      polygon.cls-1(points='0 0 30 1.83 43.33 1.67 72.33 2.83 78 3.17 100.83 4.33 118.83 5 123 5.17 129 6 157.67 7.17 157.5 8.5 169.17 8 168.33 39.67 157.83 39.67 131.83 39.33 127.67 39.33 121.83 39.5 105.5 38.83 100.67 39 78.67 38.5 43.83 37.67 30.33 38.33 0.17 37.67 0 0')
+                    a.house__appartment3-6-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 0 1 1" data-section="3" data-floor="6")
+                    svg.house__appartment3-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 168.5 37.17')
+                      polygon.cls-1(points='0.33 0 30.17 0.67 43.17 0.83 73.33 1 78.33 1 100.33 1.33 105.5 1.83 118.67 1.67 121.83 1.83 128.67 1.83 157.67 1.5 157.5 2.67 168.5 2.33 168.17 33.83 156.83 33.5 157 34.67 131.83 35.5 122.67 35.67 118.67 35.83 105.17 35.67 100.83 35.83 78 35.83 44 36.83 31 36.33 0 37.17 0.33 0')
+                    a.house__appartment3-5-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="3" data-floor="5")
+                    svg.house__appartment3-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 167.67 41.49')
+                      path.cls-1(d='M136.17,552.5l29.17-.33,12.17.33,5.17-.33,25.83-.5,4.83-.33h26.83l14,.17,2.83-.17,6.33.17,3.5-.33,21.17-.83,4.17-.17V549s11.5-.83,11.5-.33.17,31.83.17,31.83H292.67l-.17,2.83-25,1.17-4.67-.5-5,1.5-18.33.33-2.83.17H213.5l-5,.67-28.67,1.67L166.67,588l-30.17,2Z', transform='translate(-136.17 -548.51)')
+                    a.house__appartment3-4-link.house__appartment3-4-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="3" data-floor="4")
+                    svg.house__appartment3-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 167.83 46.33')
+                      polygon.cls-1(points='0 9.33 30 8.33 42.33 8.33 72.5 7 76.17 6 99.17 6.17 103.33 6 116.83 5.83 120.33 4.83 126.67 3.67 131.17 4 156 3.17 156.17 0.33 167.83 0 167.33 32 156.5 32.33 156.17 35 127.33 37.17 127.33 38.5 121.33 39 117.17 39.33 104.17 40.17 100.33 40.5 97 41.17 77 41.33 72.17 41.67 51.17 44.5 42.33 44.33 29.5 43.67 1.17 46.33 0 9.33')
+                    a.house__appartment3-3-link.house__appartment3-3-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="3" data-floor="3")
+                    svg.house__appartment3-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170 51.83')
+                      polygon.cls-1(points='0 15.17 30.5 12.67 43.83 13.17 49.17 13.17 74.83 11 79.17 9.83 102.33 9.67 106.33 9 119.33 8.17 123.33 7.33 129.17 6.33 133 6.33 158.5 3.67 158.5 0.67 170 0 169.5 31.83 158.33 32.17 158.5 35.83 154.33 36.5 133.5 39.17 129.17 40.17 124 41.83 119 42.33 106.67 43.5 102.83 43.83 79 45.5 44.33 49.17 31.5 48.33 1.5 51.83 0 15.17')
+                    a.house__appartment3-2-link.house__appartment3-2-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="3" data-floor="2")
+                    svg.house__appartment3-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 170.17 58')
+                      polygon.cls-1(points='0 20.67 31.33 17.33 43.67 18 49.5 18 74.5 15 78.5 14 101.67 12.83 106.33 12.67 119 11.5 123.17 10.5 129 8.83 133 8.17 158.5 5 158.17 1.67 170.17 0 169.67 32.17 158.17 32.83 157.67 36.5 135 40 130.5 39.5 129.33 41.5 126.5 42.5 123.17 43.17 113.83 43.33 110.5 44.5 103.5 44.83 102.67 46.17 99.83 46 78.83 46 74.83 47.67 74.83 50.83 45 54.33 32 53.17 0.17 58 0 20.67')
+                    a.house__appartment3-1-link.house__appartment-link(href="#" data-selling="1" data-selling-position="3" data-section="3" data-floor="1")
+                    svg.house__appartment3-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 169.67 62.67')
+                      path.cls-1(d='M133.5,700.33,164.83,696l12.83,1.17,30.67-3.83.17-2.33,28.67,3.33,57.67-9-15.5-2.5,13.33-3v-3.17l10.5-1.5-.17,29.5-10.67,2.17.5,19.5-55,11.5h-2.67l-25-2.5-.5-8s-30.33,4.17-30.83,4.33-13.67-1.17-13.67-1.17L135,736.67Z', transform='translate(-133.5 -675.17)')
+                    //-- Корпус 4 --------------------------------------------------------------------------------------------------------------------------
+                    a.house__appartment4-17-link.house__appartment-link(href="#" data-selling="4" data-selling-position="0" data-section="4" data-floor="17")
+                    svg.house__appartment4-17-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.38 15.88')
+                      polygon.cls-1(points='0.19 0 5.31 1.88 8.31 1.5 14.19 3.69 18.69 4.5 19.44 4.75 21.75 5.69 22.56 6.19 23.13 7.13 23.69 7.44 28.38 9 28.38 15.88 23.38 14.06 22.44 12.81 18.81 11.5 14.31 10.75 13.5 10.5 8.31 8.69 5.38 9.38 0 7.44 0.19 0')
+                    a.house__appartment4-16-link.house__appartment-link(href="#" data-selling="2" data-selling-position="2" data-section="4" data-floor="16")
+                    svg.house__appartment4-16-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.38 15.13')
+                      polygon.cls-1(points='0.13 0 5.25 1.75 8.5 1.25 14.38 3.44 18.81 4.19 21.94 5.06 22.63 5.56 23.63 6.75 28.25 8.25 28.38 15.13 23.5 13.56 22.38 12.31 18.81 11.25 14.38 10.5 13.63 10.25 8.38 8.63 5.5 9.13 0 7.38 0.13 0')
+                    a.house__appartment4-15-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="15")
+                    svg.house__appartment4-15-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.44 14.56')
+                      polygon.cls-1(points='0.06 0 5.56 1.69 8.69 1.19 14.38 3.19 18.81 3.81 22.44 4.94 23.44 6.06 28.38 7.69 28.44 14.56 23.81 13.19 22.31 11.81 18.88 11 14.38 10.44 8.44 8.63 5.38 9.13 0 7.56 0.06 0')
+                    a.house__appartment4-14-link.house__appartment-link(href="#" data-selling="1" data-selling-position="2 0 1" data-section="4" data-floor="14")
+                    svg.house__appartment4-14-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.56 13.5')
+                      polygon.cls-1(points='0.19 0 5.69 1.5 8.38 1.06 13.56 2.56 18.81 3.31 22.38 4.38 23.88 5.69 28.56 7.06 28.44 13.5 23.5 12.25 22.44 11.38 18.94 10.5 14.31 9.88 8.56 8.44 5.44 8.75 0 7.38 0.19 0')
+                    a.house__appartment4-13-link.house__appartment-link(href="#" data-selling="4" data-selling-position="4" data-section="4" data-floor="13")
+                    svg.house__appartment4-13-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.25 12.75')
+                      path.cls-1(d='M322.38,386.88l5.25,1.38,2.94-.37,6.06,1.44,4.25.5,3.69.94,1.13.81,4.94,1.31-.06,6.75-4.87-1.19-.94-.62-3.75-.94-4.75-.44s-5.31-1.25-5.56-1.25-3.12.38-3.12.38l-5.19-1.12Z' transform='translate(-322.38 -386.88)')
+                    a.house__appartment4-12-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="12")
+                    svg.house__appartment4-12-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.38 12.06')
+                      polygon.cls-1(points='0 0 5.31 1.19 8.5 1 14.19 2.13 18.81 2.63 21.75 3.25 22.44 3.5 23.63 4.25 28.38 5.19 28.31 12.06 23.94 11.31 22.31 10.44 18.94 9.75 14.06 9.31 8.31 8.31 5.38 8.56 0.06 7.63 0 0')
+                    a.house__appartment4-11-link.house__appartment-link(href="#" data-selling="1" data-selling-position="3" data-section="4" data-floor="11")
+                    svg.house__appartment4-11-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.38 11.06')
+                      polygon.cls-1(points='0.19 0 5.44 0.94 8.5 0.75 14.5 1.88 18.81 2.25 19.5 2.38 21.88 2.81 22.5 3 23.69 3.75 28.38 4.38 28.31 11.06 23.5 10.44 22.25 9.81 18.81 9.44 14.25 9 8.56 8.06 5.44 8.38 0 7.63 0.19 0')
+                    a.house__appartment4-10-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="10")
+                    svg.house__appartment4-10-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.31 10.25')
+                      polygon.cls-1(points='0 0 5.38 0.75 8.38 0.5 14.13 1.38 19 1.88 22.25 2.25 23.69 3 28.31 3.56 28.19 10.25 23.69 9.88 22.13 9.19 18.69 9 14.19 8.69 8.44 7.88 5.44 8 0 7.5 0 0')
+                    a.house__appartment4-9-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="9")
+                    svg.house__appartment4-9-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.56 9.44')
+                      polygon.cls-1(points='0.25 0 5.75 0.56 8.5 0.38 14.63 1.13 18.81 1.31 22.44 1.63 24 2.25 28.44 2.69 28.56 9.44 24.19 9.19 22.5 8.63 18.81 8.63 14.38 8.31 8.56 7.81 5.5 7.81 0 7.5 0.25 0')
+                    a.house__appartment4-8-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="8")
+                    svg.house__appartment4-8-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.31 8.63')
+                      polygon.cls-1(points='0 0 5.38 0.31 8.38 0.31 14.25 0.81 19.25 1.06 22.19 1.19 23.69 1.63 28.31 1.81 28.31 8.63 23.88 8.38 22.06 8.25 18.69 8.13 13.81 7.94 8.44 7.75 5.25 7.75 0 7.5 0 0')
+                    a.house__appartment4-7-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="7")
+                    svg.house__appartment4-7-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.44 7.81')
+                      polygon.cls-1(points='0.06 0 5.44 0.19 8.25 0.25 14.13 0.38 18.75 0.63 22.38 0.75 23.63 0.81 28.31 1.06 28.44 7.81 23.94 7.75 22.31 7.63 18.81 7.69 14.31 7.63 8.38 7.5 5.25 7.56 0 7.44 0.06 0')
+                    a.house__appartment4-6-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="6")
+                    svg.house__appartment4-6-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.38 7.56')
+                      polygon.cls-1(points='0 0 5.25 0.06 8.25 0.13 14.44 0.25 18.44 0.31 22.44 0.31 23.63 0.31 28.25 0.31 28.38 7 23.63 7.31 21.81 7.19 18.56 7.25 14.13 7.44 8.44 7.5 5.25 7.44 0 7.56 0 0')
+                    a.house__appartment4-5-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="5")
+                    svg.house__appartment4-5-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.31 8.31')
+                      polygon.cls-1(points='0.06 0.69 5.38 0.63 8.38 0.63 14.31 0.56 18.63 0.44 19.5 0.44 23.75 0.19 28.31 0 28.31 6.81 23.88 7.19 22.38 7.31 18.63 7.5 14.31 7.56 8.38 8 5.19 7.81 0 8.31 0.06 0.69')
+                    a.house__appartment4-4-link.house__appartment-link(href="#" data-selling="2" data-selling-position="0 0 1 1" data-section="4" data-floor="4")
+                    svg.house__appartment4-4-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.38 8.94')
+                      polygon.cls-1(points='0 1.31 5.31 0.94 8.38 1.06 14.38 0.75 18.5 0.69 22.56 0.5 23.81 0.19 28.25 0 28.38 6.75 23.56 7.19 22.19 7.56 18.63 7.69 14.31 7.88 8.56 8.5 5.44 8.38 0.06 8.94 0 1.31')
+                    a.house__appartment4-3-link.house__appartment4-3-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="4" data-floor="3")
+                    svg.house__appartment4-3-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.31 9.75')
+                      polygon.cls-1(points='0 2.13 5.31 1.69 8.38 1.88 13.81 1.38 14.38 1.25 18 1.13 19.25 1.06 21.88 0.94 22.44 0.75 23.63 0.38 28.19 0 28.31 6.81 23.81 7.38 22.38 7.81 19.44 8.19 18.5 8.31 14.44 8.44 13.56 8.56 8.88 9.25 5.25 9.06 0 9.75 0 2.13')
+                    a.house__appartment4-2-link.house__appartment4-2-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="4" data-floor="2")
+                    svg.house__appartment4-2-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 28.31 10.5')
+                      polygon.cls-1(points='0 3.13 5.56 2.31 8.63 2.56 13.69 2.13 14.31 1.81 18.63 1.69 19.69 1.5 22.44 1.06 23.69 0.56 28.19 0 28.31 6.69 25 7.19 24.25 6.81 22.88 7 22.56 7.38 19.31 8.06 18.38 7.88 13.75 8.56 13.56 9.06 8.5 9.94 5.5 9.63 0 10.5 0 3.13')
+                    a.house__appartment4-1-link.house__appartment4-1-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="4" data-floor="1")
+                    svg.house__appartment4-1-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 32.75 11.44')
+                      polygon.cls-1(points='0 3.94 5.56 3 8.44 3.31 9.25 3.25 13.56 2.63 13.56 2.06 19.94 2.63 30.31 1.13 24.81 0.44 28.56 0 28.63 6.06 32.75 7.19 30.69 7.88 28.44 7.38 20.31 9.75 13.75 9.25 9.13 10.56 8.25 10.81 5.63 10.31 0.13 11.44 0 3.94')
+                    //-- Корпус 5 --------------------------------------------------------------------------------------------------------------------------
+                    a.house__appartment5-17-link.house__appartment5-17-link--sell.house__appartment-link(href="#" data-rooms="6" data-selling-position="6" data-selling="0" data-section="5" data-floor="17")
+                    svg.house__appartment5-17-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.29 10.5')
+                      polygon.cls-1(points='0 0.58 3.38 0 7.63 1.67 10.92 1.17 18.67 4.25 35.21 1.83 35.29 8.33 18.67 10.5 10.96 7.63 7.58 8.17 3.54 6.58 0.04 7.08 0 0.58')
+                    a.house__appartment5-16-link.house__appartment5-16-link--sell.house__appartment-link(href="#" data-rooms="6" data-selling-position="6" data-selling="0" data-section="5" data-floor="16")
+                    svg.house__appartment5-16-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.5 10.17')
+                      polygon.cls-1(points='0 0.5 3.5 0 7.54 1.58 11.17 1.08 18.63 3.83 35.38 1.71 35.5 8.13 18.79 10.17 11.08 7.54 7.75 7.96 3.33 6.63 0 7.13 0 0.5')
+                    a.house__appartment5-15-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="15")
+                    svg.house__appartment5-15-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.54 9.75')
+                      polygon.cls-1(points='0 0.46 3.54 0 7.63 1.38 11.29 0.96 18.71 3.46 35.42 1.54 35.54 8.08 18.83 9.75 11.21 7.46 7.63 7.75 3.54 6.63 0 7 0 0.46')
+                    a.house__appartment5-14-link.house__appartment5-14-link--sell.house__appartment-link(href="#" data-rooms="6" data-selling-position="6" data-selling="0" data-section="5" data-floor="14")
+                    svg.house__appartment5-14-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.5 9.29')
+                      polygon.cls-1(points='0 0.33 3.46 0 7.63 1.08 11.04 0.71 18.71 3.08 35.46 1.25 35.5 7.88 18.54 9.29 11 7.29 7.54 7.63 3.5 6.58 0.04 6.92 0 0.33')
+                    a.house__appartment5-13-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="13")
+                    svg.house__appartment5-13-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.5 8.96')
+                      polygon.cls-1(points='0 0.33 3.58 0 7.58 1.04 11.08 0.71 18.54 2.71 35.42 1.17 35.5 7.71 18.92 8.96 11.13 7.17 7.71 7.5 3.42 6.67 0.08 6.92 0 0.33')
+                    a.house__appartment5-12-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="12")
+                    svg.house__appartment5-12-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.5 8.5')
+                      polygon.cls-1(points='0.04 0.33 3.5 0 7.58 0.88 11 0.63 18.54 2.33 35.33 1 35.5 7.46 18.63 8.5 11.04 7.08 7.5 7.33 3.38 6.54 0 6.83 0.04 0.33')
+                    a.house__appartment5-11-link.house__appartment5-11-link--sell.house__appartment-link(href="#" data-rooms="6" data-selling-position="6" data-selling="0" data-section="5" data-floor="11")
+                    svg.house__appartment5-11-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.54 8.17')
+                      polygon.cls-1(points='0 0.17 3.5 0 7.46 0.71 11.13 0.46 18.54 1.92 35.46 0.79 35.54 7.38 18.58 8.17 11 7.04 7.58 7.25 3.33 6.58 0 6.79 0 0.17')
+                    a.house__appartment5-10-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="10")
+                    svg.house__appartment5-10-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.58 7.83')
+                      path.cls-1(d='M351.54,413.58l3.46-.17,4,.58,3.67-.12,7.46,1.13,16.92-.83,0,6.5-16.87.58-7.62-.79h-3.5c-.12,0-4.21-.42-4.21-.42l-3.37.13Z' transform='translate(-351.54 -413.42)')
+                    a.house__appartment5-9-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="9")
+                    svg.house__appartment5-9-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.54 7.5')
+                      polygon.cls-1(points='0 0.17 3.38 0 7.54 0.5 11.04 0.38 18.67 1.21 35.54 0.58 35.5 7.04 18.71 7.5 11.25 6.92 7.54 6.96 3.46 6.63 0.04 6.71 0 0.17')
+                    a.house__appartment5-8-link.house__appartment5-8-link--sell.house__appartment-link(href="#" data-rooms="6" data-selling-position="6" data-selling="0" data-section="5" data-floor="8")
+                    svg.house__appartment5-8-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.63 7.08')
+                      polygon.cls-1(points='0.13 0.08 3.38 0 7.63 0.29 11.08 0.25 18.58 0.83 35.63 0.42 35.54 6.88 18.79 7.08 11.08 6.79 7.63 6.79 3.54 6.67 0 6.71 0.13 0.08')
+                    a.house__appartment5-7-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="7")
+                    svg.house__appartment5-7-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.71 6.83')
+                      path.cls-1(d='M351.38,433.17l7.71.17,3.54,0,7.5.33,8.08,0,8.79-.12,0,6.5-8.79-.08-8,.13-7.5-.21-3.62,0-7.75-.08Z' transform='translate(-351.29 -433.17)')
+                    a.house__appartment5-6-link.house__appartment5-6-link--sell.house__appartment-link(href="#" data-rooms="6" data-selling-position="6" data-selling="0" data-section="5" data-floor="6")
+                    svg.house__appartment5-6-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.67 6.63')
+                      polygon.cls-1(points='0.08 0 3.5 0 7.5 0 11.25 0 18.75 0.08 26.71 0 35.54 0.08 35.67 6.63 26.67 6.54 18.71 6.46 11.29 6.38 7.5 6.58 3.71 6.46 0 6.54 0.08 0')
+                    a.house__appartment5-5-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="5")
+                    svg.house__appartment5-5-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.54 6.92')
+                      path.cls-1(d='M351.42,446.29l3.17,0,4.25-.08,3.79,0,7.42-.17,7.5,0s9.25-.08,9.25,0,0,6.5,0,6.5l-8.54-.08-8.42-.08-7.37.21-3.54,0c-.21,0-4.25.21-4.25.21l-3.42.13Z' transform='translate(-351.29 -446.13)')
+                    a.house__appartment5-4-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="4")
+                    svg.house__appartment5-4-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.58 7.25')
+                      polygon.cls-1(points='0.04 0.54 3.5 0.54 7.63 0.29 11.13 0.29 18.42 0 26.79 0.13 35.58 0.46 35.58 6.92 26.67 6.46 18.54 6.17 11.13 6.88 7.5 6.79 3.54 7.25 0 7 0.04 0.54')
+                    a.house__appartment5-3-link.house__appartment-link(href="#" data-rooms="6" data-selling-position="1 1 1 1 0 1" data-selling="1" data-section="5" data-floor="3")
+                    svg.house__appartment5-3-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.42 7.5')
+                      polygon.cls-1(points='0 0.75 3.25 0.83 7.42 0.5 11 0.54 18.46 0 35.42 0.63 35.38 7.13 18.5 6.21 11 7.13 7.25 7 3.5 7.5 0 7.38 0 0.75')
+                    a.house__appartment5-2-link.house__appartment5-2-link--sell.house__appartment-link(href="#" data-rooms="6" data-selling-position="6" data-selling="0" data-section="5" data-floor="2")
+                    svg.house__appartment5-2-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 35.58 7.79')
+                      polygon.cls-1(points='0.08 1.17 3.5 1.29 7.46 0.79 11.13 0.92 18.67 0 35.54 0.79 35.58 6.71 26.5 6.08 18.63 5.58 15.38 6.33 15.38 6.71 11.17 7.33 7.67 7.21 3.46 7.79 0 7.63 0.08 1.17')
+                    a.house__appartment5-1-link.house__appartment5-1-link--sell.house__appartment-link(href="#" data-rooms="6" data-selling-position="6" data-selling="0" data-section="5" data-floor="1")
+                    svg.house__appartment5-1-img(data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 36.46 9.29')
+                      path.cls-1(d='M351.21,472.42l3.46.13,4-.58,3.83.25,4.17-1.08.71-.21,7.67.67,1.38-.21,9.17.63,1.83-.42,0,.67,0,7.38-1.87.58-5.5-.71-2.58-.71-1.17.79-1.08-.21.21-.83L375,478l-4.75-.33,0,.5-.75,0-.21.42-2,.08v.54l-4.79.88s-3.67-.83-4-.83-2.58.71-2.58.71l-1.42,0h-2.83v-1.29l.08-3.25.42,0-.08-1.21-1-.29Z' transform='translate(-351.04 -470.92)')
+                    //-- Корпус 6 --------------------------------------------------------------------------------------------------------------------------
+                    a.house__appartment6-17-link.house__appartment6-17-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="6" data-floor="17")
+                    svg.house__appartment6-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263 59.25')
+                      path.cls-1(d='M273.75,231.25s28-2.75,28-3.5v-4L340,219.5l15.5-4.25L361,214l16.75-2.5h5.5L405,210l42.75-6.5,4.25,3.25,42-6,42,32.5.25,26.75-42.5-30-41,6-5.25-3-42,5.25-22.25.75L356,243l-15.5,3.5-38,3.75-.25,4.5-29,2.75Z', transform='translate(-273.25 -200.75)')
+                    a.house__appartment6-16-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 0 1 1" data-section="6" data-floor="16")
+                    svg.house__appartment6-16-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 56.75')
+                      polygon.cls-1(points='0 27.75 29 25 29 20.75 62 17.5 67.5 17.5 82.25 13.25 87.75 12.75 103.5 10.25 111 9.5 131.5 8.75 175 2.75 179.25 6.25 220.75 0 263.5 30 263 56.75 220.5 29.75 180 35.25 174.5 32 137.75 36.75 132 36.75 110.75 38 104.75 38.25 87.75 40.5 82.5 40.75 67.75 44.5 28.75 48 28.75 52.25 0.5 54.75 0 27.75')
+                    a.house__appartment6-15-link.house__appartment6-15-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="6" data-floor="15")
+                    svg.house__appartment6-15-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.75 53.75')
+                      polygon.cls-1(points='0.25 24.5 28.25 22 28.5 18.5 62 15.5 67.5 15 82.5 11.25 88 10.75 105.25 8.5 110.75 8.25 137.25 7 173.75 2.25 179.5 5.25 220.5 0 263.75 27.25 263 53.75 221 29.25 179.25 34 174 31.5 137.75 36 131.75 36 111 36.75 104.25 37 87.75 39.25 82 39.25 68.25 42.75 28.5 46 28.5 49.5 0 51.5 0.25 24.5')
+                    a.house__appartment6-14-link.house__appartment6-14-link--14.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="6" data-floor="14")
+                    svg.house__appartment6-14-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.25 51.5')
+                      polygon.cls-1(points='0.5 22.5 28.5 20 29 16.75 62.25 15 67.75 13.25 83.5 10.25 87.75 9.75 104.75 8 110.25 7.5 132.25 7 138 6.75 175.5 2.5 178.5 5.25 220.75 0 263.25 24.25 263.25 51.5 221 29.5 179.75 35 174.75 31.75 138.25 35.25 110.25 36 105 36.5 88.25 38.25 82.25 38.75 68.25 41 29 44 29 47.75 0 49 0.5 22.5')
+                    a.house__appartment6-13-link.house__appartment-link(href="#" data-selling="2" data-selling-position="1 0 0 1" data-section="6" data-floor="13")
+                    svg.house__appartment6-13-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.25 48.25')
+                      polygon.cls-1(points='0 19 28.5 17.5 28.75 14.25 62.5 12 67.75 11.75 82 9 88 8.75 105.25 6.75 110.75 6.5 133.5 5.75 174.5 1.75 179.25 4.25 220.75 0 263.25 21.25 263 48.25 220.75 30 180.25 33.75 175 31.25 132.75 34.5 110.25 35.25 104.25 35.5 88 36.75 82.75 37 68.75 39.5 29 41.75 28.75 44.25 0 46.25 0 19')
+                    a.house__appartment6-12-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 1 0 1" data-section="6" data-floor="12")
+                    svg.house__appartment6-12-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263 45.75')
+                      polygon.cls-1(points='0 16.5 28 15.5 28.25 12.5 61.75 10.5 66.25 10 82.5 7.75 87.75 7.5 104.5 6.25 110 5.75 132.25 5 174 1.75 179 4 219.75 0 263 19 262.5 45.75 220.5 30.25 179.25 33.5 174.25 31 137.75 34 131 34 104.75 34.5 82.5 35.5 67 37.75 29.25 39.75 28.5 42.5 0.25 43.25 0 16.5')
+                    a.house__appartment6-11-link.house__appartment6-11-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="6" data-floor="11")
+                    svg.house__appartment6-11-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 42.25')
+                      polygon.cls-1(points='0.75 13.25 28.25 12.25 29 9.25 68 8 83.5 5.75 110.25 4.25 138.75 3.5 174.75 1.25 179.5 2.5 221 0 263.5 15.25 263.25 42.25 220 29.75 180.5 32.25 174.25 30.25 138 32.5 110.25 33 83.75 34 67.5 36.25 29.5 36.75 28.75 39.25 0 40 0.75 13.25')
+                    a.house__appartment6-10-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 1 0 1" data-section="6" data-floor="10")
+                    svg.house__appartment6-10-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 39.5')
+                      polygon.cls-1(points='0.5 10 28.5 9.5 28.75 7.25 63.75 6.25 68.25 6 83.25 4.5 106 3.5 132.25 2.75 175.5 0.5 180.25 1.75 220.75 0 263.5 11.75 263.5 39.5 221 29.75 179.5 31.25 174.25 29.25 136.75 31.25 110.5 31.5 83.5 32.5 67.5 34 29.5 34.75 29.5 37 0 37 0.5 10')
+                    a.house__appartment6-9-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 0 1 1" data-section="6" data-floor="9")
+                    svg.house__appartment6-9-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 262.75 36.75')
+                      path.cls-1(d='M273.25,444.75l27-.25,1.75-1.75,37.5-1.5,20.5-1,23-.75,26.25-.25,38.5-1.5,4.25,1L492.75,437,536,446.75v27l-42.5-7.25L452,468.25,447.75,467l-37,1.25-27.25.25-27.75.5-16.25.75H301.75s1,1.75.25,1.75l-28.75.25Z', transform='translate(-273.25 -437)')
+                    a.house__appartment6-8-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 1 0 1" data-section="6" data-floor="8")
+                    svg.house__appartment6-8-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.25 33.75')
+                      polygon.cls-1(points='0 5 28.5 4.5 28.75 3.25 67 2.5 88.75 2.5 109.5 1.5 138 1.25 175 0.25 180.25 1.25 220.25 0 263.25 6.5 263 33.75 220.75 29.75 179.5 30.25 174.5 29.5 132.75 30.25 110.25 30.25 83.25 30.25 63.75 30.5 29 30.75 29 32.25 0 32 0 5')
+                    a.house__appartment6-7-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 1 0 1" data-section="6" data-floor="7")
+                    svg.house__appartment6-7-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.75 30.75')
+                      path.cls-1(d='M272.25,498.75l28.75-.5,38.5-.75,17.25-.25H382.5l27-.75h38.25l4.75.25,40-.75,43.5,4v26.75l-43-.5-40.5-.5h-5.25l-42.75-.25-21.5-.25H355.5l-15.5.25-38-.5-29.5.5Z', transform='translate(-272.25 -496)')
+                    a.house__appartment6-6-link.house__appartment-link(href="#" data-selling="2" data-selling-position="1 0 0 1" data-section="6" data-floor="6")
+                    svg.house__appartment6-6-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 30.25')
+                      polygon.cls-1(points='0 0.5 29.25 0.25 66.75 0 83 0.25 104.75 0.25 110.75 0.25 131.5 0 175.25 0.5 179 1 220.5 0.75 263.5 1.5 263.5 27.75 220.75 30.25 179.5 29.25 174.25 29.75 132 29 110.25 28.75 105.5 29 83.5 28.5 67.75 28.25 30.25 27.75 0 26.75 0 0.5')
+                    a.house__appartment6-5-link.house__appartment-link(href="#" data-selling="2" data-selling-position="1 0 0 1" data-section="6" data-floor="5")
+                    svg.house__appartment6-5-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 33.25')
+                      path.cls-1(d='M272.5,552l29,.5,38.5,1.25,19.75.25,23.75.25,26-.25,37.25.75h5.5L493,555l43-1.75v27l-42.5,5-41.5-1.5-5.25.25-35.5-.75h-6l-22-.25-27-1-16-1-38.75-.75L273,578.5Z', transform='translate(-272.5 -552)')
+                    a.house__appartment6-4-link.house__appartment-link(href="#" data-selling="2" data-selling-position="1 0 0 1" data-section="6" data-floor="4")
+                    svg.house__appartment6-4-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 263.5 35.5')
+                      polygon.cls-1(points='0 0 28.25 1 67 2.5 88.25 3.5 110.5 4 136.25 4.5 174.75 5.5 179.5 4.5 220 6.25 263.5 1.25 263.5 28.5 220.75 35.5 179.5 33.5 174.75 34.5 138 33.25 111 32.75 83.25 31.5 67.5 30.5 29 29 29.25 27 0 26.75 0 0')
+                    a.house__appartment6-3-link.house__appartment-link(href="#" data-selling="1" data-selling-position="1 1 0 1" data-section="6" data-floor="3")
+                    svg.house__appartment6-3-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 264.5 38')
+                      path.cls-1(d='M272,606l29,.25V608l34.25,1h4.5L355,610l22.25,1.25,27,.25,6.75.25L447,613l5.75-.5,40,1.5,43-7.5-.25,27L493,644l-41.25-2.5L447.5,643l-36.75-1.5-7-.75-21.5-.5-22.5-1s-5-1.25-5.75-1-14-.75-14-.75L301.75,635l-.75-1.75-29.75-.5Z', transform='translate(-271.25 -606)')
+                    a.house__appartment6-2-link.house__appartment6-2-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="6" data-floor="2")
+                    svg.house__appartment6-2-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 264.5 40.75')
+                      path.cls-1(d='M271.75,632.75l28.25.75v1.75l38.75,2,15.75,1.5,5,.25,23.25,1,26.75,1.25s35.25,1.5,36.75,1.5,5.75-1.5,5.75-1.5l40.5,2.5,43.25-10.25-.25,26.75L492.75,673.5l-40-2.25-6.25.25-36.25-2.25L334.5,663l-4,1.5L301.25,663l.5-2.25L275,659.5v-2l-3.25-.25,1-10.75h-1.5Z', transform='translate(-271.25 -632.75)')
+                    a.house__appartment6-1-link.house__appartment6-1-link--sell.house__appartment-link(href="#" data-selling="0" data-selling-position="4" data-section="6" data-floor="1")
+                    svg.house__appartment6-1-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 264.16 39.25')
+                      path.cls-1(d='M275,659.25l25.75,1s-2.25,3.25-.5,3.25,30.5.5,30.5.5l-7,3-.75,3.75,71.5,5.5,4-.75L409,673l.25-3.5,38,2.25s4-1,4.75-1.25,40.5,3,40.5,3l43-13.25s.5,26.75-.25,27-14,5.5-14,5.5l.5-16.75L493,674.5l-41.5-2.75L420.25,671l-10,2.25L382,680l-11.75,3.5-.25,15-19.75-2.25-32-3.75-17.5-.75.25-3.25-27-1.75-.25-3.5-2.25-.5.75-19,2.75-1Z', transform='translate(-271.5 -659.25)')
       footer.page-footer
         .footer-content
 

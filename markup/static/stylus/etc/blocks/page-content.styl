@@ -1,2 +1,20 @@
 .page-content__description
-  overflow-x scroll
+  flex-grow 1
+  overflow-x: scroll;
+  overflow-y scroll
+  width 70%
+  margin-left 315px
+
+@media(max-width 1570px)
+  .page-content
+    position relative
+    
+@media(max-width 1366px)
+  .page-content__description
+    margin-left 0
+    width 100%
+    
+@media(max-width 1024px)
+  .page-content__description
+    display: flex;
+    flex-direction: column;

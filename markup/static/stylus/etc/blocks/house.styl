@@ -20,9 +20,6 @@
         color #ffffff
   &--hidden
     opacity 0
-    
-.house__content
-  position relative
   
 .house__popup
   center-absolute()
@@ -367,7 +364,7 @@
     color #ffffff
     
 .house__preview-text
-  font-family 'SF UI Display'
+  font-family 'Sf-Ui-Display'
   font-size 13px
   line-height 15px
   font-weight 700
@@ -376,17 +373,9 @@
   transition 0.2s ease
   &--white
     color #ffffff
-
+    
 .house__img-wrap
-  width 1920px
-  height 1110px
- 
-  background-image url('%=static=%content/main-img.jpg')
-  background-repeat no-repeat
-  background-size 1920px 1110px
-  
-.house__img
-  width 1612px
+  position relative
 
 .house__appartment1-17-link,
 .house__appartment1-16-link,
@@ -406,120 +395,105 @@
 .house__appartment1-2-link,
 .house__appartment1-1-link
   position: absolute;
-  top: 146px;
-  left: 230px;
+  bottom: 82%;
+  right: 66%;
   z-index: 20;
   
   display: block;
-  width: 368px;
-  height: 50px;
+  width: 22.2%;
+  height: 4.3%;
   
   transform: rotateZ(20deg);
   &:hover ~ .house__appartment1-17-img
     opacity 0.6
     
 .house__appartment1-16-link
-  top: 210px;
+  bottom 77%
   transform: rotateZ(18deg);
-  height: 36px;
   &:hover ~ .house__appartment1-16-img
     opacity 0.6
     
 .house__appartment1-15-link
-  top: 263px;
+  bottom: 72.3%;
   transform: rotateZ(17deg);
-  height: 36px;
   &:hover ~ .house__appartment1-15-img
     opacity 0.6
     
 .house__appartment1-14-link
-  top: 315px;
-  transform: rotateZ(14deg);
-  height: 36px;
+  bottom: 67.6%;
+  transform: rotateZ(16deg);
   &:hover ~ .house__appartment1-14-img
     opacity 0.6
     
 .house__appartment1-13-link
-  top: 373px;
-  transform: rotateZ(10deg);
-  height: 37px;
+  bottom: 63%;
+  transform: rotateZ(15deg);
   &:hover ~ .house__appartment1-13-img
     opacity 0.6
     
 .house__appartment1-12-link
-  top: 418px;
-  transform: rotateZ(11deg);
-  height: 40px;
+  bottom: 58.3%;
+  transform: rotateZ(12deg);
   &:hover ~ .house__appartment1-12-img
     opacity 0.6
     
 .house__appartment1-11-link
-  top: 469px;
-  height: 42px;
-  transform: rotateZ(10deg);
+  bottom: 53.7%;
+  transform: rotateZ(11deg);
   &:hover ~ .house__appartment1-11-img
     opacity 0.6
     
 .house__appartment1-10-link
-  top: 522px;
-  height: 45px;
-  transform: rotateZ(8deg);
+  bottom: 48.8%;
+  transform: rotateZ(9deg);
   &:hover ~ .house__appartment1-10-img
     opacity 0.6
 
 .house__appartment1-9-link
-  top: 577px;
-  height: 45px;
+  bottom: 44%;
   transform: rotateZ(5deg);
   &:hover ~ .house__appartment1-9-img
     opacity 0.6
     
 .house__appartment1-8-link
-  top: 628px;
-  height: 45px;
-  transform: rotateZ(4deg);
+  bottom: 39.2%;
+  transform: rotateZ(3deg);
   &:hover ~ .house__appartment1-8-img
     opacity 0.6
     
 .house__appartment1-7-link
-  top: 681px;
-  height: 43px;
-  transform: rotateZ(2deg);
+  bottom: 34.7%;
+  transform: rotateZ(3deg);
   &:hover ~ .house__appartment1-7-img
     opacity 0.6
     
 .house__appartment1-6-link
-  top: 733px;
-  transform: rotateZ(0deg);
-  height: 43px;
+  bottom: 30.3%;
+  transform: rotateZ(3deg);
   &:hover ~ .house__appartment1-6-img
     opacity 0.6
     
 .house__appartment1-5-link
-  top: 786px;
+  bottom: 25.5%;
   transform: rotateZ(-2deg);
-  height: 43px;
   &:hover ~ .house__appartment1-5-img
     opacity 0.6
     
 .house__appartment1-4-link
-  top: 840px;
-  transform: rotateZ(-4deg);
-  height: 43px;
+  bottom: 21%;
+  transform: rotateZ(-3deg);
   &:hover ~ .house__appartment1-4-img
     opacity 0.6
     
 .house__appartment1-3-link
-  top: 892px;
-  transform: rotateZ(-6deg);
-  height: 43px;
+  bottom: 16.3%;
+  transform: rotateZ(-5deg);
   &:hover ~ .house__appartment1-3-img
     opacity 0.6
     
 .house__appartment1-2-link
-  top: 946px;
-  transform: rotateZ(-8deg);
-  height: 43px;
+  bottom: 11.9%;
+  transform: rotateZ(-7deg);
   &:hover ~ .house__appartment1-2-img
     opacity 0.6
   &--sell
@@ -529,9 +503,8 @@
       opacity 0.6
     
 .house__appartment1-1-link
-  top: 1000px;
-  height: 70px;
-  transform: rotateZ(-10deg);
+  bottom: 7%;
+  transform: rotateZ(-11deg);
   &:hover ~ .house__appartment1-1-img
     opacity 0.6
   &--sell
@@ -558,85 +531,103 @@
 .house__appartment1-2-img,
 .house__appartment1-1-img
   position absolute
-  top: 68px;
-  left: 105px;
-  width: 524px;
-  height 239px
+  right: 67.4%;
+  bottom: 69.8%;
+  width: 27.17%;
+  height: 26.68%;
   fill #20c1e6
   opacity 0
   
   transition 0.2s ease
   
 .house__appartment1-16-img
-  left: 104px;
-  top: 121px;
-  width: 521px;
+  bottom: 65.1%;
+  width: 26.8%;
+  right: 67.7%;
   
 .house__appartment1-15-img
-  top: 173px;
-  width: 518px;
+  bottom: 60.5%;
+  width: 26.8%;
+  right: 67.7%;
   
 .house__appartment1-14-img  
-  top: 222px;
-  width: 514px;
+  bottom: 56%;
+  width: 26.8%;
+  right: 67.7%;
+
   
 .house__appartment1-13-img  
-  top: 275px;
-  width: 517px;
+  bottom: 51.3%;
+  width: 26.8%;
+  right: 67.7%;
   
 .house__appartment1-12-img  
-  top: 325px;
-  width: 517px;
+  bottom: 46.7%;
+  width: 26.8%;
+  right: 67.7%;
+
   
 .house__appartment1-11-img
-  top: 376px;
-  width: 517px;
+  bottom: 42.1%;
+  width: 26.8%;
+  right: 67.7%;
+
   
 .house__appartment1-10-img
-  top: 427px;
-  width: 517px;
+  bottom: 37.5%;
+  width: 26.8%;
+  right: 67.7%;
+
   
 .house__appartment1-9-img
-  top: 478px;
-  width: 517px;
+  bottom: 33%;
+  width: 26.8%;
+  right: 67.7%;
+
   
 .house__appartment1-8-img
-  top: 529px;
-  width: 517px;
+  bottom: 28.4%;
+  width: 26.9%;
+  right: 67.7%;
+
   
 .house__appartment1-7-img
-  top: 580px;
-  width: 517px;
+  bottom: 23.8%;
+  width: 26.9%;
+  right: 67.7%;
+
   
 .house__appartment1-6-img
-  top: 636px;
-  left: 103px;
-  width: 517px;
+  bottom: 18.9%;
+  width: 26.95%;
+  right: 67.7%;
+
   
 .house__appartment1-5-img
-  top: 689px;
-  left: 103px;
-  width: 517px;
+  bottom: 14.1%;
+  width: 26.95%;
+  right: 67.7%;
   
 .house__appartment1-4-img
-  top: 740px;
-  left: 103px;
-  width: 517px;
+  bottom: 9.6%;
+  width: 26.99%;
+  right: 67.7%;
   
 .house__appartment1-3-img
-  top: 792px;
-  left: 103px;
-  width: 517px;
+  bottom: 5%;
+  width: 26.999%;
+  right: 67.7%;
   
 .house__appartment1-2-img
-  top: 842px;
-  left: 103px;
-  width: 517px;
+  bottom: 0.5%;
+  width: 27%;
+  right: 67.7%;
   
 .house__appartment1-1-img
-  top: 898px;
-  left: 98px;
-  width: 520px;
+  bottom: 2.6%;
+  width: 27.2%;
+  right: 67.7%;
+  height: 12%;
   
   
 .house__appartment2-17-link,
@@ -657,10 +648,10 @@
 .house__appartment2-2-link,
 .house__appartment2-1-link
   position: absolute;
-  top: 285px;
-  left: 626px;
-  width: 246px;
-  height: 32px;
+  right: 55%;
+  bottom: 71.4%;
+  width: 12%;
+  height: 3.2%;
   transform: rotateZ(18deg);
   z-index: 20;
   display: block;
@@ -668,37 +659,37 @@
     opacity 0.6
     
 .house__appartment2-16-link
-  top: 325px;
+  bottom: 67.9%;
   transform: rotateZ(17deg);
   &:hover ~ .house__appartment2-16-img
     opacity 0.6
     
 .house__appartment2-15-link
-  top: 365px;
+  bottom: 64.4%;
   transform: rotateZ(17deg);
   &:hover ~ .house__appartment2-15-img
     opacity 0.6
     
 .house__appartment2-14-link
-  top: 407px;
+  bottom: 60.6%;
   transform: rotateZ(15deg);
   &:hover ~ .house__appartment2-14-img
     opacity 0.6
     
 .house__appartment2-13-link
-  top: 448px;
+  bottom: 56.9%;
   transform: rotateZ(13deg);
   &:hover ~ .house__appartment2-13-img
     opacity 0.6
     
 .house__appartment2-12-link
-  top: 490px;
+  bottom: 53.2%;
   transform: rotateZ(11deg);
   &:hover ~ .house__appartment2-12-img
     opacity 0.6
     
 .house__appartment2-11-link
-  top: 530px;
+  bottom: 49.5%;
   transform: rotateZ(9deg);
   &:hover ~ .house__appartment2-11-img
     opacity 0.6
@@ -709,55 +700,55 @@
       opacity 0.6
     
 .house__appartment2-10-link
-  top: 572px;
+  bottom: 45.7%;
   transform: rotateZ(7deg);
   &:hover ~ .house__appartment2-10-img
     opacity 0.6
     
 .house__appartment2-9-link
-  top: 614px;
+  bottom: 42.1%;
   transform: rotateZ(5deg);
   &:hover ~ .house__appartment2-9-img
     opacity 0.6
     
 .house__appartment2-8-link
-  top: 654px;
+  bottom: 38.4%;
   transform: rotateZ(4deg);
   &:hover ~ .house__appartment2-8-img
     opacity 0.6
     
 .house__appartment2-7-link
-  top: 695px;
+  bottom: 34.7%;
   transform: rotateZ(2deg);
   &:hover ~ .house__appartment2-7-img
     opacity 0.6
     
 .house__appartment2-6-link
-  top: 736px;
+  bottom: 31%;
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment2-6-img
     opacity 0.6
     
 .house__appartment2-5-link
-  top: 779px;
+  bottom: 27.2%;
   transform: rotateZ(-2deg);
   &:hover ~ .house__appartment2-5-img
     opacity 0.6
     
 .house__appartment2-4-link
-  top: 821px;
+  bottom: 23.6%;
   transform: rotateZ(-4deg);
   &:hover ~ .house__appartment2-4-img
     opacity 0.6
     
 .house__appartment2-3-link
-  top: 862px;
+  bottom: 20.2%;
   transform: rotateZ(-5deg);
   &:hover ~ .house__appartment2-3-img
     opacity 0.6
     
 .house__appartment2-2-link
-  top: 903px;
+  bottom: 16.2%;
   transform: rotateZ(-7deg);
   &:hover ~ .house__appartment2-2-img
     opacity 0.6
@@ -768,9 +759,8 @@
       opacity 0.6
     
 .house__appartment2-1-link
-  top: 945px;
+  bottom: 12%;
   transform: rotateZ(-7deg);
-  height: 37px;
   &:hover ~ .house__appartment2-1-img
     opacity 0.6
     
@@ -792,61 +782,61 @@
 .house__appartment2-2-img,
 .house__appartment2-1-img
   position absolute
-  top: 228px;
-  left: 623px;
-  width: 236px;
-  height: 152px;
+  bottom: 66.9%;
+  height: 12%;
+  right: 55.5%;
+  width: 12%;
   fill: #20c1e6;
   opacity: 0;
   transition: 0.2s ease;
   
 .house__appartment2-16-img
-  top: 268px;
+  bottom: 63.2%;
   
 .house__appartment2-15-img
-  top: 309px;
+  bottom: 59.6%;
   
 .house__appartment2-14-img
-  top: 349px;
+  bottom: 55.9%;
   
 .house__appartment2-13-img
-  top: 390px;
+  bottom: 52.3%;
   
 .house__appartment2-12-img
-  top: 431px;
+  bottom: 48.6%;
   
 .house__appartment2-11-img
-  top: 471px;
+  bottom: 45%;
   
 .house__appartment2-10-img
-  top: 510px;
+  bottom: 41.3%;
   
 .house__appartment2-9-img
-  top: 552px;
+  bottom: 37.7%;
   
 .house__appartment2-8-img
-  top: 593px;
+  bottom: 33.9%
   
 .house__appartment2-7-img
-  top: 634px;
+  bottom: 30.3%;
   
 .house__appartment2-6-img
-  top: 677px;
+  bottom: 26.5%;
   
 .house__appartment2-5-img
-  top: 720px;
+  bottom: 22.7%;
   
 .house__appartment2-4-img
-  top: 761px;
+  bottom: 19%;
   
 .house__appartment2-3-img
-  top: 801px;
+  bottom: 15.4%;
   
 .house__appartment2-2-img
-  top: 842px;
+  bottom: 11.7%;
   
 .house__appartment2-1-img
-  top: 883px;
+  bottom: 8%;
   
 .house__appartment3-17-link,
 .house__appartment3-16-link,
@@ -866,10 +856,10 @@
 .house__appartment3-2-link,
 .house__appartment3-1-link
   position: absolute;
-  top: 358px;
-  left: 860px;
-  width: 170px;
-  height: 27px;
+  bottom: 65.4%;
+  right: 46%;
+  width: 9%;
+  height: 2.5%;
   
   z-index: 20;
   display: block;
@@ -878,7 +868,7 @@
     opacity 0.6
     
 .house__appartment3-16-link
-  top: 392px;
+  bottom: 62.4%;
   &:hover ~ .house__appartment3-16-img
     opacity 0.6
   &--sell
@@ -888,73 +878,73 @@
       opacity 0.6
     
 .house__appartment3-15-link
-  top: 426px;
+  bottom: 59.3%;
   transform: rotateZ(14deg);
   &:hover ~ .house__appartment3-15-img
     opacity 0.6
     
 .house__appartment3-14-link
-  top: 460px;
+  bottom: 56.2%;
   transform: rotateZ(14deg);
   &:hover ~ .house__appartment3-14-img
     opacity 0.6
     
 .house__appartment3-13-link
-  top: 496px;
+  bottom: 53.1%;
   transform: rotateZ(14deg);
   &:hover ~ .house__appartment3-13-img
     opacity 0.6
     
 .house__appartment3-12-link
-  top: 530px;
+  bottom: 50.1%;
   transform: rotateZ(11deg);
   &:hover ~ .house__appartment3-12-img
     opacity 0.6
     
 .house__appartment3-11-link
-  top: 565px;
+  bottom: 46.9%;
   transform: rotateZ(9deg);
   &:hover ~ .house__appartment3-11-img
     opacity 0.6
     
 .house__appartment3-10-link
-  top: 600px;
+  bottom: 43.9%;
   transform: rotateZ(7deg);
   &:hover ~ .house__appartment3-10-img
     opacity 0.6
     
 .house__appartment3-9-link
-  top: 634px;
+  bottom: 40.6%;
   transform: rotateZ(5deg);
   &:hover ~ .house__appartment3-9-img
     opacity 0.6
     
 .house__appartment3-8-link
-  top: 670px;
+  bottom: 37.6%;
   transform: rotateZ(5deg);
   &:hover ~ .house__appartment3-8-img
     opacity 0.6
     
 .house__appartment3-7-link
-  top: 705px;
+  bottom: 34.4%;
   transform: rotateZ(2deg);
   &:hover ~ .house__appartment3-7-img
     opacity 0.6
     
 .house__appartment3-6-link
-  top: 739px;
+  bottom: 31.4%;
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment3-6-img
     opacity 0.6
     
 .house__appartment3-5-link
-  top: 773px;
+  bottom: 28.4%;
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment3-5-img
     opacity 0.6
     
 .house__appartment3-4-link
-  top: 809px;
+  bottom: 25.1%;
   transform: rotateZ(-3deg);
   &:hover ~ .house__appartment3-4-img
     opacity 0.6
@@ -965,7 +955,7 @@
       opacity 0.6
     
 .house__appartment3-3-link
-  top: 842px;
+  bottom: 22.3%;
   transform: rotateZ(-5deg);
   &:hover ~ .house__appartment3-3-img
     opacity 0.6
@@ -976,7 +966,7 @@
       opacity 0.6
     
 .house__appartment3-2-link
-  top: 877px;
+  bottom: 19.2%;
   transform: rotateZ(-6deg);
   &:hover ~ .house__appartment3-2-img
     opacity 0.6
@@ -987,9 +977,8 @@
       opacity 0.6
     
 .house__appartment3-1-link
-  top: 914px;
+  bottom: 15.5%;
   transform: rotateZ(-6deg);
-  height: 32px;
   &:hover ~ .house__appartment3-1-img
     opacity 0.6
     
@@ -1011,61 +1000,61 @@
 .house__appartment3-2-img,
 .house__appartment3-1-img
   position: absolute;
-  top: 322px;
-  left: 856px;
-  width: 172px;
-  height: 108px;
+  bottom: 61.8%;
+  right: 46.5%;
+  width: 8.5%;
+  height: 8.8%;
   fill: #20c1e6;
   opacity: 0;
   transition: 0.2s ease;
   
 .house__appartment3-16-img
-  top: 356px;
+  bottom: 58.8%;
   
 .house__appartment3-15-img
-  top: 390px;
+  bottom: 55.8%;
   
 .house__appartment3-14-img
-  top: 424px;
+  bottom: 52.8%;
   
 .house__appartment3-13-img
-  top: 458px;
+  bottom: 49.7%;
   
 .house__appartment3-12-img
-  top: 490px;
+  bottom: 46.7%;
   
 .house__appartment3-11-img
-  top: 526px;
+  bottom: 43.6%;
 
 .house__appartment3-10-img
-  top: 560px;
+  bottom: 40.6%
   
 .house__appartment3-9-img
-  top: 594px;
+  bottom: 37.5%;
   
 .house__appartment3-8-img
-  top: 628px;
+  bottom: 34.5%
   
 .house__appartment3-7-img
-  top: 662px;
+  bottom: 31.5%
   
 .house__appartment3-6-img
-  top: 698px;
+  bottom: 28.1%;
   
 .house__appartment3-5-img
-  top: 733px;
+  bottom: 25%;
   
 .house__appartment3-4-img
-  top: 768px;
+  bottom: 22%
   
 .house__appartment3-3-img
-  top: 801px;
+  bottom: 18.9%;
   
 .house__appartment3-2-img
-  top: 835px;
+  bottom: 15.8%;
   
 .house__appartment3-1-img
-  top: 871px;
+  bottom: 12.7%;
   
 .house__appartment4-17-link,
 .house__appartment4-16-link,
@@ -1085,10 +1074,10 @@
 .house__appartment4-2-link,
 .house__appartment4-1-link
   position: absolute;
-  top: 413px;
-  left: 1029px;
-  width: 125px;
-  height: 24px;
+  bottom: 60.8%;
+  right: 40%;
+  width: 6%;
+  height: 2.3%;
   z-index: 20;
   display: block;
   transform: rotateZ(16deg);
@@ -1096,83 +1085,83 @@
     opacity 0.6
     
 .house__appartment4-16-link
-  top: 441px;
+  bottom: 58.2%;
   &:hover ~ .house__appartment4-16-img
     opacity 0.6
     
 .house__appartment4-15-link
-  top: 470px;
+  bottom: 55.4%
   &:hover ~ .house__appartment4-15-img
     opacity 0.6
     
 .house__appartment4-14-link
-  top: 500px;
+  bottom: 52.9%
   transform: rotateZ(13deg);
   &:hover ~ .house__appartment4-14-img
     opacity 0.6
     
 .house__appartment4-13-link
-  top: 530px;
+  bottom: 50.3%
   transform: rotateZ(13deg);
   &:hover ~ .house__appartment4-13-img
     opacity 0.6
     
 .house__appartment4-12-link
-  top: 560px;
+  bottom: 47.6%
   transform: rotateZ(11deg);
   &:hover ~ .house__appartment4-12-img
     opacity 0.6
     
 .house__appartment4-11-link
-  top: 590px;
+  bottom: 44.9%
   transform: rotateZ(8deg);
   &:hover ~ .house__appartment4-11-img
     opacity 0.6
     
 .house__appartment4-10-link
-  top: 620px;
+  bottom: 42.2%
   transform: rotateZ(6deg);
   &:hover ~ .house__appartment4-10-img
     opacity 0.6
     
 .house__appartment4-9-link
-  top: 650px;
+  bottom: 39.6%
   transform: rotateZ(6deg);
   &:hover ~ .house__appartment4-9-img
     opacity 0.6
     
 .house__appartment4-8-link
-  top: 680px;
+  bottom: 36.9%
   transform: rotateZ(3deg);
   &:hover ~ .house__appartment4-8-img
     opacity 0.6
     
 .house__appartment4-7-link
-  top: 710px;
+  bottom: 34.2%
   transform: rotateZ(1deg);
   &:hover ~ .house__appartment4-7-img
     opacity 0.6
     
 .house__appartment4-6-link
-  top: 740px;
+  bottom: 31.6%
   transform: rotateZ(1deg);
   &:hover ~ .house__appartment4-6-img
     opacity 0.6
     
 .house__appartment4-5-link
-  top: 770px;
+  bottom: 28.9%
   transform: rotateZ(-1deg);
   &:hover ~ .house__appartment4-5-img
     opacity 0.6
     
 .house__appartment4-4-link
-  top: 800px;
+  bottom: 26.3%
   transform: rotateZ(-3deg);
   &:hover ~ .house__appartment4-4-img
     opacity 0.6
     
 .house__appartment4-3-link
-  top: 830px;
+  bottom: 23.6%
   transform: rotateZ(-4deg);
   &:hover ~ .house__appartment4-3-img
     opacity 0.6
@@ -1183,7 +1172,7 @@
       opacity 0.6
     
 .house__appartment4-2-link
-  top: 858px;
+  bottom: 21.1%
   transform: rotateZ(-6deg);
   &:hover ~ .house__appartment4-2-img
     opacity 0.6
@@ -1194,9 +1183,8 @@
       opacity 0.6
     
 .house__appartment4-1-link
-  top: 890px;
+  bottom: 18.1%
   transform: rotateZ(-7deg);
-  height: 32px;
   &:hover ~ .house__appartment4-1-img
     opacity 0.6
   &--sell
@@ -1223,62 +1211,107 @@
 .house__appartment4-2-img,
 .house__appartment4-1-img
   position: absolute;
-  top: 392px;
-  left: 1024px;
-  width: 124px;
-  height: 67px;
+  bottom: 58.9%;
+  right: 38%;
+  height: 6%;
+  width: 11%;
   fill: #20c1e6;
   opacity: 0;
   transition: 0.2s ease;
   
 .house__appartment4-16-img
-  top: 422px;
+  bottom: 56.1%;
   
 .house__appartment4-15-img
-  top: 450px;
+  bottom: 53.7%;
+  height: 5.5%;
+  width: 10.5%;
+  right: 38.2%;
   
 .house__appartment4-14-img
-  top: 480px;
+  bottom: 51.2%;
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   transform: rotateZ(-1deg);
   
 .house__appartment4-13-img
-  top: 510px;
+  bottom: 48.5%;
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-12-img
-  top: 540px;
+  bottom: 45.8%;
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-11-img
-  top: 570px;
+  bottom: 43.1%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-10-img
-  top: 600px;
+  bottom: 40.4%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-9-img
-  top: 630px;
+  bottom: 37.8%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-8-img
-  top: 657px;
+  bottom: 35.1%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-7-img
-  top: 687px;
+  bottom: 32.4%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-6-img
-  top: 718px;
+  bottom: 29.7%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-5-img
-  top: 748px;
+  bottom: 27%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-4-img
-  top: 778px;
+  bottom: 24.2%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-3-img
-  top: 807px;
+  bottom: 21.6%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-2-img
-  top: 836px;
+  bottom: 18.9%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment4-1-img
-  top: 866px;
+  bottom: 16.3%
+  height: 5.5%;
+  width: 6.2%;
+  right: 40.3%;
   
 .house__appartment5-17-link,
 .house__appartment5-16-link,
@@ -1298,12 +1331,12 @@
 .house__appartment5-2-link,
 .house__appartment5-1-link
   position: absolute;
-  top: 447px;
-  width: 130px;
-  left: 1165px;
+  bottom: 58.2%;
+  right: 32.5%;
+  width: 7%;
+  height: 2%;
   z-index: 20;
   display: block;
-  height: 20px;
   transform: rotateZ(3deg);
   &:hover ~ .house__appartment5-17-img
     opacity 0.6
@@ -1314,7 +1347,7 @@
       opacity 0.6
     
 .house__appartment5-16-link
-  top: 476px;
+  bottom: 55.5%
   &:hover ~ .house__appartment5-16-img
     opacity 0.6
   &--sell
@@ -1324,12 +1357,12 @@
       opacity 0.6
     
 .house__appartment5-15-link
-  top: 505px;
+  bottom: 53.3%
   &:hover ~ .house__appartment5-15-img
     opacity 0.6
     
 .house__appartment5-14-link
-  top: 530px;
+  bottom: 50.8%
   &:hover ~ .house__appartment5-14-img
     opacity 0.6
   &--sell
@@ -1339,17 +1372,17 @@
       opacity 0.6
     
 .house__appartment5-13-link
-  top: 556px;
+  bottom: 48.4%
   &:hover ~ .house__appartment5-13-img
     opacity 0.6
     
 .house__appartment5-12-link
-  top: 582px;
+  bottom: 46.1%
   &:hover ~ .house__appartment5-12-img
     opacity 0.6
     
 .house__appartment5-11-link
-  top: 608px;
+  bottom: 43.6%
   &:hover ~ .house__appartment5-11-img
     opacity 0.6
   &--sell
@@ -1359,18 +1392,18 @@
       opacity 0.6
     
 .house__appartment5-10-link
-  top: 634px;
+  bottom: 41.4%
   &:hover ~ .house__appartment5-10-img
     opacity 0.6
     
 .house__appartment5-9-link
-  top: 661px;
+  bottom: 38.9%
   transform: rotateZ(1deg);
   &:hover ~ .house__appartment5-9-img
     opacity 0.6
     
 .house__appartment5-8-link
-  top: 687px;
+  bottom: 36.6%
   transform: rotateZ(1deg);
   &:hover ~ .house__appartment5-8-img
     opacity 0.6
@@ -1381,13 +1414,13 @@
       opacity 0.6
     
 .house__appartment5-7-link
-  top: 714px;
+  bottom: 34.3%
   transform: rotateZ(1deg);
   &:hover ~ .house__appartment5-7-img
     opacity 0.6
     
 .house__appartment5-6-link
-  top: 740px;
+  bottom: 31.8%
   transform: rotateZ(1deg);
   &:hover ~ .house__appartment5-6-img
     opacity 0.6
@@ -1398,25 +1431,25 @@
       opacity 0.6
     
 .house__appartment5-5-link
-  top: 766px;
+  bottom: 29.4%
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment5-5-img
     opacity 0.6
     
 .house__appartment5-4-link
-  top: 792px;
+  bottom: 27.1%
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment5-4-img
     opacity 0.6
     
 .house__appartment5-3-link
-  top: 819px;
+  bottom: 24.7%
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment5-3-img
     opacity 0.6
     
 .house__appartment5-2-link
-  top: 845px;
+  bottom: 22.4%
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment5-2-img
     opacity 0.6
@@ -1427,7 +1460,7 @@
       opacity 0.6
     
 .house__appartment5-1-link
-  top: 875px;
+  bottom: 19.6%
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment5-1-img
     opacity 0.6
@@ -1455,61 +1488,61 @@
 .house__appartment5-2-img,
 .house__appartment5-1-img
   position: absolute;
-  top: 430px;
-  left: 1145px;
-  width: 152px;
-  height: 53px;
+  bottom: 57.1%;
+  right: 32.4%;
+  width: 8%;
+  height: 4%
   fill: #20c1e6;
-  opacity: 0;
+  opacity: 0
   transition: 0.2s ease;
   
 .house__appartment5-16-img
-  top: 457px;
+  bottom: 54.6%;
   
 .house__appartment5-15-img
-  top: 484px;
+  bottom: 52.2%
   
 .house__appartment5-14-img
-  top: 511px;
+  bottom: 49.9%
   
 .house__appartment5-13-img
-  top: 537px;
+  bottom: 47.4%
   
 .house__appartment5-12-img
-  top: 563px;
+  bottom: 45.2%
   
 .house__appartment5-11-img
-  top: 590px;
+  bottom: 42.7%
   
 .house__appartment5-10-img
-  top: 617px;
+  bottom: 40.4%
   
 .house__appartment5-9-img
-  top: 643px;
+  bottom: 38%
   
 .house__appartment5-8-img
-  top: 670px;
+  bottom: 35.6%
   
 .house__appartment5-7-img
-  top: 697px;
+  bottom: 33.2%
   
 .house__appartment5-6-img
-  top: 724px;
+  bottom: 30.7%
   
 .house__appartment5-5-img
-  top: 752px;
+  bottom: 28.3%
   
 .house__appartment5-4-img
-  top: 778px;
+  bottom: 26%
   
 .house__appartment5-3-img
-  top: 805px;
+  bottom: 23.5%
   
 .house__appartment5-2-img
-  top: 831px;
+  bottom: 21.1%
   
 .house__appartment5-1-img
-  top: 859px;
+  bottom: 18.4%
   
 .house__appartment6-17-link,
 .house__appartment6-16-link,
@@ -1529,13 +1562,13 @@
 .house__appartment6-2-link,
 .house__appartment6-1-link
   position: absolute;
-  top: 429px;
-  left: 1297px;
-  width: 216px;
+  bottom: 59.7%;
+  right: 21%;
+  width: 11.5%;
+  height: 2.1%;
   transform: rotateZ(-7deg);
   z-index: 20;
   display: block;
-  height: 20px;
   &:hover ~ .house__appartment6-17-img
     opacity 0.6
   &--sell
@@ -1545,12 +1578,12 @@
       opacity 0.6
     
 .house__appartment6-16-link
-  top: 457px;
+  bottom: 57.3%
   &:hover ~ .house__appartment6-16-img
     opacity 0.6
     
 .house__appartment6-15-link
-  top: 484px;
+  bottom: 54.7%
   &:hover ~ .house__appartment6-15-img
     opacity 0.6
   &--sell
@@ -1560,7 +1593,7 @@
       opacity 0.6
     
 .house__appartment6-14-link
-  top: 512px;
+  bottom: 52%
   transform: rotateZ(-5deg);
   &:hover ~ .house__appartment6-14-img
     opacity 0.6
@@ -1571,19 +1604,19 @@
       opacity 0.6
     
 .house__appartment6-13-link
-  top: 542px;
+  bottom: 49.6%
   transform: rotateZ(-5deg);
   &:hover ~ .house__appartment6-13-img
     opacity 0.6
     
 .house__appartment6-12-link
-  top: 570px;
+  bottom: 47%
   transform: rotateZ(-5deg);
   &:hover ~ .house__appartment6-12-img
     opacity 0.6
     
 .house__appartment6-11-link
-  top: 599px;
+  bottom: 44.5%
   transform: rotateZ(-5deg);
   &:hover ~ .house__appartment6-11-img
     opacity 0.6
@@ -1594,55 +1627,55 @@
       opacity 0.6
     
 .house__appartment6-10-link
-  top: 628px;
+  bottom: 41.8%
   transform: rotateZ(-2deg);
   &:hover ~ .house__appartment6-10-img
     opacity 0.6
     
 .house__appartment6-9-link
-  top: 656px;
+  bottom: 39.3%
   transform: rotateZ(-2deg);
   &:hover ~ .house__appartment6-9-img
     opacity 0.6
     
 .house__appartment6-8-link
-  top: 684px;
+  bottom: 36.7%
   transform: rotateZ(-2deg);
   &:hover ~ .house__appartment6-8-img
     opacity 0.6
     
 .house__appartment6-7-link
-  top: 712px;
+  bottom: 34.1%
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment6-7-img
     opacity 0.6
     
 .house__appartment6-6-link
-  top: 742px;
+  bottom: 31.7%
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment6-6-img
     opacity 0.6
     
 .house__appartment6-5-link
-  top: 770px;
+  bottom: 29%
   transform: rotateZ(0deg);
   &:hover ~ .house__appartment6-5-img
     opacity 0.6
     
 .house__appartment6-4-link
-  top: 799px;
+  bottom: 26.5%
   transform: rotateZ(2deg);
   &:hover ~ .house__appartment6-4-img
     opacity 0.6
     
 .house__appartment6-3-link
-  top: 827px;
+  bottom: 24%
   transform: rotateZ(2deg);
   &:hover ~ .house__appartment6-3-img
     opacity 0.6
     
 .house__appartment6-2-link
-  top: 856px;
+  bottom: 21.5%
   transform: rotateZ(2deg);
   &:hover ~ .house__appartment6-2-img
     opacity 0.6
@@ -1653,9 +1686,8 @@
       opacity 0.6
     
 .house__appartment6-1-link
-  top: 881px;
+  bottom: 18.8%
   transform: rotateZ(2deg);
-  height: 40px;
   &:hover ~ .house__appartment6-1-img
     opacity 0.6
   &--sell
@@ -1682,61 +1714,65 @@
 .house__appartment6-2-img,
 .house__appartment6-1-img
   position: absolute;
-  top: 409px;
-  left: 1296px;
-  width: 264px;
-  height: 67px;
+  bottom: 56.8%;
+  right: 18.7%;
+  width: 13.8%;
+  height: 7.2%;
   fill: #20c1e6;
-  opacity: 0;
+  opacity: 0
   transition: 0.2s ease;
   
 .house__appartment6-16-img
-  top: 436px;
+  bottom: 54.3%
   
 .house__appartment6-15-img
-  top: 465px;
+  bottom: 51.7%
   
 .house__appartment6-14-img
-  top: 493px;
+  bottom: 49.2%
   
 .house__appartment6-13-img
-  top: 521px;
+  bottom: 46.6%
   
 .house__appartment6-12-img
-  top: 549px;
+  bottom: 44%
   
 .house__appartment6-11-img
-  top: 577px;
+  bottom: 41.4%
   
 .house__appartment6-10-img
-  top: 606px;
+  bottom: 39%
   
 .house__appartment6-9-img
-  top: 634px;
+  bottom: 36.5%
   
 .house__appartment6-8-img
-  top: 662px;
+  bottom: 34%
   
 .house__appartment6-7-img
-  top: 690px;
+  bottom: 31.5%
   
 .house__appartment6-6-img
-  top: 719px;
+  bottom: 28.9%
   
 .house__appartment6-5-img
-  top: 747px;
+  bottom: 26.3%
   
 .house__appartment6-4-img
-  top: 774px;
+  bottom: 23.8%
   
 .house__appartment6-3-img
-  top: 804px;
+  bottom: 21.3%
   
 .house__appartment6-2-img
-  top: 831px;
+  bottom: 18.7%
   
 .house__appartment6-1-img
-  top: 858px;
+  bottom: 16.4%
+  
+@media(max-width 1680px)
+  .house__content
+    left: -178px;
   
 @media(max-width 1366px)
   .house__appartment1-17-img,
@@ -1987,926 +2023,1027 @@
 
       opacity 0.6
       
-@media(max-width 1024px)
+@media(max-width 1280px)
   .house
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    
-  .house__content
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    
-  .house__img-wrap
-    flex-grow: 1;
-    height: auto;
-    background-size: 1920px 100%;
-    
-  .house__appartment1-17-link,
-  .house__appartment1-16-link,
-  .house__appartment1-15-link,
-  .house__appartment1-14-link,
-  .house__appartment1-13-link,
-  .house__appartment1-12-link,
-  .house__appartment1-11-link,
-  .house__appartment1-10-link,
-  .house__appartment1-9-link,
-  .house__appartment1-8-link,
-  .house__appartment1-7-link,
-  .house__appartment1-6-link,
-  .house__appartment1-5-link,
-  .house__appartment1-4-link,
-  .house__appartment1-3-link,
-  .house__appartment1-2-link,
-  .house__appartment1-1-link
-    width: 414px;
-    transform: rotateZ(21deg);
-    
-  .house__appartment1-17-link
-    top: 201px;
-    transform: rotateZ(23deg);
-    
-  .house__appartment1-16-link
-    top: 270px;
-    height: 40px;
-    
-  .house__appartment1-15-link
-    top: 334px;
-    
-  .house__appartment1-14-link
-    top: 399px;
-    
-  .house__appartment1-13-link
-    top: 464px;
-    
-  .house__appartment1-12-link
-    top: 529px;
-    transform: rotateZ(14deg);
-    
-  .house__appartment1-11-link
-    top: 594px;
-    transform: rotateZ(14deg);
-    
-  .house__appartment1-10-link
-    top: 653px;
-    transform: rotateZ(9deg);
-    
-  .house__appartment1-9-link
-    top: 718px;
-    transform: rotateZ(9deg);
-    
-  .house__appartment1-8-link
-    top: 783px;
-    transform: rotateZ(4deg);
-    
-  .house__appartment1-7-link
-    top: 848px;
-    transform: rotateZ(1deg);
-    
-  .house__appartment1-6-link
-    top: 913px;
-    transform: rotateZ(1deg);
-    
-  .house__appartment1-5-link
-    top: 974px;
-    transform: rotateZ(-3deg);
-    
-  .house__appartment1-4-link
-    top: 1039px;
-    transform: rotateZ(-3deg);
-    
-  .house__appartment1-3-link
-    top: 1104px;
-    transform: rotateZ(-7deg);
-    
-  .house__appartment1-2-link
-    top: 1170px;
-    transform: rotateZ(-7deg);
-    
-  .house__appartment1-1-link
-    top: 1235px;
-    transform: rotateZ(-7deg);
-
-  .house__appartment1-17-img,
-  .house__appartment1-16-img,
-  .house__appartment1-15-img,
-  .house__appartment1-14-img,
-  .house__appartment1-13-img,
-  .house__appartment1-12-img,
-  .house__appartment1-11-img,
-  .house__appartment1-10-img,
-  .house__appartment1-9-img,
-  .house__appartment1-8-img,
-  .house__appartment1-7-img,
-  .house__appartment1-6-img,
-  .house__appartment1-5-img,
-  .house__appartment1-4-img
-  .house__appartment1-3-img,
-  .house__appartment1-2-img,
-  .house__appartment1-1-img
-    transform: scaleY(1.2);
-    
-  .house__appartment1-17-img
-    top: 111px;
-    
-  .house__appartment1-16-img
-    top: 174px;
-    
-  .house__appartment1-15-img
-    top: 236px;
-    
-  .house__appartment1-14-img
-    top: 298px;
-    
-  .house__appartment1-13-img
-    top: 362px;
-    
-  .house__appartment1-12-img
-    top: 425px;
-    
-  .house__appartment1-11-img
-    top: 489px;
-    
-  .house__appartment1-10-img
-    top: 552px;
-    
-  .house__appartment1-9-img
-    top: 615px;
-    
-  .house__appartment1-8-img
-    top: 678px;
-    
-  .house__appartment1-7-img
-    top: 741px;
-    
-  .house__appartment1-6-img
-    top: 804px;
-    
-  .house__appartment1-5-img
-    top: 867px;
-    
-  .house__appartment1-4-img
-    top: 929px;
-    
-  .house__appartment1-3-img
-    top: 993px;
-    
-  .house__appartment1-2-img
-    top: 1056px;
-    
-  .house__appartment1-1-img
-    top: 1119px;
-    
-  .house__appartment2-17-link,
-  .house__appartment2-16-link,
-  .house__appartment2-15-link,
-  .house__appartment2-14-link,
-  .house__appartment2-13-link,
-  .house__appartment2-12-link,
-  .house__appartment2-11-link,
-  .house__appartment2-10-link,
-  .house__appartment2-9-link,
-  .house__appartment2-8-link,
-  .house__appartment2-7-link,
-  .house__appartment2-6-link,
-  .house__appartment2-5-link,
-  .house__appartment2-4-link,
-  .house__appartment2-3-link,
-  .house__appartment2-2-link,
-  .house__appartment2-1-link
-    transform: scaleY(1.2) rotateZ(18deg);
-    
-  .house__appartment2-17-link
-    top 348px
-    
-  .house__appartment2-16-link
-    top 400px
-    
-  .house__appartment2-15-link
-    top 452px
-    
-  .house__appartment2-14-link
-    top 504px
-    
-  .house__appartment2-13-link
-    top 556px
-    transform: scaleY(1.2) rotateZ(11deg);
-    
-  .house__appartment2-12-link
-    top 608px
-    transform: scaleY(1.2) rotateZ(11deg);
-    
-  .house__appartment2-11-link
-    top 660px
-    transform: scaleY(1.2) rotateZ(11deg);
-    
-  .house__appartment2-10-link
-    top 712px
-    transform: scaleY(1.2) rotateZ(7deg);
-    
-  .house__appartment2-9-link
-    top 764px
-    transform: scaleY(1.2) rotateZ(7deg);
-    
-  .house__appartment2-8-link
-    top 816px
-    transform: scaleY(1.2) rotateZ(7deg);
-    
-  .house__appartment2-7-link
-    top 863px
-    transform: scaleY(1.2) rotateZ(3deg);
-    
-  .house__appartment2-6-link
-    top 915px
-    transform: scaleY(1.2) rotateZ(3deg);
-    
-  .house__appartment2-5-link
-    top 967px
-    transform: scaleY(1.2) rotateZ(-2deg);
-    
-  .house__appartment2-4-link
-    top 1019px
-    transform: scaleY(1.2) rotateZ(-2deg);
-    
-  .house__appartment2-3-link
-    top 1071px
-    transform: scaleY(1.2) rotateZ(-2deg);
-    
-  .house__appartment2-2-link
-    top 1117px
-    transform: scaleY(1.2) rotateZ(-6deg);
-    
-  .house__appartment2-1-link
-    top 1170px
-    transform: scaleY(1.2) rotateZ(-6deg);
-    
-  .house__appartment2-17-img,
-  .house__appartment2-16-img,
-  .house__appartment2-15-img,
-  .house__appartment2-14-img,
-  .house__appartment2-13-img,
-  .house__appartment2-12-img,
-  .house__appartment2-11-img,
-  .house__appartment2-10-img,
-  .house__appartment2-9-img,
-  .house__appartment2-8-img,
-  .house__appartment2-7-img,
-  .house__appartment2-6-img,
-  .house__appartment2-5-img,
-  .house__appartment2-4-img
-  .house__appartment2-3-img,
-  .house__appartment2-2-img,
-  .house__appartment2-1-img
-    transform: scaleY(1.2);
-    
-  .house__appartment2-17-img
-    top: 297px;
-    
-  .house__appartment2-16-img
-    top: 347px;
-    
-  .house__appartment2-15-img
-    top: 397px;
-    
-  .house__appartment2-14-img
-    top: 447px;
-    
-  .house__appartment2-13-img
-    top: 496px;
-    
-  .house__appartment2-12-img
-    top: 545px;
-    
-  .house__appartment2-11-img
-    top: 595px;
-    
-  .house__appartment2-10-img
-    top: 645px;
-    
-  .house__appartment2-9-img
-    top: 694px;
-    
-  .house__appartment2-8-img
-    top: 743px;
-    
-  .house__appartment2-7-img
-    top: 794px;
-    
-  .house__appartment2-6-img
-    top: 849px;
-    
-  .house__appartment2-5-img
-    top: 902px;
-    
-  .house__appartment2-4-img
-    top: 953px;
-    
-  .house__appartment2-3-img
-    top: 1003px;
-    
-  .house__appartment2-2-img
-    top: 1053px;
-    
-  .house__appartment2-1-img
-    top: 1103px;
-    
-  .house__appartment3-17-link,
-  .house__appartment3-16-link,
-  .house__appartment3-15-link,
-  .house__appartment3-14-link,
-  .house__appartment3-13-link,
-  .house__appartment3-12-link,
-  .house__appartment3-11-link,
-  .house__appartment3-10-link,
-  .house__appartment3-9-link,
-  .house__appartment3-8-link,
-  .house__appartment3-7-link,
-  .house__appartment3-6-link,
-  .house__appartment3-5-link,
-  .house__appartment3-4-link,
-  .house__appartment3-3-link,
-  .house__appartment3-2-link,
-  .house__appartment3-1-link
-    transform: scaleY(1.2) rotateZ(17deg);
-    
-  .house__appartment3-17-link
-    top 440px
-    
-  .house__appartment3-16-link
-    top 484px
-    
-  .house__appartment3-15-link
-    top 528px
-    
-  .house__appartment3-14-link
-    top 572px
-    
-  .house__appartment3-13-link
-    top 615px
-    
-  .house__appartment3-12-link
-    top 658px
-    
-  .house__appartment3-11-link
-    top 702px
-    transform: scaleY(1.2) rotateZ(9deg);
-    
-  .house__appartment3-10-link
-    top 746px
-    transform: scaleY(1.2) rotateZ(9deg);
-    
-  .house__appartment3-9-link
-    top 789px
-    transform: scaleY(1.2) rotateZ(9deg);
-    
-  .house__appartment3-8-link
-    top 832px
-    transform: scaleY(1.2) rotateZ(3deg);
-    
-  .house__appartment3-7-link
-    top 875px
-    transform: scaleY(1.2) rotateZ(3deg);
-    
-  .house__appartment3-6-link
-    top 918px
-    transform: scaleY(1.2) rotateZ(3deg);
-    
-  .house__appartment3-5-link
-    top 961px
-    transform: scaleY(1.2) rotateZ(3deg);
-    
-  .house__appartment3-4-link
-    top 1004px
-    transform: scaleY(1.2) rotateZ(-4deg);
-    
-  .house__appartment3-3-link
-    top 1047px
-    transform: scaleY(1.2) rotateZ(-4deg);
-    
-  .house__appartment3-2-link
-    top 1090px
-    transform: scaleY(1.2) rotateZ(-4deg);
-    
-  .house__appartment3-1-link
-    top 1133px
-    transform: scaleY(1.2) rotateZ(-4deg);
-    
-  .house__appartment3-17-img,
-  .house__appartment3-16-img,
-  .house__appartment3-15-img,
-  .house__appartment3-14-img,
-  .house__appartment3-13-img,
-  .house__appartment3-12-img,
-  .house__appartment3-11-img,
-  .house__appartment3-10-img,
-  .house__appartment3-9-img,
-  .house__appartment3-8-img,
-  .house__appartment3-7-img,
-  .house__appartment3-6-img,
-  .house__appartment3-5-img,
-  .house__appartment3-4-img
-  .house__appartment3-3-img,
-  .house__appartment3-2-img,
-  .house__appartment3-1-img
-    transform: scaleY(1.2);
-    
-  .house__appartment3-17-img
-    top: 409px;
-    
-  .house__appartment3-16-img
-    top: 451px;
-    
-  .house__appartment3-15-img
-    top: 493px;
-    
-  .house__appartment3-14-img
-    top: 535px;
-    
-  .house__appartment3-13-img
-    top: 578px;
-    
-  .house__appartment3-12-img
-    top: 620px;
-    
-  .house__appartment3-11-img
-    top: 663px;
-    
-  .house__appartment3-10-img
-    top: 705px;
-    
-  .house__appartment3-9-img
-    top: 747px;
-    
-  .house__appartment3-8-img
-    top: 789px;
-    
-  .house__appartment3-7-img
-    top: 832px;
-    
-  .house__appartment3-6-img
-    top: 875px;
-    
-  .house__appartment3-5-img
-    top: 918px;
-    
-  .house__appartment3-4-img
-    top: 960px;
-    
-  .house__appartment3-3-img
-    top: 1003px;
-    
-  .house__appartment3-2-img
-    top: 1045px;
-    
-  .house__appartment3-1-img
-    top: 1087px;
-    
-  .house__appartment4-17-link,
-  .house__appartment4-16-link,
-  .house__appartment4-15-link,
-  .house__appartment4-14-link,
-  .house__appartment4-13-link,
-  .house__appartment4-12-link,
-  .house__appartment4-11-link,
-  .house__appartment4-10-link,
-  .house__appartment4-9-link,
-  .house__appartment4-8-link,
-  .house__appartment4-7-link,
-  .house__appartment4-6-link,
-  .house__appartment4-5-link,
-  .house__appartment4-4-link,
-  .house__appartment4-3-link,
-  .house__appartment4-2-link,
-  .house__appartment4-1-link
-    transform: scaleY(1.2) rotateZ(16deg);
-    
-  .house__appartment4-17-link
-    top: 508px;
-    
-  .house__appartment4-16-link
-    top: 548px;
-    
-  .house__appartment4-15-link
-    top: 588px;
-    
-  .house__appartment4-14-link
-    top: 621px;
-    transform: scaleY(1.2) rotateZ(10deg);
-    
-  .house__appartment4-13-link
-    top: 661px;
-    transform: scaleY(1.2) rotateZ(10deg);
-    
-  .house__appartment4-12-link
-    top: 693px;
-    transform: scaleY(1.2) rotateZ(10deg);
-    
-  .house__appartment4-11-link
-    top: 732px;
-    transform: scaleY(1.2) rotateZ(10deg);
-    
-  .house__appartment4-10-link
-    top: 771px;
-    transform: scaleY(1.2) rotateZ(6deg);
-    
-  .house__appartment4-9-link
-    top: 810px;
-    transform: scaleY(1.2) rotateZ(6deg);
-    
-  .house__appartment4-8-link
-    top: 844px;
-    transform: scaleY(1.2) rotateZ(0deg);
-    
-  .house__appartment4-7-link
-    top: 877px;
-    transform: scaleY(1.2) rotateZ(0deg);
-    
-  .house__appartment4-6-link
-    top: 915px;
-    transform: scaleY(1.2) rotateZ(0deg);
-    
-  .house__appartment4-5-link
-    top: 953px;
-    transform: scaleY(1.2) rotateZ(0deg);
-    
-  .house__appartment4-4-link
-    top: 991px;
-    transform: scaleY(1.2) rotateZ(0deg);
-    
-  .house__appartment4-3-link
-    top: 1024px;
-    transform: scaleY(1.2) rotateZ(-5deg);
-    
-  .house__appartment4-2-link
-    top: 1062px;
-    transform: scaleY(1.2) rotateZ(-5deg);
-    
-  .house__appartment4-1-link
-    top: 1100px;
-    transform: scaleY(1.2) rotateZ(-5deg);
-    
-  .house__appartment4-17-img,
-  .house__appartment4-16-img,
-  .house__appartment4-15-img,
-  .house__appartment4-14-img,
-  .house__appartment4-13-img,
-  .house__appartment4-12-img,
-  .house__appartment4-11-img,
-  .house__appartment4-10-img,
-  .house__appartment4-9-img,
-  .house__appartment4-8-img,
-  .house__appartment4-7-img,
-  .house__appartment4-6-img,
-  .house__appartment4-5-img,
-  .house__appartment4-4-img
-  .house__appartment4-3-img,
-  .house__appartment4-2-img,
-  .house__appartment4-1-img
-    transform: scaleY(1.2);
-    
-  .house__appartment4-17-img
-    top 490px
-    
-  .house__appartment4-16-img
-    top 527px
-    
-  .house__appartment4-15-img
-    top 564px
-    
-  .house__appartment4-14-img
-    top 601px
-    
-  .house__appartment4-13-img
-    top 637px
-    
-  .house__appartment4-12-img
-    top 674px
-    
-  .house__appartment4-11-img
-    top 711px
-    
-  .house__appartment4-10-img
-    top 747px
-    
-  .house__appartment4-9-img
-    top 784px
-    
-  .house__appartment4-8-img
-    top 821px
-    
-  .house__appartment4-7-img
-    top 858px
-    
-  .house__appartment4-6-img
-    top 895px
-    
-  .house__appartment4-5-img
-    top 932px
-    
-  .house__appartment4-4-img
-    top 968px
-    
-  .house__appartment4-3-img
-    top 1004px
-    
-  .house__appartment4-2-img
-    top 1040px
-    
-  .house__appartment4-1-img
-    top 1077px
-    
-  .house__appartment5-17-link,
-  .house__appartment5-16-link,
-  .house__appartment5-15-link,
-  .house__appartment5-14-link,
-  .house__appartment5-13-link,
-  .house__appartment5-12-link,
-  .house__appartment5-11-link,
-  .house__appartment5-10-link,
-  .house__appartment5-9-link,
-  .house__appartment5-8-link,
-  .house__appartment5-7-link,
-  .house__appartment5-6-link,
-  .house__appartment5-5-link,
-  .house__appartment5-4-link,
-  .house__appartment5-3-link,
-  .house__appartment5-2-link,
-  .house__appartment5-1-link
-    transform: scaleY(1.2) rotateZ(3deg);
-    
-  .house__appartment5-17-link
-    top 553px
-    
-  .house__appartment5-16-link
-    top 584px
-    
-  .house__appartment5-15-link
-    top 615px
-    
-  .house__appartment5-14-link
-    top 646px
-    
-  .house__appartment5-13-link
-    top 685px
-    
-  .house__appartment5-12-link
-    top 719px
-    
-  .house__appartment5-11-link
-    top 749px
-    
-  .house__appartment5-10-link
-    top 783px
-    
-  .house__appartment5-9-link
-    top 816px
-    
-  .house__appartment5-8-link
-    top 849px
-    
-  .house__appartment5-7-link
-    top 882px
-    
-  .house__appartment5-6-link
-    top 915px
-    
-  .house__appartment5-5-link
-    top 948px
-    
-  .house__appartment5-4-link
-    top 981px
-    
-  .house__appartment5-3-link
-    top 1014px
-    
-  .house__appartment5-2-link
-    top 1046px
-    
-  .house__appartment5-1-link
-    top 1077px
-    
-  .house__appartment5-17-img,
-  .house__appartment5-16-img,
-  .house__appartment5-15-img,
-  .house__appartment5-14-img,
-  .house__appartment5-13-img,
-  .house__appartment5-12-img,
-  .house__appartment5-11-img,
-  .house__appartment5-10-img,
-  .house__appartment5-9-img,
-  .house__appartment5-8-img,
-  .house__appartment5-7-img,
-  .house__appartment5-6-img,
-  .house__appartment5-5-img,
-  .house__appartment5-4-img
-  .house__appartment5-3-img,
-  .house__appartment5-2-img,
-  .house__appartment5-1-img
-    transform: scaleY(1.2);
-    
-  .house__appartment5-17-img
-    top 536px
-    
-  .house__appartment5-16-img
-    top 568px
-    
-  .house__appartment5-15-img
-    top 600px
-    
-  .house__appartment5-14-img
-    top 632px
-    
-  .house__appartment5-13-img
-    top 664px
-    
-  .house__appartment5-12-img
-    top 696px
-    
-  .house__appartment5-11-img
-    top 728px
-    
-  .house__appartment5-10-img
-    top 760px
-    
-  .house__appartment5-9-img
-    top 792px
-    
-  .house__appartment5-8-img
-    top 829px
-    
-  .house__appartment5-7-img
-    top 862px
-    
-  .house__appartment5-6-img
-    top 896px
-    
-  .house__appartment5-5-img
-    top 930px
-    
-  .house__appartment5-4-img
-    top 963px
-    
-  .house__appartment5-3-img
-    top 996px
-    
-  .house__appartment5-2-img
-    top 1027px
-    
-  .house__appartment5-1-img
-    top 1062px
-    
-  .house__appartment6-17-link,
-  .house__appartment6-16-link,
-  .house__appartment6-15-link,
-  .house__appartment6-14-link,
-  .house__appartment6-13-link,
-  .house__appartment6-12-link,
-  .house__appartment6-11-link,
-  .house__appartment6-10-link,
-  .house__appartment6-9-link,
-  .house__appartment6-8-link,
-  .house__appartment6-7-link,
-  .house__appartment6-6-link,
-  .house__appartment6-5-link,
-  .house__appartment6-4-link,
-  .house__appartment6-3-link,
-  .house__appartment6-2-link,
-  .house__appartment6-1-link
-    transform: scaleY(1.2) rotateZ(-7deg);
-    
-  .house__appartment6-17-link
-    top 529px
-    
-  .house__appartment6-16-link
-    top 565px
-    
-  .house__appartment6-15-link
-    top 604px
-    
-  .house__appartment6-14-link
-    top 637px
-    transform: scaleY(1.2) rotateZ(-4deg);
-    
-  .house__appartment6-13-link
-    top 670px
-    transform: scaleY(1.2) rotateZ(-4deg);
+    overflow-x auto
+    
+@media(max-width 420px)
+  .house__popup-content
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    
+    box-sizing border-box
+    width 100%
+    margin auto
+    
+  .house__popup-img-room1-link
+    transform: scaleX(0.8);
+    left: -12px;
+    
+  .house__popup-img-room1-img
+    transform: scaleX(0.81);
+    left: -12px;
+    
+  .house__popup-img-room2-link
+    transform: scaleX(0.8);
+    left: 46px;
+    top: 4px;
+    
+  .house__popup-img-room2-img
+    transform: scaleX(0.82);
+    left: 39px;
+    
+  .house__popup-img-room3-link
+    left: 146px;
+    transform: scaleX(0.82);
   
-  .house__appartment6-12-link
-    top 705px
-    transform: scaleY(1.2) rotateZ(-4deg);
+  .house__popup-img-room3-img
+    transform: scaleX(0.79);
+    left: 145px;
+    top: 0px;
     
-  .house__appartment6-11-link
-    top 742px
-    transform: scaleY(1.2) rotateZ(-2deg);
+  .house__popup-img-room4-link
+    left: 198px;
+    transform: scaleX(0.81);
     
-  .house__appartment6-10-link
-    top 774px
-    transform: scaleY(1.2) rotateZ(-2deg);
+  .house__popup-img-room4-img
+    left: 196px;
+    transform: scaleX(0.81);
     
-  .house__appartment6-9-link
-    top 809px
-    transform: scaleY(1.2) rotateZ(-2deg);
+  .house__popup-img-room1-6-link
+    transform: scaleX(0.81);
+    left: -19px;
     
-  .house__appartment6-8-link
-    top 845px
-    transform: scaleY(1.2) rotateZ(0deg);
+  .house__popup-img-room1-6-img
+    transform: scaleX(0.82);
+    left: -17px;
     
-  .house__appartment6-7-link
-    top 879px
-    transform: scaleY(1.2) rotateZ(0deg);
+  .house__popup-img-room2-6-link
+    transform: scaleX(0.81);
+    left: 33px;
     
-  .house__appartment6-6-link
-    top 913px
-    transform: scaleY(1.2) rotateZ(0deg);
+  .house__popup-img-room2-6-img
+    transform: scaleX(0.81);
+    left: 35px;
     
-  .house__appartment6-5-link
-    top 947px
-    transform: scaleY(1.2) rotateZ(0deg);
+  .house__popup-img-room3-6-link
+    transform: scaleX(0.81);
+    left: 118px;
     
-  .house__appartment6-4-link
-    top 981px
-    transform: scaleY(1.2) rotateZ(0deg);
+  .house__popup-img-room3-6-img
+    transform: scaleX(0.81);
+    left: 120px;
     
-  .house__appartment6-3-link
-    top 1020px
-    transform: scaleY(1.2) rotateZ(0deg);
+  .house__popup-img-room4-6-link
+    transform: scaleX(0.81);
+    left: 205px;
     
-  .house__appartment6-2-link
-    top 1057px
-    transform: scaleY(1.2) rotateZ(0deg);
+  .house__popup-img-room4-6-img
+    transform: scaleX(0.81);
+    left: 204px;
     
-  .house__appartment6-1-link
-    top 1097px
-    transform: scaleY(1.2) rotateZ(0deg);
+  .house__popup-img-room5-6-link
+    transform: scaleX(0.81);
+    left: 203px;
     
-  .house__appartment6-17-img,
-  .house__appartment6-16-img,
-  .house__appartment6-15-img,
-  .house__appartment6-14-img,
-  .house__appartment6-13-img,
-  .house__appartment6-12-img,
-  .house__appartment6-11-img,
-  .house__appartment6-10-img,
-  .house__appartment6-9-img,
-  .house__appartment6-8-img,
-  .house__appartment6-7-img,
-  .house__appartment6-6-img,
-  .house__appartment6-5-img,
-  .house__appartment6-4-img
-  .house__appartment6-3-img,
-  .house__appartment6-2-img,
-  .house__appartment6-1-img
-    transform: scaleY(1.2);
+  .house__popup-img-room5-6-img
+    transform: scaleX(0.81);
+    left: 203px;
     
-  .house__appartment6-17-img
-    top: 511px;
+  .house__popup-img-room6-6-link
+    transform: scaleX(0.81);
+    left: 204px;
     
-  .house__appartment6-16-img
-    top: 546px;
+  .house__popup-img-room6-6-img
+    transform: scaleX(0.81);
+    left: 204px;
+  
+      
+//@media(max-width 1024px)
+//  .house
+//    flex-grow: 1;
+//    display: flex;
+//    flex-direction: column;
+//    
+//  .house__content
+//    flex-grow: 1;
+//    display: flex;
+//    flex-direction: column;
+//    
+//  .house__img-wrap
+//    flex-grow: 1;
+//    height: auto;
+//    background-size: 1920px 100%;
+//    
+//  .house__appartment1-17-link,
+//  .house__appartment1-16-link,
+//  .house__appartment1-15-link,
+//  .house__appartment1-14-link,
+//  .house__appartment1-13-link,
+//  .house__appartment1-12-link,
+//  .house__appartment1-11-link,
+//  .house__appartment1-10-link,
+//  .house__appartment1-9-link,
+//  .house__appartment1-8-link,
+//  .house__appartment1-7-link,
+//  .house__appartment1-6-link,
+//  .house__appartment1-5-link,
+//  .house__appartment1-4-link,
+//  .house__appartment1-3-link,
+//  .house__appartment1-2-link,
+//  .house__appartment1-1-link
+//    width: 414px;
+//    transform: rotateZ(21deg);
+//    
+//  .house__appartment1-17-link
+//    top: 201px;
+//    transform: rotateZ(23deg);
+//    
+//  .house__appartment1-16-link
+//    top: 270px;
+//    height: 40px;
+//    
+//  .house__appartment1-15-link
+//    top: 334px;
+//    
+//  .house__appartment1-14-link
+//    top: 399px;
+//    
+//  .house__appartment1-13-link
+//    top: 464px;
+//    
+//  .house__appartment1-12-link
+//    top: 529px;
+//    transform: rotateZ(14deg);
+//    
+//  .house__appartment1-11-link
+//    top: 594px;
+//    transform: rotateZ(14deg);
+//    
+//  .house__appartment1-10-link
+//    top: 653px;
+//    transform: rotateZ(9deg);
+//    
+//  .house__appartment1-9-link
+//    top: 718px;
+//    transform: rotateZ(9deg);
+//    
+//  .house__appartment1-8-link
+//    top: 783px;
+//    transform: rotateZ(4deg);
+//    
+//  .house__appartment1-7-link
+//    top: 848px;
+//    transform: rotateZ(1deg);
+//    
+//  .house__appartment1-6-link
+//    top: 913px;
+//    transform: rotateZ(1deg);
+//    
+//  .house__appartment1-5-link
+//    top: 974px;
+//    transform: rotateZ(-3deg);
+//    
+//  .house__appartment1-4-link
+//    top: 1039px;
+//    transform: rotateZ(-3deg);
+//    
+//  .house__appartment1-3-link
+//    top: 1104px;
+//    transform: rotateZ(-7deg);
+//    
+//  .house__appartment1-2-link
+//    top: 1170px;
+//    transform: rotateZ(-7deg);
+//    
+//  .house__appartment1-1-link
+//    top: 1235px;
+//    transform: rotateZ(-7deg);
+//
+//  .house__appartment1-17-img,
+//  .house__appartment1-16-img,
+//  .house__appartment1-15-img,
+//  .house__appartment1-14-img,
+//  .house__appartment1-13-img,
+//  .house__appartment1-12-img,
+//  .house__appartment1-11-img,
+//  .house__appartment1-10-img,
+//  .house__appartment1-9-img,
+//  .house__appartment1-8-img,
+//  .house__appartment1-7-img,
+//  .house__appartment1-6-img,
+//  .house__appartment1-5-img,
+//  .house__appartment1-4-img
+//  .house__appartment1-3-img,
+//  .house__appartment1-2-img,
+//  .house__appartment1-1-img
+//    transform: scaleY(1.2);
+//    
+//  .house__appartment1-17-img
+//    top: 111px;
+//    
+//  .house__appartment1-16-img
+//    top: 174px;
+//    
+//  .house__appartment1-15-img
+//    top: 236px;
+//    
+//  .house__appartment1-14-img
+//    top: 298px;
+//    
+//  .house__appartment1-13-img
+//    top: 362px;
+//    
+//  .house__appartment1-12-img
+//    top: 425px;
+//    
+//  .house__appartment1-11-img
+//    top: 489px;
+//    
+//  .house__appartment1-10-img
+//    top: 552px;
+//    
+//  .house__appartment1-9-img
+//    top: 615px;
+//    
+//  .house__appartment1-8-img
+//    top: 678px;
+//    
+//  .house__appartment1-7-img
+//    top: 741px;
+//    
+//  .house__appartment1-6-img
+//    top: 804px;
+//    
+//  .house__appartment1-5-img
+//    top: 867px;
+//    
+//  .house__appartment1-4-img
+//    top: 929px;
+//    
+//  .house__appartment1-3-img
+//    top: 993px;
+//    
+//  .house__appartment1-2-img
+//    top: 1056px;
+//    
+//  .house__appartment1-1-img
+//    top: 1119px;
+//    
+//  .house__appartment2-17-link,
+//  .house__appartment2-16-link,
+//  .house__appartment2-15-link,
+//  .house__appartment2-14-link,
+//  .house__appartment2-13-link,
+//  .house__appartment2-12-link,
+//  .house__appartment2-11-link,
+//  .house__appartment2-10-link,
+//  .house__appartment2-9-link,
+//  .house__appartment2-8-link,
+//  .house__appartment2-7-link,
+//  .house__appartment2-6-link,
+//  .house__appartment2-5-link,
+//  .house__appartment2-4-link,
+//  .house__appartment2-3-link,
+//  .house__appartment2-2-link,
+//  .house__appartment2-1-link
+//    transform: scaleY(1.2) rotateZ(18deg);
+//    
+//  .house__appartment2-17-link
+//    top 348px
+//    
+//  .house__appartment2-16-link
+//    top 400px
+//    
+//  .house__appartment2-15-link
+//    top 452px
+//    
+//  .house__appartment2-14-link
+//    top 504px
+//    
+//  .house__appartment2-13-link
+//    top 556px
+//    transform: scaleY(1.2) rotateZ(11deg);
+//    
+//  .house__appartment2-12-link
+//    top 608px
+//    transform: scaleY(1.2) rotateZ(11deg);
+//    
+//  .house__appartment2-11-link
+//    top 660px
+//    transform: scaleY(1.2) rotateZ(11deg);
+//    
+//  .house__appartment2-10-link
+//    top 712px
+//    transform: scaleY(1.2) rotateZ(7deg);
+//    
+//  .house__appartment2-9-link
+//    top 764px
+//    transform: scaleY(1.2) rotateZ(7deg);
+//    
+//  .house__appartment2-8-link
+//    top 816px
+//    transform: scaleY(1.2) rotateZ(7deg);
+//    
+//  .house__appartment2-7-link
+//    top 863px
+//    transform: scaleY(1.2) rotateZ(3deg);
+//    
+//  .house__appartment2-6-link
+//    top 915px
+//    transform: scaleY(1.2) rotateZ(3deg);
+//    
+//  .house__appartment2-5-link
+//    top 967px
+//    transform: scaleY(1.2) rotateZ(-2deg);
+//    
+//  .house__appartment2-4-link
+//    top 1019px
+//    transform: scaleY(1.2) rotateZ(-2deg);
+//    
+//  .house__appartment2-3-link
+//    top 1071px
+//    transform: scaleY(1.2) rotateZ(-2deg);
+//    
+//  .house__appartment2-2-link
+//    top 1117px
+//    transform: scaleY(1.2) rotateZ(-6deg);
+//    
+//  .house__appartment2-1-link
+//    top 1170px
+//    transform: scaleY(1.2) rotateZ(-6deg);
+//    
+//  .house__appartment2-17-img,
+//  .house__appartment2-16-img,
+//  .house__appartment2-15-img,
+//  .house__appartment2-14-img,
+//  .house__appartment2-13-img,
+//  .house__appartment2-12-img,
+//  .house__appartment2-11-img,
+//  .house__appartment2-10-img,
+//  .house__appartment2-9-img,
+//  .house__appartment2-8-img,
+//  .house__appartment2-7-img,
+//  .house__appartment2-6-img,
+//  .house__appartment2-5-img,
+//  .house__appartment2-4-img
+//  .house__appartment2-3-img,
+//  .house__appartment2-2-img,
+//  .house__appartment2-1-img
+//    transform: scaleY(1.2);
+//    
+//  .house__appartment2-17-img
+//    top: 297px;
+//    
+//  .house__appartment2-16-img
+//    top: 347px;
+//    
+//  .house__appartment2-15-img
+//    top: 397px;
+//    
+//  .house__appartment2-14-img
+//    top: 447px;
+//    
+//  .house__appartment2-13-img
+//    top: 496px;
+//    
+//  .house__appartment2-12-img
+//    top: 545px;
+//    
+//  .house__appartment2-11-img
+//    top: 595px;
+//    
+//  .house__appartment2-10-img
+//    top: 645px;
+//    
+//  .house__appartment2-9-img
+//    top: 694px;
+//    
+//  .house__appartment2-8-img
+//    top: 743px;
+//    
+//  .house__appartment2-7-img
+//    top: 794px;
+//    
+//  .house__appartment2-6-img
+//    top: 849px;
+//    
+//  .house__appartment2-5-img
+//    top: 902px;
+//    
+//  .house__appartment2-4-img
+//    top: 953px;
+//    
+//  .house__appartment2-3-img
+//    top: 1003px;
+//    
+//  .house__appartment2-2-img
+//    top: 1053px;
+//    
+//  .house__appartment2-1-img
+//    top: 1103px;
+//    
+//  .house__appartment3-17-link,
+//  .house__appartment3-16-link,
+//  .house__appartment3-15-link,
+//  .house__appartment3-14-link,
+//  .house__appartment3-13-link,
+//  .house__appartment3-12-link,
+//  .house__appartment3-11-link,
+//  .house__appartment3-10-link,
+//  .house__appartment3-9-link,
+//  .house__appartment3-8-link,
+//  .house__appartment3-7-link,
+//  .house__appartment3-6-link,
+//  .house__appartment3-5-link,
+//  .house__appartment3-4-link,
+//  .house__appartment3-3-link,
+//  .house__appartment3-2-link,
+//  .house__appartment3-1-link
+//    transform: scaleY(1.2) rotateZ(17deg);
+//    
+//  .house__appartment3-17-link
+//    top 440px
+//    
+//  .house__appartment3-16-link
+//    top 484px
+//    
+//  .house__appartment3-15-link
+//    top 528px
+//    
+//  .house__appartment3-14-link
+//    top 572px
+//    
+//  .house__appartment3-13-link
+//    top 615px
+//    
+//  .house__appartment3-12-link
+//    top 658px
+//    
+//  .house__appartment3-11-link
+//    top 702px
+//    transform: scaleY(1.2) rotateZ(9deg);
+//    
+//  .house__appartment3-10-link
+//    top 746px
+//    transform: scaleY(1.2) rotateZ(9deg);
+//    
+//  .house__appartment3-9-link
+//    top 789px
+//    transform: scaleY(1.2) rotateZ(9deg);
+//    
+//  .house__appartment3-8-link
+//    top 832px
+//    transform: scaleY(1.2) rotateZ(3deg);
+//    
+//  .house__appartment3-7-link
+//    top 875px
+//    transform: scaleY(1.2) rotateZ(3deg);
+//    
+//  .house__appartment3-6-link
+//    top 918px
+//    transform: scaleY(1.2) rotateZ(3deg);
+//    
+//  .house__appartment3-5-link
+//    top 961px
+//    transform: scaleY(1.2) rotateZ(3deg);
+//    
+//  .house__appartment3-4-link
+//    top 1004px
+//    transform: scaleY(1.2) rotateZ(-4deg);
+//    
+//  .house__appartment3-3-link
+//    top 1047px
+//    transform: scaleY(1.2) rotateZ(-4deg);
+//    
+//  .house__appartment3-2-link
+//    top 1090px
+//    transform: scaleY(1.2) rotateZ(-4deg);
+//    
+//  .house__appartment3-1-link
+//    top 1133px
+//    transform: scaleY(1.2) rotateZ(-4deg);
+//    
+//  .house__appartment3-17-img,
+//  .house__appartment3-16-img,
+//  .house__appartment3-15-img,
+//  .house__appartment3-14-img,
+//  .house__appartment3-13-img,
+//  .house__appartment3-12-img,
+//  .house__appartment3-11-img,
+//  .house__appartment3-10-img,
+//  .house__appartment3-9-img,
+//  .house__appartment3-8-img,
+//  .house__appartment3-7-img,
+//  .house__appartment3-6-img,
+//  .house__appartment3-5-img,
+//  .house__appartment3-4-img
+//  .house__appartment3-3-img,
+//  .house__appartment3-2-img,
+//  .house__appartment3-1-img
+//    transform: scaleY(1.2);
+//    
+//  .house__appartment3-17-img
+//    top: 409px;
+//    
+//  .house__appartment3-16-img
+//    top: 451px;
+//    
+//  .house__appartment3-15-img
+//    top: 493px;
+//    
+//  .house__appartment3-14-img
+//    top: 535px;
+//    
+//  .house__appartment3-13-img
+//    top: 578px;
+//    
+//  .house__appartment3-12-img
+//    top: 620px;
+//    
+//  .house__appartment3-11-img
+//    top: 663px;
+//    
+//  .house__appartment3-10-img
+//    top: 705px;
+//    
+//  .house__appartment3-9-img
+//    top: 747px;
+//    
+//  .house__appartment3-8-img
+//    top: 789px;
+//    
+//  .house__appartment3-7-img
+//    top: 832px;
+//    
+//  .house__appartment3-6-img
+//    top: 875px;
+//    
+//  .house__appartment3-5-img
+//    top: 918px;
+//    
+//  .house__appartment3-4-img
+//    top: 960px;
+//    
+//  .house__appartment3-3-img
+//    top: 1003px;
+//    
+//  .house__appartment3-2-img
+//    top: 1045px;
+//    
+//  .house__appartment3-1-img
+//    top: 1087px;
+//    
+//  .house__appartment4-17-link,
+//  .house__appartment4-16-link,
+//  .house__appartment4-15-link,
+//  .house__appartment4-14-link,
+//  .house__appartment4-13-link,
+//  .house__appartment4-12-link,
+//  .house__appartment4-11-link,
+//  .house__appartment4-10-link,
+//  .house__appartment4-9-link,
+//  .house__appartment4-8-link,
+//  .house__appartment4-7-link,
+//  .house__appartment4-6-link,
+//  .house__appartment4-5-link,
+//  .house__appartment4-4-link,
+//  .house__appartment4-3-link,
+//  .house__appartment4-2-link,
+//  .house__appartment4-1-link
+//    transform: scaleY(1.2) rotateZ(16deg);
+//    
+//  .house__appartment4-17-link
+//    top: 508px;
+//    
+//  .house__appartment4-16-link
+//    top: 548px;
+//    
+//  .house__appartment4-15-link
+//    top: 588px;
+//    
+//  .house__appartment4-14-link
+//    top: 621px;
+//    transform: scaleY(1.2) rotateZ(10deg);
+//    
+//  .house__appartment4-13-link
+//    top: 661px;
+//    transform: scaleY(1.2) rotateZ(10deg);
+//    
+//  .house__appartment4-12-link
+//    top: 693px;
+//    transform: scaleY(1.2) rotateZ(10deg);
+//    
+//  .house__appartment4-11-link
+//    top: 732px;
+//    transform: scaleY(1.2) rotateZ(10deg);
+//    
+//  .house__appartment4-10-link
+//    top: 771px;
+//    transform: scaleY(1.2) rotateZ(6deg);
+//    
+//  .house__appartment4-9-link
+//    top: 810px;
+//    transform: scaleY(1.2) rotateZ(6deg);
+//    
+//  .house__appartment4-8-link
+//    top: 844px;
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment4-7-link
+//    top: 877px;
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment4-6-link
+//    top: 915px;
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment4-5-link
+//    top: 953px;
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment4-4-link
+//    top: 991px;
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment4-3-link
+//    top: 1024px;
+//    transform: scaleY(1.2) rotateZ(-5deg);
+//    
+//  .house__appartment4-2-link
+//    top: 1062px;
+//    transform: scaleY(1.2) rotateZ(-5deg);
+//    
+//  .house__appartment4-1-link
+//    top: 1100px;
+//    transform: scaleY(1.2) rotateZ(-5deg);
+//    
+//  .house__appartment4-17-img,
+//  .house__appartment4-16-img,
+//  .house__appartment4-15-img,
+//  .house__appartment4-14-img,
+//  .house__appartment4-13-img,
+//  .house__appartment4-12-img,
+//  .house__appartment4-11-img,
+//  .house__appartment4-10-img,
+//  .house__appartment4-9-img,
+//  .house__appartment4-8-img,
+//  .house__appartment4-7-img,
+//  .house__appartment4-6-img,
+//  .house__appartment4-5-img,
+//  .house__appartment4-4-img
+//  .house__appartment4-3-img,
+//  .house__appartment4-2-img,
+//  .house__appartment4-1-img
+//    transform: scaleY(1.2);
+//    
+//  .house__appartment4-17-img
+//    top 490px
+//    
+//  .house__appartment4-16-img
+//    top 527px
+//    
+//  .house__appartment4-15-img
+//    top 564px
+//    
+//  .house__appartment4-14-img
+//    top 601px
+//    
+//  .house__appartment4-13-img
+//    top 637px
+//    
+//  .house__appartment4-12-img
+//    top 674px
+//    
+//  .house__appartment4-11-img
+//    top 711px
+//    
+//  .house__appartment4-10-img
+//    top 747px
+//    
+//  .house__appartment4-9-img
+//    top 784px
+//    
+//  .house__appartment4-8-img
+//    top 821px
+//    
+//  .house__appartment4-7-img
+//    top 858px
+//    
+//  .house__appartment4-6-img
+//    top 895px
+//    
+//  .house__appartment4-5-img
+//    top 932px
+//    
+//  .house__appartment4-4-img
+//    top 968px
+//    
+//  .house__appartment4-3-img
+//    top 1004px
+//    
+//  .house__appartment4-2-img
+//    top 1040px
+//    
+//  .house__appartment4-1-img
+//    top 1077px
+//    
+//  .house__appartment5-17-link,
+//  .house__appartment5-16-link,
+//  .house__appartment5-15-link,
+//  .house__appartment5-14-link,
+//  .house__appartment5-13-link,
+//  .house__appartment5-12-link,
+//  .house__appartment5-11-link,
+//  .house__appartment5-10-link,
+//  .house__appartment5-9-link,
+//  .house__appartment5-8-link,
+//  .house__appartment5-7-link,
+//  .house__appartment5-6-link,
+//  .house__appartment5-5-link,
+//  .house__appartment5-4-link,
+//  .house__appartment5-3-link,
+//  .house__appartment5-2-link,
+//  .house__appartment5-1-link
+//    transform: scaleY(1.2) rotateZ(3deg);
+//    
+//  .house__appartment5-17-link
+//    top 553px
+//    
+//  .house__appartment5-16-link
+//    top 584px
+//    
+//  .house__appartment5-15-link
+//    top 615px
+//    
+//  .house__appartment5-14-link
+//    top 646px
+//    
+//  .house__appartment5-13-link
+//    top 685px
+//    
+//  .house__appartment5-12-link
+//    top 719px
+//    
+//  .house__appartment5-11-link
+//    top 749px
+//    
+//  .house__appartment5-10-link
+//    top 783px
+//    
+//  .house__appartment5-9-link
+//    top 816px
+//    
+//  .house__appartment5-8-link
+//    top 849px
+//    
+//  .house__appartment5-7-link
+//    top 882px
+//    
+//  .house__appartment5-6-link
+//    top 915px
+//    
+//  .house__appartment5-5-link
+//    top 948px
+//    
+//  .house__appartment5-4-link
+//    top 981px
+//    
+//  .house__appartment5-3-link
+//    top 1014px
+//    
+//  .house__appartment5-2-link
+//    top 1046px
+//    
+//  .house__appartment5-1-link
+//    top 1077px
+//    
+//  .house__appartment5-17-img,
+//  .house__appartment5-16-img,
+//  .house__appartment5-15-img,
+//  .house__appartment5-14-img,
+//  .house__appartment5-13-img,
+//  .house__appartment5-12-img,
+//  .house__appartment5-11-img,
+//  .house__appartment5-10-img,
+//  .house__appartment5-9-img,
+//  .house__appartment5-8-img,
+//  .house__appartment5-7-img,
+//  .house__appartment5-6-img,
+//  .house__appartment5-5-img,
+//  .house__appartment5-4-img
+//  .house__appartment5-3-img,
+//  .house__appartment5-2-img,
+//  .house__appartment5-1-img
+//    transform: scaleY(1.2);
+//    
+//  .house__appartment5-17-img
+//    top 536px
+//    
+//  .house__appartment5-16-img
+//    top 568px
+//    
+//  .house__appartment5-15-img
+//    top 600px
+//    
+//  .house__appartment5-14-img
+//    top 632px
+//    
+//  .house__appartment5-13-img
+//    top 664px
+//    
+//  .house__appartment5-12-img
+//    top 696px
+//    
+//  .house__appartment5-11-img
+//    top 728px
+//    
+//  .house__appartment5-10-img
+//    top 760px
+//    
+//  .house__appartment5-9-img
+//    top 792px
+//    
+//  .house__appartment5-8-img
+//    top 829px
+//    
+//  .house__appartment5-7-img
+//    top 862px
+//    
+//  .house__appartment5-6-img
+//    top 896px
+//    
+//  .house__appartment5-5-img
+//    top 930px
+//    
+//  .house__appartment5-4-img
+//    top 963px
+//    
+//  .house__appartment5-3-img
+//    top 996px
+//    
+//  .house__appartment5-2-img
+//    top 1027px
+//    
+//  .house__appartment5-1-img
+//    top 1062px
+//    
+//  .house__appartment6-17-link,
+//  .house__appartment6-16-link,
+//  .house__appartment6-15-link,
+//  .house__appartment6-14-link,
+//  .house__appartment6-13-link,
+//  .house__appartment6-12-link,
+//  .house__appartment6-11-link,
+//  .house__appartment6-10-link,
+//  .house__appartment6-9-link,
+//  .house__appartment6-8-link,
+//  .house__appartment6-7-link,
+//  .house__appartment6-6-link,
+//  .house__appartment6-5-link,
+//  .house__appartment6-4-link,
+//  .house__appartment6-3-link,
+//  .house__appartment6-2-link,
+//  .house__appartment6-1-link
+//    transform: scaleY(1.2) rotateZ(-7deg);
+//    
+//  .house__appartment6-17-link
+//    top 529px
+//    
+//  .house__appartment6-16-link
+//    top 565px
+//    
+//  .house__appartment6-15-link
+//    top 604px
+//    
+//  .house__appartment6-14-link
+//    top 637px
+//    transform: scaleY(1.2) rotateZ(-4deg);
+//    
+//  .house__appartment6-13-link
+//    top 670px
+//    transform: scaleY(1.2) rotateZ(-4deg);
+//  
+//  .house__appartment6-12-link
+//    top 705px
+//    transform: scaleY(1.2) rotateZ(-4deg);
+//    
+//  .house__appartment6-11-link
+//    top 742px
+//    transform: scaleY(1.2) rotateZ(-2deg);
+//    
+//  .house__appartment6-10-link
+//    top 774px
+//    transform: scaleY(1.2) rotateZ(-2deg);
+//    
+//  .house__appartment6-9-link
+//    top 809px
+//    transform: scaleY(1.2) rotateZ(-2deg);
+//    
+//  .house__appartment6-8-link
+//    top 845px
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment6-7-link
+//    top 879px
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment6-6-link
+//    top 913px
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment6-5-link
+//    top 947px
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment6-4-link
+//    top 981px
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment6-3-link
+//    top 1020px
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment6-2-link
+//    top 1057px
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment6-1-link
+//    top 1097px
+//    transform: scaleY(1.2) rotateZ(0deg);
+//    
+//  .house__appartment6-17-img,
+//  .house__appartment6-16-img,
+//  .house__appartment6-15-img,
+//  .house__appartment6-14-img,
+//  .house__appartment6-13-img,
+//  .house__appartment6-12-img,
+//  .house__appartment6-11-img,
+//  .house__appartment6-10-img,
+//  .house__appartment6-9-img,
+//  .house__appartment6-8-img,
+//  .house__appartment6-7-img,
+//  .house__appartment6-6-img,
+//  .house__appartment6-5-img,
+//  .house__appartment6-4-img
+//  .house__appartment6-3-img,
+//  .house__appartment6-2-img,
+//  .house__appartment6-1-img
+//    transform: scaleY(1.2);
+//    
+//  .house__appartment6-17-img
+//    top: 511px;
+//    
+//  .house__appartment6-16-img
+//    top: 546px;
+//    
+//  .house__appartment6-15-img
+//    top: 581px;
+//    
+//  .house__appartment6-14-img
+//    top: 616px;
+//    
+//  .house__appartment6-13-img
+//    top: 651px;
+//    
+//  .house__appartment6-12-img
+//    top: 686px;
+//    
+//  .house__appartment6-11-img
+//    top: 721px;
+//    
+//  .house__appartment6-10-img
+//    top: 756px;
+//    
+//  .house__appartment6-9-img
+//    top: 791px;
+//    
+//  .house__appartment6-8-img
+//    top: 826px;
+//    
+//  .house__appartment6-7-img
+//    top: 861px;
+//    
+//  .house__appartment6-6-img
+//    top: 896px;
+//    
+//  .house__appartment6-5-img
+//    top: 931px;
+//    
+//  .house__appartment6-4-img
+//    top: 966px;
+//    
+//  .house__appartment6-3-img
+//    top: 1001px;
+//    
+//  .house__appartment6-2-img
+//    top: 1036px;
+//    
+//  .house__appartment6-1-img
+//    top: 1071px;
     
-  .house__appartment6-15-img
-    top: 581px;
-    
-  .house__appartment6-14-img
-    top: 616px;
-    
-  .house__appartment6-13-img
-    top: 651px;
-    
-  .house__appartment6-12-img
-    top: 686px;
-    
-  .house__appartment6-11-img
-    top: 721px;
-    
-  .house__appartment6-10-img
-    top: 756px;
-    
-  .house__appartment6-9-img
-    top: 791px;
-    
-  .house__appartment6-8-img
-    top: 826px;
-    
-  .house__appartment6-7-img
-    top: 861px;
-    
-  .house__appartment6-6-img
-    top: 896px;
-    
-  .house__appartment6-5-img
-    top: 931px;
-    
-  .house__appartment6-4-img
-    top: 966px;
-    
-  .house__appartment6-3-img
-    top: 1001px;
-    
-  .house__appartment6-2-img
-    top: 1036px;
-    
-  .house__appartment6-1-img
-    top: 1071px;
+
     

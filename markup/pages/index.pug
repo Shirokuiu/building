@@ -7,10 +7,10 @@ html(class="no-js", lang="ru")
     |%=symbols=%
 
     .wrapper
-      .content.column
+      .content
         header.page-header
-        main.page-content.grow.column
-          .container.grow.row
+        main.page-content
+          .container.row
             aside.aside
               .aside__headline-wrap.row.row--ai-c
                 .aside__burder
@@ -125,8 +125,7 @@ html(class="no-js", lang="ru")
                     p.house__preview-text.text.text--uppercase.text--center Этаж
                 .house__content
                   .house__img-wrap
-                    
-
+                    img.house__img(src="%=static=%img/content/main-img.jpg")
                     //-- Корпус 1 --------------------------------------------------------------------------------------------------------------------------
                     a.house__appartment1-17-link.house__appartment-link(href="#" data-selling="3" data-selling-position="1" data-section="1" data-floor="17")
                     svg.house__appartment1-17-img(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.33 46.17')

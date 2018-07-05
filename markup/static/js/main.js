@@ -58,7 +58,7 @@
     } else {
       preview.style.top = (coords.y - 150) + 'px';
     };
-    preview.style.left = (coords.x + 100) + 'px';
+    preview.style.left = (coords.x - 200) + 'px';
   });
   
   for (var i = 0, len = floor.length; i < len; i++) {
@@ -94,7 +94,6 @@
     
     floor[i].addEventListener('click', function (evt) {
       evt.preventDefault();
-      house.style.overflow = 'hidden'
       
       var dataFloor = this.dataset.floor;
       var dataSection = this.dataset.section;
@@ -257,7 +256,6 @@
   };
   
   exit.addEventListener('click', function () {
-    house.style.overflow = 'auto';
     popup.classList.add('hidden');
     popupRooms.room1.classList.remove(popupRooms.setSell(popupRooms.room1));
     popupRooms.room2.classList.remove(popupRooms.setSell(popupRooms.room2));
@@ -270,7 +268,6 @@
   });
   
   exitPopupRooms6.addEventListener('click', function () {
-    house.style.overflow = 'auto';
     popupRooms6.classList.add('hidden');
     objPopupRooms6.room1.classList.remove(popupRooms.setSell(objPopupRooms6.room1));
     objPopupRooms6.room2.classList.remove(popupRooms.setSell(objPopupRooms6.room2));

@@ -47,19 +47,21 @@
     }
   };
   
-  house.addEventListener('mousemove', function (evt) {
-    coords.x = evt.clientX;
-    coords.y = evt.clientY;
-    
-    if (coords.y < 130 || coords.y > 600) {
-      var pos = preview.style.top;
-      
-      preview.style.top = pos;
-    } else {
-      preview.style.top = (coords.y - 150) + 'px';
-    };
-    preview.style.left = (coords.x - 200) + 'px';
-  });
+  if (document.body.clientWidth > 1024) {
+    house.addEventListener('mousemove', function (evt) {
+      coords.x = evt.clientX;
+      coords.y = evt.clientY;
+
+      if (coords.y < 130 || coords.y > 600) {
+        var pos = preview.style.top;
+
+        preview.style.top = pos;
+      } else {
+        preview.style.top = (coords.y - 150) + 'px';
+      };
+      preview.style.left = (coords.x - 200) + 'px';
+    });
+  };
   
   for (var i = 0, len = floor.length; i < len; i++) {
     if (document.body.clientWidth > 1366) {

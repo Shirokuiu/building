@@ -470,28 +470,6 @@ img {
           flex-grow: 1;
   width: 70%;
 }
-@media (max-width: 1570px) {
-  .page-content {
-    position: relative;
-  }
-}
-@media (max-width: 1440px) {
-  .page-content__description {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-@media (max-width: 1024px) {
-  .page-content__description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 .aside {
   width: 315px;
   background-color: #fff;
@@ -743,6 +721,21 @@ img {
     cursor: pointer;
   }
 }
+@media (max-width: 420px) {
+  .aside--close {
+    width: 62px;
+  }
+}
+@media (max-width: 320px) {
+  .aside {
+    right: 0;
+    width: auto;
+  }
+  .aside--close {
+    right: auto;
+    width: 62px;
+  }
+}
 .main-nav {
   margin-bottom: 20px;
 }
@@ -793,6 +786,14 @@ img {
   .main-nav__item-link {
     font-size: 16px;
     line-height: 19px;
+  }
+}
+@media (max-width: 320px) {
+  .main-nav {
+    margin-bottom: 9px;
+  }
+  .main-nav__items {
+    margin-bottom: 7px;
   }
 }
 .house__preview {
@@ -2960,12 +2961,10 @@ img {
 .house__appartment6-1-img {
   bottom: 16.2%;
 }
-@media (max-width: 1680px) {
-  .house__content {
-    left: -178px;
+@media (max-width: 1024px) {
+  .house__preview {
+    display: none;
   }
-}
-@media (max-width: 1366px) {
   .house__appartment1-17-img,
   .house__appartment1-16-img,
   .house__appartment1-15-img,
@@ -3167,9 +3166,19 @@ img {
     opacity: 0.6;
   }
 }
-@media (max-width: 1280px) {
-  .house {
-    overflow-x: auto;
+@media (max-width: 768px) {
+  .house__appartment1-17-link {
+    bottom: 81.5%;
+  }
+}
+@media (max-width: 600px) {
+  .house__content {
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+  .house__img-wrap {
+    width: 1000px;
+    height: 578.34px;
   }
 }
 @media (max-width: 420px) {
@@ -3284,6 +3293,453 @@ img {
     -webkit-transform: scaleX(0.81);
             transform: scaleX(0.81);
     left: 204px;
+  }
+  .house__appartment1-17-link {
+    z-index: 17;
+  }
+  .house__appartment1-16-link {
+    z-index: 16;
+  }
+  .house__appartment1-15-link {
+    z-index: 15;
+  }
+  .house__appartment1-14-link {
+    z-index: 14;
+  }
+  .house__appartment1-13-link {
+    z-index: 13;
+  }
+  .house__appartment1-12-link {
+    z-index: 12;
+  }
+  .house__appartment1-11-link {
+    z-index: 11;
+  }
+  .house__appartment1-10-link {
+    z-index: 10;
+  }
+  .house__appartment1-9-link {
+    z-index: 9;
+  }
+  .house__appartment1-8-link {
+    z-index: 8;
+  }
+  .house__appartment1-7-link {
+    z-index: 7;
+  }
+  .house__appartment1-6-link {
+    z-index: 6;
+  }
+  .house__appartment1-5-link {
+    z-index: 5;
+  }
+  .house__appartment1-4-link {
+    z-index: 4;
+  }
+  .house__appartment1-3-link {
+    z-index: 3;
+  }
+  .house__appartment1-2-link {
+    z-index: 2;
+  }
+  .house__appartment1-1-link {
+    z-index: 1;
+  }
+  .house__appartment2-17-link {
+    z-index: 17;
+  }
+  .house__appartment2-16-link {
+    z-index: 16;
+  }
+  .house__appartment2-15-link {
+    z-index: 15;
+  }
+  .house__appartment2-14-link {
+    z-index: 14;
+  }
+  .house__appartment2-13-link {
+    z-index: 13;
+  }
+  .house__appartment2-12-link {
+    z-index: 12;
+  }
+  .house__appartment2-11-link {
+    z-index: 11;
+  }
+  .house__appartment2-10-link {
+    z-index: 10;
+  }
+  .house__appartment2-9-link {
+    z-index: 9;
+  }
+  .house__appartment2-8-link {
+    z-index: 8;
+  }
+  .house__appartment2-7-link {
+    z-index: 7;
+  }
+  .house__appartment2-6-link {
+    z-index: 6;
+  }
+  .house__appartment2-5-link {
+    z-index: 5;
+  }
+  .house__appartment2-4-link {
+    z-index: 4;
+  }
+  .house__appartment2-3-link {
+    z-index: 3;
+  }
+  .house__appartment2-2-link {
+    z-index: 2;
+  }
+  .house__appartment2-1-link {
+    z-index: 1;
+  }
+  .house__appartment3-17-link {
+    z-index: 17;
+  }
+  .house__appartment3-16-link {
+    z-index: 16;
+  }
+  .house__appartment3-15-link {
+    z-index: 15;
+  }
+  .house__appartment3-14-link {
+    z-index: 14;
+  }
+  .house__appartment3-13-link {
+    z-index: 13;
+  }
+  .house__appartment3-12-link {
+    z-index: 12;
+  }
+  .house__appartment3-11-link {
+    z-index: 11;
+  }
+  .house__appartment3-10-link {
+    z-index: 10;
+  }
+  .house__appartment3-9-link {
+    z-index: 9;
+  }
+  .house__appartment3-8-link {
+    z-index: 8;
+  }
+  .house__appartment3-7-link {
+    z-index: 7;
+  }
+  .house__appartment3-6-link {
+    z-index: 6;
+  }
+  .house__appartment3-5-link {
+    z-index: 5;
+  }
+  .house__appartment3-4-link {
+    z-index: 4;
+  }
+  .house__appartment3-3-link {
+    z-index: 3;
+  }
+  .house__appartment3-2-link {
+    z-index: 2;
+  }
+  .house__appartment3-1-link {
+    z-index: 1;
+  }
+  .house__appartment4-17-link {
+    z-index: 17;
+  }
+  .house__appartment4-16-link {
+    z-index: 16;
+  }
+  .house__appartment4-15-link {
+    z-index: 15;
+  }
+  .house__appartment4-14-link {
+    z-index: 14;
+  }
+  .house__appartment4-13-link {
+    z-index: 13;
+  }
+  .house__appartment4-12-link {
+    z-index: 12;
+  }
+  .house__appartment4-11-link {
+    z-index: 11;
+  }
+  .house__appartment4-10-link {
+    z-index: 10;
+  }
+  .house__appartment4-9-link {
+    z-index: 9;
+  }
+  .house__appartment4-8-link {
+    z-index: 8;
+  }
+  .house__appartment4-7-link {
+    z-index: 7;
+  }
+  .house__appartment4-6-link {
+    z-index: 6;
+  }
+  .house__appartment4-5-link {
+    z-index: 5;
+  }
+  .house__appartment4-4-link {
+    z-index: 4;
+  }
+  .house__appartment4-3-link {
+    z-index: 3;
+  }
+  .house__appartment4-2-link {
+    z-index: 2;
+  }
+  .house__appartment4-1-link {
+    z-index: 1;
+  }
+  .house__appartment5-17-link {
+    z-index: 17;
+  }
+  .house__appartment5-16-link {
+    z-index: 16;
+  }
+  .house__appartment5-15-link {
+    z-index: 15;
+  }
+  .house__appartment5-14-link {
+    z-index: 14;
+  }
+  .house__appartment5-13-link {
+    z-index: 13;
+  }
+  .house__appartment5-12-link {
+    z-index: 12;
+  }
+  .house__appartment5-11-link {
+    z-index: 11;
+  }
+  .house__appartment5-10-link {
+    z-index: 10;
+  }
+  .house__appartment5-9-link {
+    z-index: 9;
+  }
+  .house__appartment5-8-link {
+    z-index: 8;
+  }
+  .house__appartment5-7-link {
+    z-index: 7;
+  }
+  .house__appartment5-6-link {
+    z-index: 6;
+  }
+  .house__appartment5-5-link {
+    z-index: 5;
+  }
+  .house__appartment5-4-link {
+    z-index: 4;
+  }
+  .house__appartment5-3-link {
+    z-index: 3;
+  }
+  .house__appartment5-2-link {
+    z-index: 2;
+  }
+  .house__appartment5-1-link {
+    z-index: 1;
+  }
+  .house__appartment6-17-link {
+    z-index: 17;
+  }
+  .house__appartment6-16-link {
+    z-index: 16;
+  }
+  .house__appartment6-15-link {
+    z-index: 15;
+  }
+  .house__appartment6-14-link {
+    z-index: 14;
+  }
+  .house__appartment6-13-link {
+    z-index: 13;
+  }
+  .house__appartment6-12-link {
+    z-index: 12;
+  }
+  .house__appartment6-11-link {
+    z-index: 11;
+  }
+  .house__appartment6-10-link {
+    z-index: 10;
+  }
+  .house__appartment6-9-link {
+    z-index: 9;
+  }
+  .house__appartment6-8-link {
+    z-index: 8;
+  }
+  .house__appartment6-7-link {
+    z-index: 7;
+  }
+  .house__appartment6-6-link {
+    z-index: 6;
+  }
+  .house__appartment6-5-link {
+    z-index: 5;
+  }
+  .house__appartment6-4-link {
+    z-index: 4;
+  }
+  .house__appartment6-3-link {
+    z-index: 3;
+  }
+  .house__appartment6-2-link {
+    z-index: 2;
+  }
+  .house__appartment6-1-link {
+    z-index: 1;
+  }
+}
+@media (max-width: 360px) {
+  .house__popup-img-room1-img {
+    left: -15px;
+  }
+  .house__popup-img-room2-img {
+    left: 33px;
+  }
+  .house__popup-img-room3-img {
+    left: 137px;
+    top: 1px;
+  }
+  .house__popup-img-room4-img {
+    left: 185px;
+  }
+  .house__popup-img-room1-6-img {
+    left: -19px;
+  }
+  .house__popup-img-room2-6-img {
+    left: 32px;
+  }
+  .house__popup-img-room3-6-img {
+    left: 114px;
+  }
+  .house__popup-img-room4-6-img {
+    -webkit-transform: scaleX(0.79);
+            transform: scaleX(0.79);
+    left: 192px;
+  }
+  .house__popup-img-room5-6-img {
+    -webkit-transform: scaleX(0.77);
+            transform: scaleX(0.77);
+    left: 191px;
+  }
+  .house__popup-img-room6-6-img {
+    -webkit-transform: scaleX(0.77);
+            transform: scaleX(0.77);
+    left: 193px;
+  }
+}
+@media (max-width: 320px) {
+  .house__popup-img-room1-link {
+    -webkit-transform: scaleX(0.6);
+            transform: scaleX(0.6);
+    left: -27px;
+  }
+  .house__popup-img-room1-img {
+    left: -21px;
+    -webkit-transform: scaleX(0.68);
+            transform: scaleX(0.68);
+  }
+  .house__popup-img-room2-link {
+    -webkit-transform: scaleX(0.68);
+            transform: scaleX(0.68);
+    left: 25px;
+  }
+  .house__popup-img-room2-img {
+    left: 22px;
+    -webkit-transform: scaleX(0.64);
+            transform: scaleX(0.64);
+  }
+  .house__popup-img-room3-link {
+    left: 111px;
+    -webkit-transform: scaleX(0.68);
+            transform: scaleX(0.68);
+  }
+  .house__popup-img-room3-img {
+    -webkit-transform: scaleX(0.66);
+            transform: scaleX(0.66);
+    left: 108px;
+  }
+  .house__popup-img-room4-link {
+    -webkit-transform: scaleX(0.68);
+            transform: scaleX(0.68);
+    left: 152px;
+  }
+  .house__popup-img-room4-img {
+    left: 150px;
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+  }
+  .house__popup-img-room1-6-link {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: -35px;
+  }
+  .house__popup-img-room1-6-img {
+    left: -32px;
+    -webkit-transform: scaleX(0.68);
+            transform: scaleX(0.68);
+  }
+  .house__popup-img-room2-6-link {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 19px;
+  }
+  .house__popup-img-room2-6-img {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 20px;
+  }
+  .house__popup-img-room3-6-link {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 89px;
+  }
+  .house__popup-img-room3-6-img {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 90px;
+  }
+  .house__popup-img-room4-6-link {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 157px;
+  }
+  .house__popup-img-room4-6-img {
+    -webkit-transform: scaleX(0.69);
+            transform: scaleX(0.69);
+    left: 158px;
+  }
+  .house__popup-img-room5-6-link {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 156px;
+  }
+  .house__popup-img-room5-6-img {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 157px;
+  }
+  .house__popup-img-room6-6-link {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 160px;
+  }
+  .house__popup-img-room6-6-img {
+    -webkit-transform: scaleX(0.67);
+            transform: scaleX(0.67);
+    left: 160px;
   }
 }
 .house-footer {
